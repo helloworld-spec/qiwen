@@ -32,7 +32,7 @@ sqlite3的命令输入没有大小写区别，且以分号结尾
 
 打开一个数据库，没有则创建
 
-```
+```C
 sqlite3 [数据库名.db]
 eg:
 sqlite3 department.db
@@ -40,7 +40,7 @@ sqlite3 department.db
 
 数据库创建一个表
 
-```
+```C
 creat table [表名]
 (	
 	[列名1] [数据类型] ["约束"]，
@@ -49,7 +49,13 @@ creat table [表名]
 	[列名n] [数据类型] ["约束"]
 );
 eg:
-
+CREATE TABLE library(
+number int "primary key",
+name varchar "not null",
+price real "default",
+type text "not null",
+amount int "not null"
+);
 ```
 
 查看表
@@ -76,6 +82,7 @@ drop table [表名];
 ```
 insert into [表名] values([值1], [值2]...);
 eg:
+INSERT INTO library VALUES (2,"Chinese",22.3,"language",88);
 ```
 
 从表中删除数据
@@ -94,9 +101,12 @@ DELETE FROM [表名] WHERE [列] [运算符] [值];
 
 ```
 select [列名1], [列名2], ... from [表名] where [列] [运算符] [值];
+eg:
 ```
 
 更新表中的数据
+
+
 
 ```
 
