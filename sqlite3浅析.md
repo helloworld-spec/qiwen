@@ -178,3 +178,48 @@ sqlite> SELECT * FROM library ;c
 
 ### sqlite3的C函数接口
 
+**1、sqlite3_open: 用来打开或创建一个sqlite3数据库引擎的连接**
+在sqlite3数据库引擎中，用结构体sqlite3来表示 sqlite3的数据库引擎 的连接。
+我们在调用sqlite3_open这个函数时，它会给我们创建一个sqlite3数据库引擎的连接。
+
+```c
+int sqlite3_open(
+            const char *filename, //database fiename, 你要打开或创建的数据库的文c件名
+            sqlite3 **ppdb;  //sqlite3这个结构体的二级指针
+        );
+返回值:
+    成功返回 SQLITE_OK, 并且ppdb指向新创建的sqlite3数据库引擎的连接
+    其他值，表示失败。
+```
+
+#### 2、sqlite3_exec:操作一个SQL引擎的数据库系统，实际上就是在这个数据库引擎上执行SQL语句
+
+```c
+int sqlite3_exec(
+        sqlite * db; //指向sqlite3数据库系统引擎的连接
+        const char *sql; //你要执行的SQL语句的字符串
+        int (*callback)(void *, int, char **, char **), //函数指针，指向回调函数
+        void *, //将作为callback的第一个参数，传给回调函数
+        char **errmsg //指向错误字符串
+        );
+    返回值:
+        //成功返回0
+        //失败返回其他值，错误信息在errmsg
+        
+        int (*callback)(void *, int, char **, char **), //函数指针，指向回调函数
+        callback主要是在SQL语句为SELECT时用，SELECT返回的结果是一个二维表， 在
+        sqlite3_exec实现查询语句，每查到一条记录，就会把结果返回， 每查到一条符合
+        条件的记录，就调用callback指向的函数。
+            int (*callback)(void *,  //
+                int,  //结果中多少列
+                char **, //char* column_value[], 指针数组，每列的值
+                char **, //char* column_name[], 指针数组，每列的字段名
+                )
+```
+
+#### 关闭数据库连接
+
+```
+int sqlite3_close(sqlite3 *ppDb);
+```
+
