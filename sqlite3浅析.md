@@ -126,7 +126,7 @@ amount int "not null"
 
 
 
-向表中增加数据N
+向表中增加数据
 
 ```c
 insert into [表名] values([值1], [值2]...);
