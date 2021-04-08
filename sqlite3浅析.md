@@ -174,7 +174,34 @@ sqlite> SELECT * FROM library ;c
 1|chinese|23.5|langue|236
 ```
 
+### sqlite3C程序编译环境准备
 
+1、需要准备sqlite3的源码
+
+sqlite-autoconf-3110100
+
+2、代码编译
+
+```c
+tar -zxvf sqlite-autoconf-3110100.tar.gz
+cd sqlite-autoconf-3110100
+./configure -prefix=[绝对路径] #-prefix用来指定sqlite目标路径
+make
+make install
+/*顺利执行后就会在指定路劲下生成
+-bin:存放可执行文件
+-include:头文件
+-lib：库文件路径*/
+```
+
+3、移植
+
+```
+- 将bin目录下的文件拷贝到 /usr/local/bin
+- 将lib目录下的文件拷贝到 /usr/local/lib 拷贝过程需要特别注意软连接
+- include –> /usr/local/include
+- share –> /usr/local/share
+```
 
 ### sqlite3的C函数接口
 
@@ -211,15 +238,54 @@ int sqlite3_exec(
         sqlite3_exec实现查询语句，每查到一条记录，就会把结果返回， 每查到一条符合
         条件的记录，就调用callback指向的函数。
             int (*callback)(void *,  //
-                int,  //结果中多少列
-                char **, //char* column_value[], 指针数组，每列的值
-                char **, //char* column_name[], 指针数组，每列的字段名
-                )
+                            int,  	//结果中多少列
+                            char **, //char* column_value[], 指针数组，每列的值
+                            char **, //char* column_name[], 指针数组，每列的字段名
+                            )
 ```
 
-#### 关闭数据库连接
+#### 3、关闭数据库连接
 
 ```
 int sqlite3_close(sqlite3 *ppDb);
+```
+
+### 使用sqlite3_exec()函数完成增删改查
+
+增：
+
+```c
+sqlite> select * from library;	
+1|English|0.5|language|83
+2|Chinese|22.3|language|88
+****************after insert****************
+china@ubuntu:/mnt/hgfs/WmShare$ gcc insert.c -lsqlite3 -o insert
+china@ubuntu:/mnt/hgfs/WmShare$ ./insert
+china@ubuntu:/mnt/hgfs/WmShare$ sqlite3 test.db 
+SQLite version 3.23.0 2018-03-27 15:13:43
+Enter ".help" for usage hints.
+sqlite> select * from	library;
+1|English|0.5|language|83
+2|Chinese|22.3|language|88
+3|math|34.0|langue|112
+```
+
+删、改：略
+
+查：
+
+```c
+sqlite> select * from library;
+1|English|0.5|language|83
+2|Chinese|22.3|language|88
+3|math|34.0|langue|112
+*************after select*****************
+china@ubuntu:/mnt/hgfs/WmShare$ vim select.c 
+china@ubuntu:/mnt/hgfs/WmShare$ gcc select.c -o select -lsqlite3
+china@ubuntu:/mnt/hgfs/WmShare$ ./select
+number	name		price		type		amount	
+1		English		0.5			language	83	
+2		Chinese		22.3		language	88	
+3		math		34.0		langue		112	
 ```
 
