@@ -1,0 +1,273 @@
+
+CROSS_COMPILE ?= nds32le-elf-
+
+CC	:= $(CROSS_COMPILE)gcc
+OBJCOPY	:= $(CROSS_COMPILE)objcopy
+AR	:= $(CROSS_COMPILE)ar
+AS	:= $(CROSS_COMPILE)as
+
+ifeq ($(DEBUG),1)
+OPTIM	:= -O0 -g3
+else
+OPTIM	:= -Os -g3
+endif
+
+
+# LWIP path: we use our lwip currently.
+RTOS_COMM_PATH			:= .
+LIB_PATH			:= $(RTOS_COMM_PATH)/library
+RTOS_PATH			:= ./rtos/freertos
+CONFIG_PATH			:= $(RTOS_COMM_PATH)/include/config
+BSP_PATH			:= $(RTOS_COMM_PATH)/bsp
+PLATFORM_PATH			:= $(BSP_PATH)/turismo
+LIBC_PATH			:= $(RTOS_COMM_PATH)/libc
+DRIVER_PATH			:= $(RTOS_COMM_PATH)/driver
+CLI_PATH			:= $(RTOS_COMM_PATH)/cli
+FREERTOS_ROOT_PATH		:= $(RTOS_PATH)/kernel
+CPU_DEF_PATH			:= $(RTOS_COMM_PATH)/bsp/CPU_DEF
+
+HW_HAL_SRC	:= $(PLATFORM_PATH)/turismo.c
+
+PLATFORM_PATH   := $(BSP_PATH)/turismo
+LDSCRIPT        := $(PLATFORM_PATH)/turismo.ld
+CONFIG_H        := $(CONFIG_PATH)/turismo_cfg.h
+HW_HAL_SRC	:= $(PLATFORM_PATH)/turismo.c
+
+LIB_JPEG_DEF	:= -DNO_GETENV
+LIB_MAD_DEF	:= -DFPM_DEFAULT
+LIB_SDL_DEF	:= -DHAVE_MALLOC
+OS_DEF		:= -DCONFIG_OS_FREERTOS
+
+INCLUDE_PATH := \
+	-I${RTOS_COMM_PATH}/include \
+	-I$(FREERTOS_ROOT_PATH)/Demo/Common/include \
+	-I$(FREERTOS_ROOT_PATH)/Source/include \
+	-I$(BSP_PATH) \
+	-I$(CPU_DEF_PATH) \
+	-I$(PLATFORM_PATH) \
+	-I$(RTOS_PATH) \
+	-I$(RTOS_PATH)/hal \
+	-I$(RTOS_PATH)/nds32 \
+	-I$(DRIVER_PATH) \
+	-I$(CLI_PATH) \
+	-I$(LIB_PATH)/
+
+#Check GCC version
+VERSION := $(shell $(CC) --version | grep ^$(CC) | sed 's/^.* //g')
+GCC_VERSION := $(shell echo $(VERSION)| sed -e 's/\.\([0-9][0-9]\)/\1/g' -e 's/\.\([0-9]\)/0\1/g' -e 's/^[0-9]\{3,4\}$$/&00/' )
+
+# GCC version before 4.8.2 doesn't support -mcmodel
+ifneq ($(shell expr `echo $(GCC_VERSION)` \< 40802 ),1)
+	CMODEL := -mcmodel=large
+endif
+
+CFLAGS := \
+	$(INCLUDE_PATH) \
+	-Wall \
+	$(OS_DEF) \
+	$(SMALL_HEAP_DEF) \
+	-fno-builtin -fomit-frame-pointer -funroll-loops -nostdlib \
+	-fno-strict-aliasing -ffunction-sections \
+	$(CMODEL) \
+	$(OPTIM) \
+	$(CFLAGS_EXT)
+
+LD_FLAGS	:= $(OPTIM) -fno-builtin -nostartfiles -static -Wl,--gc-sections $(CMODEL)
+
+AFLAGS		:= -fno-builtin
+
+# For awareness debugging, add the FreeRTOS version symbol for auto detecting.
+# Remove the '--gcc-sections' option to keep the symbol to be GLOBAL binded.
+ifeq ($(DEBUG),1)
+# The 'OSC_DEMO' is not included because of the code size limitation.
+LD_FLAGS	:= $(subst --gc-sections,--undefine=__rtos_signature_freertos_v8_0_0,$(LD_FLAGS))
+endif
+
+# Add `-fno-delete-null-pointer-checks` flag if the compiler supports it.
+# GCC assumes that programs cannot safely dereference null pointers, 
+# and that no code or data element resides there.
+# However, 0x0 is the vector table memory location, so the test must not be removed.
+ifeq ($(shell $(CC) -fno-delete-null-pointer-checks -E - 2>/dev/null >/dev/null </dev/null ; echo $$?),0)
+CFLAGS += -fno-delete-null-pointer-checks
+LD_FLAGS += -fno-delete-null-pointer-checks
+endif
+
+ifeq ($(shell echo | $(CC) -E -dM - | grep __NDS32_EXT_IFC__ > /dev/null && echo IFC),IFC)
+ifeq ($(NO_IFC),y)
+CFLAGS += -mno-ifc -DCONFIG_NO_NDS32_EXT_IFC
+LD_FLAGS += -Wl,--mno-ifc
+endif
+else
+ifneq ($(NO_IFC),)
+$(error this toolchain do not support IFC extension)
+endif
+endif
+
+ifeq ($(shell echo | $(CC) -E -dM - | grep __NDS32_EXT_EX9__ > /dev/null && echo EX9),EX9)
+ifeq ($(NO_EX9),y)
+CFLAGS += -mno-ex9 -DCONFIG_NO_NDS32_EXT_EX9
+LD_FLAGS += -Wl,--mno-ex9
+endif
+else
+ifneq ($(NO_EX9),)
+$(error this toolchain do not support EX9 extension)
+endif
+endif
+
+ifeq ($(CACHE),1)
+CFLAGS += -DCONFIG_CACHE_SUPPORT
+endif
+
+
+#default 32IVIC
+VECTOR_SRC := vector_32ivic.S
+
+# add INTC check
+ifeq ($(EXT_INTC),1)
+CFLAGS += -DCONFIG_EXT_INTC
+VECTOR_SRC := vector.S
+endif
+
+RTOS_SRC := \
+	$(FREERTOS_ROOT_PATH)/Source/tasks.c \
+	$(FREERTOS_ROOT_PATH)/Source/queue.c \
+	$(FREERTOS_ROOT_PATH)/Source/list.c \
+	$(FREERTOS_ROOT_PATH)/Source/timers.c \
+	$(FREERTOS_ROOT_PATH)/Source/event_groups.c \
+	$(FREERTOS_ROOT_PATH)/Source/portable/MemMang/heap_2.c
+
+
+NDS32_SRC := \
+	$(BSP_PATH)/bsp.c \
+	$(HW_HAL_SRC) \
+	$(CPU_DEF_PATH)/cache.c \
+	$(EXCEPT_SRC) \
+	$(RTOS_PATH)/portISR.c \
+	$(RTOS_PATH)/port.c
+
+BOOT_SRC := \
+	$(BSP_PATH)/start.S	\
+	$(PLATFORM_PATH)/$(VECTOR_SRC) \
+	$(RTOS_PATH)/nds32/os_cpu_a.S
+
+HAL_DRIVER_SRC		:= $(RTOS_PATH)/hal/hal.c
+UART_DRIVER_SRC		:= $(RTOS_COMM_PATH)/driver/uart/uart.c
+
+LIBC_SRC := \
+	$(LIBC_PATH)/stdio/fgets.c \
+	$(LIBC_PATH)/stdio/fputs.c \
+	$(LIBC_PATH)/stdio/fprintf.c \
+	$(LIBC_PATH)/stdio/do_printf.c \
+	$(LIBC_PATH)/stdio/printf.c \
+	$(LIBC_PATH)/string/memcpy.c \
+	$(LIBC_PATH)/string/memmove.c \
+	$(LIBC_PATH)/string/memset.c \
+	$(LIBC_PATH)/string/strcat.c \
+	$(LIBC_PATH)/string/strcasecmp.c \
+	$(LIBC_PATH)/string/strcmp.c \
+	$(LIBC_PATH)/string/strcpy.c \
+	$(LIBC_PATH)/string/strdup.c \
+	$(LIBC_PATH)/string/strlen.c \
+	$(LIBC_PATH)/string/strstr.c \
+	$(LIBC_PATH)/string/strupr.c \
+	$(LIBC_PATH)/string/wchar.c \
+	$(LIBC_PATH)/stdlib/qsort.c
+
+LIBC_FILE_SRC := \
+	$(LIBC_PATH)/stdio/file.c \
+
+#
+#  Applications
+#
+
+LIB_CLI_SRC := $(CLI_PATH)/cli.c
+
+APP		:=      turismo
+
+APP_TURISMO_SRC :=	$(RTOS_COMM_PATH)/app/bh/bh.c
+
+APP_BH_SRC  	:=	$(RTOS_COMM_PATH)/app/bh/bh.c
+
+APP_NESTED_INT_SRC:=	$(RTOS_COMM_PATH)/app/nested-int/test.c
+
+APP_LATENCY_SRC	:=	$(RTOS_COMM_PATH)/app/latency/test.c
+
+APP_EVENT_SRC	:=	$(RTOS_COMM_PATH)/app/event/event.c
+
+
+#################################################################
+#								#
+# We add driver source code to each application			#
+# format XXX_DRIVER_SRC						#
+#								#
+#################################################################
+BH_DRIVER_SRC	:= ${UART_DRIVER_SRC}
+
+NESTED_INT_DRIVER_SRC	:= ${UART_DRIVER_SRC}
+
+LATENCY_DRIVER_SRC	:= ${UART_DRIVER_SRC}
+
+EVENT_DRIVER_SRC	:= ${UART_DRIVER_SRC}
+
+DRIVER_SRC := \
+	${UART_DRIVER_SRC} \
+	${HAL_DRIVER_SRC}
+
+#################################################################
+#								#
+# We add library source code to each application		#
+# format XXX_LIB_SRC						#
+#								#
+#################################################################
+
+#################################################################
+#								#
+# Source code to each application				#
+#								#
+#################################################################
+SRCS := \
+	${NDS32_SRC} \
+	${RTOS_SRC} \
+	${LIBC_SRC} \
+	${DRIVER_SRC} \
+	${LIB_SRC}
+
+TURISMO_SRCS	:= ${SRCS} ${APP_TURISMO_SRC}
+TURISMO_AS_SRCS	+= ${BOOT_SRC}
+
+# % can match to all the strings
+TURISMO_OBJS := $(patsubst %.S,%.o,$(patsubst %.c,%.o,${TURISMO_SRCS}))
+TURISMO_AS_OBJS := $(patsubst %.S,%.o,${TURISMO_AS_SRCS})
+
+OBJS = ${TURISMO_OBJS} ${TURISMO_AS_OBJS}
+
+.PHONY: all clean distclean
+
+all: turismo.elf turismo.bin
+	if test ! -d ./build; then \
+		mkdir ./build; \
+	fi
+	mv turismo.* ./build
+
+clean:
+	$(RM) $(OBJS)
+	$(RM) ./build/turismo.elf ./build/turismo.bin
+
+distclean: clean
+	$(RM) -rf build/
+
+.SUFFIXES : .o .c .S
+
+.c.o : $(CONFIG_H)
+	$(CC) -include $(CONFIG_H) $(CFLAGS) -c $< -o $@
+	#$(CC) $(CONFIG_H) $(CFLAGS) -c $< -o $@
+.S.o : $(CONFIG_H)
+	$(CC) -include $(CONFIG_H) -c $(CFLAGS) $(AFLAGS) $< -o $@
+	#$(CC) $(CONFIG_H) -c $(CFLAGS) $(AFLAGS) $< -o $@
+
+${APP}.elf: $(CONFIG_H) ${KCONFIG_CONFIG} ${TURISMO_OBJS} ${TURISMO_AS_OBJS}
+	$(CC) -T$(LDSCRIPT) ${TURISMO_OBJS} ${TURISMO_AS_OBJS} $(LD_FLAGS) $(LFLAGS_EXT) -Wl,-Map=${APP}.map -o $@
+
+${APP}.bin: ${APP}.elf
+	$(OBJCOPY) ${APP}.elf -O binary ${APP}.bin
+

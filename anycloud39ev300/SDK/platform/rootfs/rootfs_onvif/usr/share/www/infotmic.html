@@ -1,0 +1,181 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Infotmic ISP</title>
+    <style type="text/css">
+        table.altrowstable {
+            font-family: verdana, arial, sans-serif;
+            font-size: 11px;
+            color: #333333;
+            width="100%";
+            border-width: 1px;
+            border-color: #080808;
+            border-collapse: collapse;
+        }
+
+        table.altrowstable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #080808;
+            background-color: lightgray;
+            text-align: right;
+        }
+
+        table.altrowstable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #080808;
+            text-align: left;
+        }
+
+        table.altrowstable input {
+            width: 100%;
+        }
+
+        .oddrowcolor {
+            background-color: #d4e3e5;
+        }
+
+        .evenrowcolor {
+            background-color: #c3dde0;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function TableToJSOn() {
+            var inputs = document.getElementById('tbl').getElementsByTagName("input");
+            var str = '{';
+
+            console.log(inputs.length);
+
+            for(var i = 0; i < inputs.length; ++i){
+                str += '"' + inputs[i].id + '":' + '"' + inputs[i].value + '"';
+                if (i !== inputs.length - 1) {
+                    str += ',';
+                }
+            }
+            str += '}';
+            console.log(str);
+            return str;
+        }
+
+        function ObjectToHTML(key, parsedJson) {
+            var tbl = '<tr width="100%" >';
+            if (undefined === parsedJson) {
+                return '';
+            }
+            if (null != key) {
+                if (isNaN(key)) {
+                    tbl += '<th  width="15%">' + key + '</th>';
+                }
+                tbl += '<td width="85%">';
+            }
+            if (typeof(parsedJson) === 'object') {
+                tbl += '<table class="altrowstable" border="1" cellpadding="0">';
+                var okey;
+                for (okey in parsedJson) {
+                    if (parsedJson.hasOwnProperty(okey)) {
+                        tbl += ObjectToHTML(okey, parsedJson[okey]);
+                    }
+                }
+                tbl += '</table>';
+            } else {
+                tbl += '<input id="' + key + '" value="' + parsedJson + '"></input>';
+            }
+            if (null != key) {
+                tbl += '</td>';
+            }
+            tbl += '</tr>';
+            return tbl;
+        }
+
+        var createAjax = function () {
+            var xhr = null;
+            try {
+                xhr = new ActiveXObject("microsoft.xmlhttp");
+            } catch (e1) {
+                try {
+                    xhr = new XMLHttpRequest();
+                } catch (e2) {
+                    window.alert("Unsupport AJAX on this Browser");
+                }
+            }
+            return xhr;
+        }
+
+        var ajax = function (conf) {
+            var type = conf.type;
+            var url = conf.url;
+            var data = conf.data;
+            var dataType = conf.dataType;
+            var success = conf.success;
+            if (type == null) {
+                type = "get";
+            }
+            if (dataType == null) {
+                dataType = "text";
+            }
+            var xhr = createAjax();
+            xhr.open(type, url, true);
+            if (type == "GET" || type == "get") {
+                xhr.send(null);
+            } else if (type == "POST" || type == "post") {
+                xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+                xhr.send(data);
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (dataType == "text" || dataType == "TEXT") {
+                        if (success != null) {
+                            success(xhr.responseText);
+                        }
+                    } else if (dataType == "xml" || dataType == "XML") {
+                        if (success != null) {
+                            success(xhr.responseXML);
+                        }
+                    } else if (dataType == "json" || dataType == "JSON") {
+                        if (success != null) {
+                            success(eval("(" + xhr.responseText + ")"));
+                        }
+                    }
+                }
+            };
+        }
+
+        function Refresh() {
+            ajax({
+                type: 'GET',
+                url: '/_Infotmic/isp.php',
+                dataType: 'json',
+                success: function (obj) {
+                    document.getElementById("tbl").innerHTML = ObjectToHTML(null, obj);
+                },
+            });
+        }
+        
+        function Submit() {
+            ajax({
+                type: 'POST',
+                url: '/_Infotmic/isp.php',
+                dataType: 'json',
+                data: TableToJSOn(),
+            });
+            console.log(TableToJSOn());
+        }
+
+        window.onload = function () {
+            Refresh();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="Refresh()" value='Refresh'></input>
+    <input type="button" onclick="Submit()" value='Submit'></input>
+    <br>
+    <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color="grey" size="3">
+    <table class="altrowstable" id="tbl" width="100%" border="1"></table>
+    <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color="grey" size="3">
+</body>
+</html>

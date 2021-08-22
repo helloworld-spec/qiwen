@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ <resumeXml>
+	 <product vendor="JUAN" version="1.3.11">
+	 	<domain>update.e-seenet.com</domain>
+	 	<port>8088</port>
+		<filepath>/IPCAM/common/update.xml</filepath>
+	</product>
+</resumeXml>

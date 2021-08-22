@@ -1,0 +1,13 @@
+                            Nucleus PLUS for ARM925
+         using Code Composer Studio Development Tools for OMAP Platform
+
+                    ********** Release History **********
+
+*****************************************************************************
+Version 1.14.1                                              November 05, 2002
+*****************************************************************************
+
+This is the first release of Nucleus PLUS for the ARM925 verified using Code 
+Composer Studio Development Tools for OMAP Platform v.2.10 and Code Composer 
+Studio Development Tools for OMAP Platform Debugger v.2.10. This release was 
+tested on the OMAP Innovator with the POMAP1510CGZG chip.

@@ -1,0 +1,51 @@
+# '#' and '//' is the remark head.
+// '#' and '//' is the remark head.
+# blank line is allowable,but couldn't contain blank(space)
+
+
+
+# Every section should be like the format followed:
+# [section name]       //no blank before '['
+# Your data...
+# Your data...
+# ...
+# [END]                //no blank before '['
+# The following section name is supported:
+# [xxxx],[xxxx]
+
+[CONFIG_DATA]
+0x08000004, 0x010052C8,    //remark
+0x66668888, 0x000000c8,    //remark
+0x21000078, 0x0001b0c3,    //remark
+0x21000004, 0x14B24525,    //remark
+0x21000008, 0x00404445,    //remark
+0x21000000, 0x00134d20,    //remark
+0x21000010, 0x02000000,    //remark
+0x21000010, 0x02f00000,    //remark
+0x21000010, 0x02a00400,    //remark
+0x21000010, 0x02820000,    //remark
+0x21000010, 0x02830000,    //remark
+0x21000010, 0x02810002,    //remark
+0x21000010, 0x02800d52,    //remark
+0x21000010, 0x02a00400,    //remark
+0x21000010, 0x02c00000,    //remark
+0x21000010, 0x02c00000,    //remark
+0x21000010, 0x02800c52,    //remark
+0x66668888, 0x000000c8,    //remark
+0x21000010, 0x02810382,    //remark
+0x21000010, 0x02810002,    //remark
+0x21000010, 0x02f00000,    //remark
+0x2100000c, 0x00001801,    //remark
+0x21000020, 0x00000003,    //remark
+0x66668888, 0x000000c8,    //remark
+0x21000024, 0x00000001,    //remark
+0x66668888, 0x000000c8,    //remark
+0x66668888, 0x000000c8,    //remark
+0x66668888, 0x000000c8,    //remark
+0x88888888, 0x88888888,    //remark
+[END]
+
+
+
+
+# ^_^ ^_^

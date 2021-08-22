@@ -1,0 +1,672 @@
+﻿/* 由开发人员工具生成。它可能不是原始源文件的准确表示形式。*/
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: Arial, "����"; COLOR: #000000 FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+* A {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+A {
+	OUTLINE-STYLE: none; font-size: 12px;
+}
+:focus {
+	OUTLINE-WIDTH: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+BODY {
+	HEIGHT: 100%; text-align:center\0;
+}
+#settings{ 
+MARGIN-RIGHT: auto;
+MARGIN-LEFT: auto;
+height:500px;
+background:#3E3E3E;
+width:800px;
+}
+#menus{
+	background-color: #000000;
+	height: 30px;
+	width: 100%;
+}
+/*.btn-left{float: left; display:block; height:32px; line-height:32px; text-align:center; font-size:16px; font-weight:bold; margin:1px; cursor:pointer; border-radius:0; width:158px; border-bottom:1px solid #CCC;}
+.btn-left:hover{text-decoration:underline;}
+.btn-left-active{color:#FFFFFF;}
+.btn-left1{float: left; display:block; height:32px; line-height:32px; text-align:center; font-size:16px; font-weight:bold; margin:1px; cursor:pointer; border-radius:0;}
+.btn-left1:hover{text-decoration:underline;}
+.btn-left-active1{color:#f00;}
+.video-pm{
+	background-color:#f1f1f1;
+	border-top:2px solid #bbb;
+	border-bottom:1px solid #bbb;
+	}*/
+A:active {
+	
+}
+#lainput SPAN {
+	COLOR: #fff
+}
+A {
+	COLOR: #fff
+}
+#lainput INPUT {
+	COLOR: #000
+}
+OPTION {
+	COLOR: #000
+}
+#lbt {
+	COLOR: #000
+}
+A.cbt {
+	COLOR: #ffffff; font-size: 12px;
+}
+#kwick .kwick {
+	FONT-WEIGHT: bold
+}
+#cl LI DIV {
+	COLOR: #555
+}
+#cmu A {
+	COLOR: #000
+}
+#smu1 LI {
+	COLOR: #555
+}
+#mnudj LI {
+	COLOR: #555
+}
+#yt1 DIV {
+	COLOR: #555
+}
+#yt3 DIV {
+	COLOR: #555
+}
+.divt {
+	COLOR: #555
+}
+#taba A {
+	COLOR: #555; font-size: 12px; 
+}
+.inputyt {
+	COLOR: #555
+}
+#lainput INPUT {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BACKGROUND: #efefef; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+SELECT {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BACKGROUND: #efefef; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+DIV.mpad {
+	WIDTH: 140px
+}
+DIV.mpad2 {
+	WIDTH: 140px; BACKGROUND: url(images/mb_bg1.png) repeat-x
+}
+#lbt {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; PADDING-LEFT: 0px; WIDTH: 60px; PADDING-RIGHT: 0px; BACKGROUND: url(images/lbt.jpg); BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 23px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 4px
+}
+A.cbt {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 62px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(images/yy1.png) no-repeat; FLOAT: left; HEIGHT: 16px; OVERFLOW: hidden; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+A.cbt:hover {
+	BACKGROUND: url(images/yy11.png) no-repeat
+}
+A.cbtm {
+	WIDTH: 12px; DISPLAY: block; FLOAT: left; HEIGHT: 19px; TEXT-DECORATION: none
+}
+A.cbtm {
+	BACKGROUND: url(images/cs.jpg)
+}
+A.cbtm:hover {
+	BACKGROUND: url(images/cs1.jpg)
+}
+.cbtd {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#sa {
+	MARGIN: 7px 0px 0px; WIDTH: 350px; BACKGROUND: url(images/sa.jpg) repeat-x; FLOAT: left; HEIGHT: 13px
+}
+#sk {
+	WIDTH: 6px; BACKGROUND: url(images/sk.jpg) no-repeat; HEIGHT: 13px; CURSOR: pointer
+}
+.sax {
+	MARGIN: 5px 0px 0px 4px; WIDTH: 70px; BACKGROUND: url(images/sas.png) repeat-x; FLOAT: left; HEIGHT: 15px
+}
+.skx {
+	MARGIN: -3px 0px 0px 0px; WIDTH: 11px; BACKGROUND: url(images/sks.gif) no-repeat; HEIGHT: 15px; CURSOR: pointer
+}
+A.sal {
+	TEXT-ALIGN: center; WIDTH: 13px; DISPLAY: block; HEIGHT: 15px; TEXT-DECORATION: none
+}
+A.sar {
+	TEXT-ALIGN: center; WIDTH: 13px; DISPLAY: block; HEIGHT: 15px; TEXT-DECORATION: none
+}
+A.sal {
+	BACKGROUND: url(images/sal.png) no-repeat
+}
+A.sal:hover {
+	BACKGROUND: url(images/sal1.png) no-repeat
+}
+A.sar {
+	BACKGROUND: url(images/sar.png) no-repeat
+}
+A.sar:hover {
+	BACKGROUND: url(images/sar1.png) no-repeat
+}
+#login {
+	POSITION: absolute; TOP: 0px
+}
+#lx {
+	MARGIN: 196px auto auto; WIDTH: 478px; HEIGHT: 186px
+}
+#lb {
+	WIDTH: 53px; BACKGROUND: url(images/lbbg.jpg); FLOAT: left; HEIGHT: 186px
+}
+#lc {
+	WIDTH: 45px; BACKGROUND: url(images/lcbg.jpg); FLOAT: left; HEIGHT: 186px
+}
+#la {
+	WIDTH: 380px; BACKGROUND: url(images/labg.jpg); FLOAT: left; HEIGHT: 186px
+}
+#lal {
+	WIDTH: 8px; BACKGROUND: url(images/lal.jpg); FLOAT: left; HEIGHT: 186px
+}
+#lar {
+	WIDTH: 24px; BACKGROUND: url(images/lar.jpg); FLOAT: right; HEIGHT: 186px
+}
+#lalogo {
+	POSITION: relative; WIDTH: 251px; BACKGROUND: url(images/lalogo.jpg); HEIGHT: 37px; TOP: 20px; LEFT: 11px
+}
+#lainput {
+	MARGIN: 35px 0px 0px 5px; WIDTH: 253px; FLOAT: left; HEIGHT: 70px
+}
+#lainput DIV {
+	TEXT-ALIGN: right; MARGIN: 5px 0px 0px; WIDTH: 250px; FLOAT: left
+}
+#lainput SPAN {
+	MARGIN: 0px 6px 0px 0px
+}
+#lainput INPUT {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 130px; PADDING-RIGHT: 0px; HEIGHT: 18px; PADDING-TOP: 3px
+}
+#lainput SELECT {
+	WIDTH: 133px; HEIGHT: 18px
+}
+#labt {
+	MARGIN: 72px 0px 0px; WIDTH: 10px; FLOAT: left; HEIGHT: 10px
+}
+#m {
+	POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; 
+}
+#ma {
+	WIDTH: 100%; BACKGROUND: url(images/m_inTop.jpg); HEIGHT: 31px
+}
+#ma DIV {
+	HEIGHT: 31px
+}
+#maa {
+	WIDTH: 6px; BACKGROUND: url(images/m_inTop.jpg); FLOAT: left
+}
+#mab {
+	WIDTH: 10px; BACKGROUND: url(images/m_inTop.jpg); FLOAT: left
+}
+#mac {
+	WIDTH: 126px; FLOAT: left
+}
+#mad {
+	WIDTH: 20px; BACKGROUND: url(images/m_inTop.jpg); FLOAT: left
+}
+#mae {
+	WIDTH: 6px; BACKGROUND: url(images/m_inTop.jpg); FLOAT: right
+}
+#kwick {
+	FLOAT: left; text-align: center;
+}
+#kwick LI {
+	FLOAT: left
+}
+#kwick .kwicks {
+	DISPLAY: block
+}
+#kwick .kwick {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; WIDTH: 120px; PADDING-RIGHT: 0px; DISPLAY: block; HEIGHT: 22px; COLOR: #555; CURSOR: pointer; PADDING-TOP: 9px; FONT-SIZE: 12px;
+}
+#kwick .a {
+	BACKGROUND: url(images/m_top.jpg)
+}
+#kwick .b {
+	BACKGROUND: url(images/m_top.jpg)
+}
+#kwick .c {
+	BACKGROUND: url(images/m_top.jpg)
+}
+#kwick .d {
+	BACKGROUND: url(images/m_top.jpg)
+}
+#kwick .e {
+	BACKGROUND: url(images/m_top.jpg)
+}
+#mb {
+	PADDING-BOTTOM: 0px; MARGIN: auto; PADDING-LEFT: 0px; WIDTH: 950px; PADDING-RIGHT: 0px; PADDING-TOP: 3px;
+}
+#yt DIV {
+	FLOAT: left
+}
+#yt A {
+	OUTLINE-STYLE: none; WIDTH: 100%; DISPLAY: block; HEIGHT: 100%; TEXT-DECORATION: none
+}
+#yt A.y1 {
+	BACKGROUND: url(images/yt1.jpg) no-repeat
+}
+/*#yt A.y1:hover {
+	BACKGROUND: url(images/yt11.jpg) no-repeat
+}*/
+#yt A.y2 {
+	BACKGROUND: url(images/yt2.jpg) no-repeat
+}
+#yt A.y2:hover {
+	BACKGROUND: url(images/yt21.jpg) no-repeat
+}
+#yt A.y3 {
+	BACKGROUND: url(images/yt3.jpg) no-repeat
+}
+/*#yt A.y3:hover {
+	BACKGROUND: url(images/yt31.jpg) no-repeat
+}*/
+#yt A.y4 {
+	BACKGROUND: url(images/yt4.jpg) no-repeat
+}
+#yt A.y4:hover {
+	BACKGROUND: url(images/yt41.jpg) no-repeat
+}
+#yt A.y5 {
+	BACKGROUND: url(images/yt5.png) no-repeat
+}
+#yt A.y5:hover {
+	BACKGROUND: url(images/yt51.png) no-repeat
+}
+#yt A.y10 {
+	BACKGROUND: url(images/yt5b.png) no-repeat
+}
+#yt A.y10:hover {
+	BACKGROUND: url(images/yt5b1.png) no-repeat
+}
+#yt A.y6 {
+	BACKGROUND: url(images/yt6.jpg) no-repeat
+}
+#yt A.y6:hover {
+	BACKGROUND: url(images/yt61.jpg) no-repeat
+}
+#yt A.y7 {
+	BACKGROUND: url(images/yt7.jpg) no-repeat
+}
+/*#yt A.y7:hover {
+	BACKGROUND: url(images/yt71.jpg) no-repeat
+}*/
+#yt A.y8 {
+	BACKGROUND: url(images/yt8.jpg) no-repeat
+}
+#yt A.y8:hover {
+	BACKGROUND: url(images/yt81.jpg) no-repeat
+}
+A.yta1 {
+	WIDTH: 13px; DISPLAY: block; FLOAT: right; HEIGHT: 18px; TEXT-DECORATION: none
+}
+A.yta1 {
+	BACKGROUND: url(images/yta1.jpg)
+}
+A.yta1:hover {
+	BACKGROUND: url(images/yta11.jpg)
+}
+#yt A.y9 {
+	BACKGROUND: url(images/yt9.jpg) no-repeat
+}
+/*#yt A.y9:hover {
+	BACKGROUND: url(images/yt91.jpg) no-repeat
+}*/
+#yt1 DIV {
+	FLOAT: left
+}
+#yt1 A {
+	OUTLINE-STYLE: none; WIDTH: 26px; DISPLAY: block; HEIGHT: 26px; TEXT-DECORATION: none
+}
+#yt2 A {
+	OUTLINE-STYLE: none
+}
+#yt1 A.y1 {
+	BACKGROUND: url(images/yt_.gif) no-repeat
+}
+#yt1 A.y1:hover {
+	BACKGROUND: url(images/yt_1.gif) no-repeat
+}
+#yt1 A.y2 {
+	BACKGROUND: url(images/yt-.gif) no-repeat
+}
+#yt1 A.y2:hover {
+	BACKGROUND: url(images/yt-1.gif) no-repeat
+}
+.divt {
+	TEXT-ALIGN: left; WIDTH: 70px; FLOAT: left; HEIGHT: 16px; OVERFLOW: hidden
+}
+#yt21 DIV {
+	FLOAT: left
+}
+#yt3 DIV {
+	FLOAT: left
+}
+.inputyt {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; WIDTH: 37px; BORDER-TOP-STYLE: none; BACKGROUND: #f4f4f4; FLOAT: left; HEIGHT: 18px; BORDER-LEFT-STYLE: none
+}
+#yt22 A {
+	TEXT-ALIGN: center; WIDTH: 129px; DISPLAY: block; HEIGHT: 9px; TEXT-DECORATION: none
+}
+#yt22 A.y1 {
+	BACKGROUND: url(images/yt22a.jpg) no-repeat
+}
+#yt22 A.y1:hover {
+	BACKGROUND: url(images/yt22a1.jpg) no-repeat
+}
+#yt22 A.y2 {
+	BACKGROUND: url(images/yt22b.jpg) no-repeat
+}
+#yt22 A.y2:hover {
+	BACKGROUND: url(images/yt22b1.jpg) no-repeat
+}
+#yt3t1 A {
+	OUTLINE-STYLE: none
+}
+#yt3t2 A {
+	OUTLINE-STYLE: none
+}
+#Talk A {
+	OUTLINE-STYLE: none
+}
+#taba A {
+	PADDING-BOTTOM: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; DISPLAY: block; HEIGHT: 14px; COLOR: #ffffff; OVERFLOW: hidden; TEXT-DECORATION: none; PADDING-TOP: 4px; line-height: 14px; 
+}
+#taba A.t1 {
+	WIDTH: 63px; BACKGROUND: url(images/t1t1.png) 
+}
+#taba A.t1:hover {
+	BACKGROUND: url(images/t2t2.png) 
+}
+#taba A.t2 {
+	LEFT:2px; WIDTH: 67px; BACKGROUND: url(images/t1t1.png); 
+}
+#taba A.t2:hover {
+	LEFT:2px; BACKGROUND: url(images/t2t2.png) 
+}
+#taba A.t3 {
+	WIDTH: 63px; BACKGROUND: url(images/t1t1.png) 
+}
+#taba A.t3:hover {
+	BACKGROUND: url(images/t2t2.png) 
+}
+#taba A.t4 {
+	WIDTH: 67px; BACKGROUND: url(images/t1t1.png) 
+}
+#taba A.t4:hover {
+	BACKGROUND: url(images/t2t2.png) 
+}
+#dcl {
+	WIDTH: 140px; FLOAT: none; OVERFLOW: auto
+}
+#cl LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; WIDTH: auto; PADDING-RIGHT: 0px; DISPLAY: block; HEIGHT: 22px; CURSOR: pointer; PADDING-TOP: 0px
+}
+#cl A {
+	WIDTH: 25px; DISPLAY: block; FLOAT: left; HEIGHT: 22px; TEXT-DECORATION: none
+}
+#cl A.zhu{
+	BACKGROUND: url(images/noSubPlay.gif) no-repeat	
+}
+#cl A.zhu:hover{
+	BACKGROUND: url(images/noSubPlay1.png) no-repeat	
+}
+#cl A.fu{
+	BACKGROUND: url(images/noPlay.gif) no-repeat	
+}
+#cl A.fu:hover{
+	BACKGROUND: url(images/noPlay1.png) no-repeat	
+}
+.cl1 {
+	WIDTH: 10px; BACKGROUND: url(images/noPlay.gif) no-repeat; HEIGHT: 10px
+}
+.cl2 {
+	BACKGROUND: url(images/play.gif) no-repeat
+}
+.cl3 {
+	BACKGROUND: url(images/c3.jpg) no-repeat
+}
+.cl4 {
+	BACKGROUND: url(images/c3.jpg) no-repeat; FLOAT: left
+}
+#Talk {
+	MARGIN: 3px 0px 0px; FLOAT: none
+}
+#Talk A.t {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; BACKGROUND: url(images/Talk.gif) no-repeat; HEIGHT: 20px; PADDING-TOP: 0px
+}
+#Talk A.noT {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; BACKGROUND: url(images/noTalk.gif) no-repeat; HEIGHT: 20px; PADDING-TOP: 0px
+}
+* HTML .cl3 {
+	BACKGROUND-IMAGE: none; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="c3.jpg", sizingMethod="crop")
+}
+#cmu {
+	WIDTH: 90px; BACKGROUND: url(images/mubg.jpg); FLOAT: right; HEIGHT: 0px; OVERFLOW: hidden
+}
+#cmu A {
+	MARGIN: 3px 0px 0px 5px; WIDTH: 80px; DISPLAY: block; FLOAT: left; HEIGHT: 13px; OVERFLOW: hidden; TEXT-DECORATION: none
+}
+#smu1 {
+	Z-INDEX: 30; POSITION: absolute; MARGIN: 0px 0px 0px 76px; WIDTH: 56px; BACKGROUND: #000; HEIGHT: 150px
+}
+#smu1 LI {
+	WIDTH: 56px; DISPLAY: block; HEIGHT: 18px; CURSOR: pointer
+}
+#smu1 A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 51px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 18px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#smu1 A {
+	BACKGROUND: #3e3e3e
+}
+#smu1 A:hover {
+	BACKGROUND: #5f5f5f
+}
+#smu2 {
+	Z-INDEX: 100; POSITION: absolute; MARGIN: 0px 0px 0px 4px; WIDTH: 56px; BACKGROUND: #000; HEIGHT: 80px
+}
+#smu2 LI {
+	WIDTH: 56px; DISPLAY: block; HEIGHT: 18px; CURSOR: pointer
+}
+#smu2 A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 51px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 18px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#smu2 A {
+	BACKGROUND: #3e3e3e
+}
+#smu2 A:hover {
+	BACKGROUND: #5f5f5f
+}
+#smu3 {
+	Z-INDEX: 100; POSITION: absolute; MARGIN: 0px 0px 0px 4px; WIDTH: 56px; BACKGROUND: #000; HEIGHT: 80px
+}
+#smu3 LI {
+	WIDTH: 56px; DISPLAY: block; HEIGHT: 18px; CURSOR: pointer
+}
+#smu3 A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 51px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 18px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#smu3 A {
+	BACKGROUND: #3e3e3e
+}
+#smu3 A:hover {
+	BACKGROUND: #5f5f5f
+}
+#mnudj {
+	Z-INDEX: 30; POSITION: absolute; MARGIN: 0px 0px 0px -65px; WIDTH: 73px; BACKGROUND: #000; HEIGHT: 10px
+}
+#mnudj LI {
+	WIDTH: 100%; DISPLAY: block; HEIGHT: 18px; CURSOR: pointer
+}
+#mnudj A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; WIDTH: 68px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 18px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#mnudj A.cdj1 {
+	BACKGROUND: #3e3e3e
+}
+#mnudj A.cdj1:hover {
+	BACKGROUND: #5f5f5f
+}
+#mnudj A.cdj2 {
+	BACKGROUND: #5f5f5f
+}
+#pc DIV {
+	FLOAT: left
+}
+#pc A {
+	OUTLINE-STYLE: none; WIDTH: 36px; DISPLAY: block; HEIGHT: 25px; TEXT-DECORATION: none
+}
+#pc A.p0 {
+	BACKGROUND: url(images/full.png) 
+}
+#pc A.p0:hover {
+	BACKGROUND: url(images/full1.jpg) 
+}
+#pc A.p1 {
+	BACKGROUND: url(images/1.jpg)
+}
+#pc A.p1:hover {
+	BACKGROUND: url(images/11.jpg)
+}
+#pc A.p2 {
+	BACKGROUND: url(images/4.jpg)
+}
+#pc A.p2:hover {
+	BACKGROUND: url(images/41.jpg)
+}
+#pc A.p3 {
+	BACKGROUND: url(images/9.jpg)
+}
+#pc A.p3:hover {
+	BACKGROUND: url(images/91.jpg)
+}
+#pc A.p4 {
+	BACKGROUND: url(images/16.jpg)
+}
+#pc A.p4:hover {
+	BACKGROUND: url(images/161.jpg)
+}
+#pc A.p5 {
+	BACKGROUND: url(images/25.jpg)
+}
+#pc A.p5:hover {
+	BACKGROUND: url(images/251.jpg)
+}
+#pc A.p6 {
+	BACKGROUND: url(images/36.jpg)
+}
+#pc A.p6:hover {
+	BACKGROUND: url(images/361.jpg)
+}
+#pc A.p7 {
+	BACKGROUND: url(images/startAll.jpg)
+}
+#pc A.p7:hover {
+	BACKGROUND: url(images/startAll1.jpg)
+}
+#pc A.p72 {
+	BACKGROUND: url(images/stopAll.jpg)
+}
+#pc A.p72:hover {
+	BACKGROUND: url(images/stopAll1.jpg)
+}
+#pc A.p8 {
+	BACKGROUND: url(images/snap.png)
+}
+#pc A.p8:hover {
+	BACKGROUND: url(images/snap1.jpg)
+}
+#pc A.p9 {
+	BACKGROUND: url(images/recordAll.jpg)
+}
+#pc A.p9:hover {
+	BACKGROUND: url(images/recordAll1.jpg)
+}
+#pc A.p92 {
+	BACKGROUND: url(images/stopRecordAll.jpg)
+}
+#pc A.p92:hover {
+	BACKGROUND: url(images/stopRecordAll1.jpg)
+}
+#pc A.p10 {
+	BACKGROUND: url(images/audio.jpg) 
+}
+#pc A.p102 {
+	BACKGROUND: url(images/audio1.png) 
+}
+#pc A.p11 {
+	BACKGROUND: url(images/64.jpg)
+}
+#pc A.p11:hover {
+	BACKGROUND: url(images/641.jpg)
+}
+#ytPoint DIV {
+	FLOAT: left
+}
+#goPreset A {
+	BACKGROUND: url(images/goPreSet.png) no-repeat; FLOAT: left
+}
+#goPreset A:hover {
+	BACKGROUND: url(images/goPreSet1.png) no-repeat; FLOAT: left
+}
+#addPreset A {
+	BACKGROUND: url(images/addPreSet.png) no-repeat; FLOAT: left
+}
+#addPreset A:hover {
+	BACKGROUND: url(images/addPreSet1.png) no-repeat; FLOAT: left
+}
+#delPreset A {
+	BACKGROUND: url(images/delPreSet.png) no-repeat; FLOAT: left
+}
+#delPreset A:hover {
+	BACKGROUND: url(images/delPreSet1.png) no-repeat; FLOAT: left
+}
+#ytCruise DIV {
+	FLOAT: left
+}
+#goCruise A {
+	BACKGROUND: url(images/goCruise.png) no-repeat; FLOAT: left
+}
+#goCruise A:hover {
+	BACKGROUND: url(images/goCruise1.png) no-repeat; FLOAT: left
+}
+#stopCruise A {
+	BACKGROUND: url(images/stopCruise.png) no-repeat; FLOAT: left
+}
+#stopCruise A:hover {
+	BACKGROUND: url(images/stopCruise1.png) no-repeat; FLOAT: left
+}
+#editCruise A {
+	BACKGROUND: url(images/editCruise.png) no-repeat; FLOAT: left
+}
+#editCruise A:hover {
+	BACKGROUND: url(images/editCruise1.png) no-repeat; FLOAT: left
+}
+A.PositionStart {
+	BACKGROUND: url(images/yt51b.jpg)
+}
+A.PositionStop {
+	BACKGROUND: url(images/yt5b.jpg)
+}
+A.PositionStop:hover {
+	BACKGROUND: url(images/yt51b.jpg)
+}
+#mc {
+	TEXT-ALIGN: center; BACKGROUND: url(images/mc.jpg) repeat-x; HEIGHT: 13px; CLEAR: both;color:#fff;
+}

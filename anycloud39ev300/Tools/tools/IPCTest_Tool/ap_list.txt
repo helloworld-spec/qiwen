@@ -1,0 +1,13 @@
+total:12
+ssid:anyka301;quality:-72
+ssid:ChinaNet;quality:-72
+ssid:airmusic_A0BB66;quality:-66
+ssid:aWiFi;quality:-74
+ssid:114 Free;quality:-74
+ssid:huawei;quality:-83
+ssid:MV32010499;quality:-71
+ssid:SPC;quality:-70
+ssid:akspc;quality:-57
+ssid:xiaomi808b;quality:-68
+ssid:guangzhoujinda;quality:-72
+ssid:1zone1;quality:-67

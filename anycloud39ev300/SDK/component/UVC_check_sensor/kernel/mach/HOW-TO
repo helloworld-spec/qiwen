@@ -1,0 +1,9 @@
+read under linux vi
+
+在调试一款新硬件板时，需要增加对应的mach bsp板级配置文件
+
+那么如何新增mach板级配置呢？
+1、在kernel\mach对应的chips目录下按照硬件板名称新建一个目录，比如myboard。也可以从其它已生成目录拷贝一份。
+2、修改kernel目录下的board.cfg配置文件，把MACH改为对应的板级名称，比如以上的myboard。
+3、在myboard目录下根据具体的硬件配置修改对应的板级配置文件，比如gpio等。
+4、以上完成后，重新make即可。

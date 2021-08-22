@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>
+	websocket protocol client demo
+	</title>
+    <script type="text/javascript">
+        if ("WebSocket" in window) {
+            var ws = new WebSocket("ws://192.168.40.120:8080/cgi-bin/hello4"); // modify this host and port!
+            ws.onopen = function () {
+                console.log('open');
+            };
+            ws.onmessage = function (msg) {
+                console.log("`Me`ssage \"" + msg.data + "\" Received!");
+                document.getElementById('there').innerHTML = msg.data;
+            };
+            ws.onclose = function () {
+                console.log("Connection is closed...");
+            };
+            ws.orerr = function() {
+                console.log("Error occurs.");
+            };
+
+
+        } else {
+            console.log("WebSocket NOT supported by your Browser!");
+        }
+
+        function send(str) {
+            console.log(str.length);
+            ws.send(str);
+            document.getElementById('me').innerHTML = str;
+        }
+
+    </script>
+</head>
+<body>
+<input id="msg" width="100%" /><br>
+<button onclick="send(document.getElementById('msg').value)">Send</button><br>
+<label >Me   : </label><label id="me" ></label><br>
+<label >There: </label><label id="there" ></label><br>
+</body>
+</html>

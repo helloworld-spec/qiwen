@@ -1,0 +1,14 @@
+
+
+=============Transc Information =============
+Print Time: 2019-07-18 17:58:50
+
+[17:58:50]BT_DriverName_IsCurrentFlag: The driver name is no current pid and  vid
+[17:58:52]BT_DriverName_IsCurrentFlag: The driver name is no current pid and  vid
+
+
+=============Transc Information =============
+Print Time: 2019-07-18 17:59:32
+
+[17:59:32]BT_DriverName_IsCurrentFlag: The driver name is no current pid and  vid
+[17:59:34]BT_DriverName_IsCurrentFlag: The driver name is no current pid and  vid

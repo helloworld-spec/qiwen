@@ -1,0 +1,1 @@
+obj-y		+= bsp.o cache.o start.o

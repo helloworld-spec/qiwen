@@ -1,0 +1,19 @@
+FLASH1 0x0
+{
+    ROM 0x0 0x80000; EILM_SIZE <= 512KB
+    {
+        * (+RO)
+    }
+    
+    RAM 0x200000 0x80000 ; EDLM_SIZE <= 512KB
+    {
+	LOADADDR __rw_lma_start
+	ADDR __rw_vma_start
+	*(+RW)
+	LOADADDR __rw_lma_end
+	*(+ZI)
+	STACK = 0x27fff8 ; 512KB
+   }	
+}
+
+

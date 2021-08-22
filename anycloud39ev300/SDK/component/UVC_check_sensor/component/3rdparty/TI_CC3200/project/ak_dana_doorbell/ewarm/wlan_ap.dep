@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3831125637</fileChecksum>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\fs.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\soc\cc_io_park.h</file>
+      <file>$PROJ_DIR$\Release\List\uart_if.lst</file>
+      <file>$PROJ_DIR$\..\..\common\i2c_if.h</file>
+      <file>$PROJ_DIR$\Release\List\lp3p0_board.s</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\spi_drv.h</file>
+      <file>$PROJ_DIR$\Release\List\gpio_if.lst</file>
+      <file>$PROJ_DIR$\Release\List\ak_adc.lst</file>
+      <file>$PROJ_DIR$\Release\Obj\pinmux.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\wdt.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\Release\Obj\gpio_if.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\framework\timer\cc_timer.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_key_led.s</file>
+      <file>$PROJ_DIR$\Release\List\ak_adc.s</file>
+      <file>$PROJ_DIR$\Release\List\network_if.lst</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_spi.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\lp3p0_board.o</file>
+      <file>$PROJ_DIR$\..\..\common\timer_if.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_ocv.s</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\trace.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Release\Obj\uart_if.o</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\spi.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_system_init.lst</file>
+      <file>$PROJ_DIR$\..\..\..\oslib\ewarm\free_rtos\Exe\free_rtos.a</file>
+      <file>$PROJ_DIR$\Release\List\ak_ocv.lst</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Release\List\i2c_if.s</file>
+      <file>$PROJ_DIR$\Release\List\network_common.lst</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\extern\dana_sock.h</file>
+      <file>$PROJ_DIR$\Release\Exe\wlan_ap.out</file>
+      <file>$PROJ_DIR$\Release\Obj\network_common.o</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\rtc_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_apps_rcm.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_spi.o</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\spi_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\queue.h</file>
+      <file>$PROJ_DIR$\Release\Obj\lp3p0_plat_ops.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\Release\List\network_common.s</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_adc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\hwspinlock.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\utils.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\netapp.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\simplelink.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_common_reg.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_system_init.s</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\framework\pm\cc_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\timer.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\..\..\common\wdt_if.h</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\projdefs.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\i2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\rom_patch.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\rom_map.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\util64.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_i2c.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_key_led.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\main.o</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\uart_drv.h</file>
+      <file>$PROJ_DIR$\Release\Obj\utils_if.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\interrupt_hal.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_system_init.o</file>
+      <file>$PROJ_DIR$\Release\Obj\startup_ewarm.pbi</file>
+      <file>$PROJ_DIR$\..\..\common\uart_if.h</file>
+      <file>$PROJ_DIR$\..\ak_uart.h</file>
+      <file>$PROJ_DIR$\..\..\common\common.h</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\extern\dana_task.h</file>
+      <file>$PROJ_DIR$\Release\Obj\gpio_if.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_key_led.o</file>
+      <file>$PROJ_DIR$\Release\Obj\i2c_if.o</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\rom.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_uart.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\uart_if.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\..\..\common\network_if.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_adc.o</file>
+      <file>$PROJ_DIR$\..\ak_key_led.h</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_system_init.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Release\List\lp3p0_board.lst</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\portable\IAR\ARM_CM4\portmacro.h</file>
+      <file>$PROJ_DIR$\wifi_audio_app.icf</file>
+      <file>$PROJ_DIR$\Release\List\uart_if.s</file>
+      <file>$PROJ_DIR$\Release\List\utils_if.s</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\debug.h</file>
+      <file>$PROJ_DIR$\..\ak_adc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\extern\dana_mem.h</file>
+      <file>$PROJ_DIR$\Release\Obj\lp3p0_plat_ops.o</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\udma.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_mcspi.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\soc\cc_pm_ops.h</file>
+      <file>$PROJ_DIR$\..\..\..\oslib\osi.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_memmap.h</file>
+      <file>$PROJ_DIR$\Release\List\pinmux.s</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\socket.h</file>
+      <file>$PROJ_DIR$\..\ak_spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\framework\pm\cc_pm.h</file>
+      <file>$PROJ_DIR$\Release\List\i2c_if.lst</file>
+      <file>$PROJ_DIR$\Release\List\timer_if.s</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_types.h</file>
+      <file>$PROJ_DIR$\Release\List\lp3p0_plat_ops.lst</file>
+      <file>$PROJ_DIR$\Release\Obj\network_if.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\list.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_uart.s</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\wlan_rx_filters.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Release\List\lp3p0_plat_ops.s</file>
+      <file>$PROJ_DIR$\Release\Obj\pinmux.o</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\ewarm\Release\Exe\driverlib.a</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\device.h</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\portable.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Release\Obj\wlan_ap.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\common\gpio_if.h</file>
+      <file>$PROJ_DIR$\Release\List\timer_if.lst</file>
+      <file>$PROJ_DIR$\..\user_app_config.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\netcfg.h</file>
+      <file>$PROJ_DIR$\Release\Obj\i2c_if.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\wlan.h</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_nvic.h</file>
+      <file>$PROJ_DIR$\..\ak_system_init.h</file>
+      <file>$PROJ_DIR$\Release\List\wlan_ap.map</file>
+      <file>$PROJ_DIR$\Release\List\gpio_if.s</file>
+      <file>$PROJ_DIR$\Release\List\ak_spi.lst</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\interrupt.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Release\List\startup_ewarm.s</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\prcm.h</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\mpu_wrappers.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\ewarm\OS\Exe\simplelink.a</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_uart.o</file>
+      <file>$PROJ_DIR$\Release\List\ak_uart.lst</file>
+      <file>$PROJ_DIR$\..\ak_dana_common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\hw_timer32.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\cc_pal.h</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\extern\dana_base.h</file>
+      <file>$PROJ_DIR$\Release\Obj\lp3p0_board.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\gpio.h</file>
+      <file>$PROJ_DIR$\Release\Obj\timer_if.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink_extlib\provisioninglib\provisioning_api.h</file>
+      <file>$PROJ_DIR$\Release\List\ak_spi.s</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\dma_hal.h</file>
+      <file>$PROJ_DIR$\..\ak_pub_def.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\gpio_hal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Release\Obj\timer_if.pbi</file>
+      <file>$PROJ_DIR$\Release\List\main.lst</file>
+      <file>$PROJ_DIR$\Release\Exe\wlan_ap.bin</file>
+      <file>$PROJ_DIR$\Release\List\ak_key_led.lst</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\source\spawn.h</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\FreeRTOS.h</file>
+      <file>$PROJ_DIR$\Release\Obj\startup_ewarm.o</file>
+      <file>$PROJ_DIR$\Release\List\main.s</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\hw_timer.h</file>
+      <file>$PROJ_DIR$\Release\Obj\network_if.o</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\libdanavideo\libdana_video.a</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\include\task.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\ewarm\Release\Exe\middleware.a</file>
+      <file>$PROJ_DIR$\Release\Obj\utils_if.o</file>
+      <file>$PROJ_DIR$\Release\List\startup_ewarm.lst</file>
+      <file>$PROJ_DIR$\..\dana_release_sdk\libdanavideo\dana_debug.h</file>
+      <file>$PROJ_DIR$\..\..\..\middleware\driver\hal\uart_hal.h</file>
+      <file>$PROJ_DIR$\Release\List\utils_if.lst</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\source\objInclusion.h</file>
+      <file>$PROJ_DIR$\..\..\..\third_party\FreeRTOS\source\FreeRTOSConfig.h</file>
+      <file>$PROJ_DIR$\Release\List\network_if.s</file>
+      <file>$PROJ_DIR$\Release\Obj\network_common.pbi</file>
+      <file>$PROJ_DIR$\Release\List\pinmux.lst</file>
+      <file>$PROJ_DIR$\..\..\..\inc\hw_ints.h</file>
+      <file>$PROJ_DIR$\..\pinmux.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\user.h</file>
+      <file>$PROJ_DIR$\..\..\common\utils_if.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\common\utils_if.c</file>
+      <file>$PROJ_DIR$\..\..\common\network_if.c</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_ocv.pbi</file>
+      <file>$PROJ_DIR$\..\..\common\timer_if.c</file>
+      <file>$PROJ_DIR$\..\ak_spi.c</file>
+      <file>$PROJ_DIR$\..\..\common\uart_if.c</file>
+      <file>$PROJ_DIR$\..\..\common\i2c_if.c</file>
+      <file>$PROJ_DIR$\..\lp3p0_plat_ops.c</file>
+      <file>$PROJ_DIR$\..\main.c</file>
+      <file>$PROJ_DIR$\..\ak_ocv.h</file>
+      <file>$PROJ_DIR$\..\pinmux.c</file>
+      <file>$PROJ_DIR$\Release\Obj\ak_ocv.o</file>
+      <file>$PROJ_DIR$\..\lp3p0_board.c</file>
+      <file>$PROJ_DIR$\..\..\common\network_common.c</file>
+      <file>$PROJ_DIR$\..\..\common\startup_ewarm.c</file>
+      <file>$PROJ_DIR$\..\..\common\gpio_if.c</file>
+      <file>$PROJ_DIR$\..\ak_system_init.c</file>
+      <file>$PROJ_DIR$\..\ak_uart.c</file>
+      <file>$PROJ_DIR$\..\..\..\driverlib\pin.h</file>
+      <file>$PROJ_DIR$\..\ak_ocv.c</file>
+      <file>$PROJ_DIR$\..\ak_key_led.c</file>
+      <file>$PROJ_DIR$\..\ak_adc.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\wlan_ap.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 89 83 75 201 39 68 145 11 76 18 96 64 35 171 119 168 154 23 175 144 121 26 172 174 28 54 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 34 136</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\utils_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91 179 175</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 86 94 161 189 155 104 140 82 111 102 77 60 59 46 142 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 86 94 161 189 155 104 140 82 111 102 77 60 59 46 142 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\network_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182 16 171</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 86 94 161 189 155 104 140 126 117 148 49 187 150 156 100 180 21 0 106 48 133 122 131 116 166 111 53 77 60 59 47 81 70 19 72</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 86 94 161 189 155 104 140 126 117 148 49 187 150 156 100 180 21 0 106 48 133 122 131 116 166 111 53 77 60 59 47 81 70 19 72</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\timer_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110 128 154</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 102 185 92 139 53 77 60 59 142 148 86 94 161 189 155 104 140 126 100 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 102 185 92 139 53 77 60 59 142 148 86 94 161 189 155 104 140 126 100 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 157 138 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 102 50 185 24 77 60 59 47 142 37 139 98 49 187 29 86 94 161 189 155 104 140 126 117 150 156 100 180 21 0 106 48 133 122 131 116 166 52 160 108 43 124 82 153 186 159 148 208 72 97 167 80 30 57 181 123 88 22 143 41 173 114 70 107 147 73 151</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 102 50 185 24 77 60 59 47 142 37 139 98 49 187 29 86 94 161 189 155 104 140 126 117 150 156 100 180 21 0 106 48 133 122 131 116 166 52 160 108 43 124 82 153 186 159 148 208 72 97 167 80 30 57 181 123 88 22 143 41 173 114 70 107 147 73 151</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\uart_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 2 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148 86 94 161 189 155 104 140 126 43 124 29 117 111 102 142 208 37 77 60 59 100 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130 86 94 161 189 155 104 140 148 126 43 124 29 117 111 102 142 208 37 77 60 59 100 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\i2c_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31 109 76</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 82 30 86 94 161 189 155 104 140 148 126 111 102 185 62 58 208 77 60 59 142 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 30 86 94 161 189 155 104 140 148 126 111 102 185 62 58 208 77 60 59 142 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\lp3p0_plat_ops.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118 112 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 86 94 161 189 155 104 140 126 117 111 102 77 60 59 142 100 52 158 148 43 124 82 97 108 99 1 208 160 153 188 186</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 86 94 161 189 155 104 140 126 117 111 102 77 60 59 142 100 52 158 148 43 124 82 97 108 99 1 208 160 153 188 186</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169 163 64</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148 86 94 161 189 155 104 140 126 29 117 43 124 12 49 187 150 156 100 180 21 0 106 48 133 122 131 116 166 111 185 102 77 60 59 139 142 47 9 72 81 55 52 36 82 170 61 160 108 153 65 178 30 13 149 99 70 5 40 24 186 92 33 151 95 73 177 159 208 97 50 37 167 80 57 181 123 88 22 143 41 173 114 135 71 107 199</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148 86 94 161 189 155 104 140 126 29 117 43 124 12 49 187 150 156 100 180 21 0 106 48 133 122 131 116 166 111 185 102 77 60 59 139 142 47 9 72 81 55 52 36 82 170 61 160 108 153 65 178 30 13 149 99 70 5 40 24 186 92 33 151 95 130 73 177 159 208 97 50 37 167 80 57 181 123 88 22 143 41 173 114 135 71 107 199</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\pinmux.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103 184 119</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186 111 102 105 208 77 60 59 153 142</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 186 111 102 105 208 77 60 59 153 142</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\lp3p0_board.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 87 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 102 105 50 77 60 59 153 185 134 142 120 37 38 98 97 108 43 86 94 161 189 155 104 140 126 124 82 52 99 13 148 29 117 149 170 61 65 100 178 30 5 40 24 160 36 158 67 139 129 186</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 102 105 50 77 60 59 153 185 134 142 120 37 38 98 97 108 43 86 94 161 189 155 104 140 126 124 82 52 99 13 148 29 117 149 170 61 65 100 178 30 5 40 24 160 36 158 67 139 129 186</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\network_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 32 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 183</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148 86 94 161 189 155 104 140 126 49 187 29 117 150 156 100 180 21 0 106 48 133 122 131 116 166</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148 86 94 161 189 155 104 140 126 49 187 29 117 150 156 100 180 21 0 106 48 133 122 131 116 166</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141 176 168</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 185 139</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 185 139</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\gpio_if.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 137 6 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 86 94 161 189 155 104 140 126 124 111 185 102 38 139 208 153 142 77 60 59 148 100 127</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43 86 94 161 189 155 104 140 126 124 111 185 102 38 139 208 153 142 77 60 59 148 100 127</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_system_init.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51 25 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 186 159 43 86 94 161 189 155 104 140 126 124 148 29 117 208 72 97 102 50 185 77 60 59 37 142 100 167 80 30 57 181 123 88 22 143 41 173 114 49 187 150 156 180 21 0 106 48 133 122 131 116 166 70 135 107 71 84 3 52 36 82 170 61 160 108 153 65 178 13 149 99</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 186 159 43 86 94 161 189 155 104 140 126 124 148 29 117 208 72 97 102 50 185 77 60 59 37 142 100 167 80 30 57 181 123 88 22 143 41 173 114 49 187 150 156 180 21 0 106 48 133 122 131 116 166 70 135 107 71 84 3 52 36 82 170 61 160 108 153 65 178 13 149 99</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 115 146 145</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111 102 50 185 24 77 60 59 47 142 37 139 52 65 108 43 86 94 161 189 155 104 140 126 124 82 100 178 30 120 159 148 29 117 208 72 97 167 80 57 181 123 88 22 143 41 173 114 49 187 150 156 180 21 0 106 48 133 122 131 116 166 70 71 135 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 102 50 185 24 77 60 59 47 142 37 139 52 65 108 43 86 94 161 189 155 104 140 126 124 82 100 178 30 120 159 148 29 117 208 72 97 167 80 57 181 123 88 22 143 41 173 114 49 187 150 156 180 21 0 106 48 133 122 131 116 166 70 71 135 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_ocv.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 20 27 201</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 199 3 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 199 3 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_key_led.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 165 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 86 94 161 189 155 104 140 126 124 102 111 208 60 59 142 160 108 82 52 153 53 19 84 13 148 29 117 149 170 61</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43 86 94 161 189 155 104 140 126 124 102 111 208 60 59 142 160 108 82 52 153 53 19 84 13 148 29 117 149 170 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\ak_adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 7 83</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60 59 111 208 101 102 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60 59 111 208 101 102 93</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

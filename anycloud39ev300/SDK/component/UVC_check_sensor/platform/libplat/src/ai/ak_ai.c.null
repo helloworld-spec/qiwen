@@ -1,0 +1,186 @@
+#include "ak_ai.h"
+#include "kernel.h"
+
+
+const char* ak_ai_get_version(void)
+{
+   return NULL;
+}
+
+
+/**
+ * @brief  get buffer address and buffer len, which can be used to fill or retrieve sound data
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device  
+ * @param[out] ai_frame return buffer address or AK_NULL
+ * @param[out] ms
+ * @return int
+ * @retval 0  get buffer successful
+ * @retval -1 get buffer failed
+ */
+
+
+int ak_ai_get_frame(void *handle, struct frame *frame, long ms)
+{
+    return 0;
+}
+/**
+ * @brief  open a sound device and it can be used
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] input  sound info
+ * @return void*
+ * @retval  the sound device
+ */
+
+
+void* ak_ai_open(const struct pcm_param *param)
+{
+    return NULL;
+}
+
+
+/**
+ * @brief  set  source  signal  connect
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] input  source
+ * @return int
+  * @retval 0  set successful
+  * @retval -1 set failed
+
+ */
+
+int ak_ai_set_source(void *handle, enum ai_source src)
+{
+  return 0;
+}
+
+/**
+ * @brief  delete sound driver and Free sound buffer
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+int ak_ai_release_frame(void *handle, struct frame *frame)
+{
+  return 0;
+}
+/**
+ * @brief  set sound driver frame size
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] frame_size  the buffer of sound device
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+
+int ak_ai_set_frame_interval(void *handle, int frame_interval)
+{
+  return 0;
+}
+/**
+ * @brief  clear sound driver frame buffer
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] frame_size  the buffer of sound device
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+int ak_ai_clear_frame_buffer(void *handle)
+{
+  return 0;
+}
+
+/**
+ * @brief  set sound driver gain
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] volume  the gain of sound device
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+
+
+int ak_ai_set_volume(void *handle, int volume)
+{
+  return 0;  
+}
+/**
+ * @brief  close a sound device 
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+
+int ak_ai_close(void *handle)
+{
+  return 0;
+}
+/**
+ * @brief  set audio resampling
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] enable  0 close, 1 open
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+int ak_ai_set_resample(void *handle, int enable)
+{
+  return 0;
+}
+
+/**
+ * @brief  set audio agc
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] enable  0 close, 1 open
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+int ak_ai_set_nr_agc(void *handle, int enable)
+{
+  return 0;
+}
+#if 0
+/**
+ * @brief  set audio aec
+ * @author Panyuyi
+ * @date   2016-11-23
+ * @param[in] handler handler of the sound device
+ * @param[in] enable  0 close, 1 open
+ * @return int
+ * @retval 0  set successful
+ * @retval -1 set failed
+ */
+
+int ak_ai_set_aec(void *handle, int enable);
+
+#endif
+
+

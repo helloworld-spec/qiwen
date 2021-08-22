@@ -1,0 +1,288 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\anyka_TestTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\anyka_TestTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工程易用宝"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "工程易用宝 V2.1.02版本",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ANYKA_TESTTOOL_DIALOG DIALOGEX 0, 0, 337, 337
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "工程易用宝"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS_NET,"SysIPAddress32",
+                    WS_TABSTOP,227,51,87,15
+    CONTROL         "List1",IDC_LIST_NO_AUTO_TEST_CONFIG,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,14,14,152,151
+    GROUPBOX        "设备列表",IDC_STATIC,10,4,163,185,BS_CENTER
+    LTEXT           "IP地址:",IDC_STATIC,184,57,32,10
+    EDITTEXT        IDC_EDIT_CHANNEL_NAME,224,17,85,14,ES_AUTOHSCROLL
+    LTEXT           "通道名称:",IDC_STATIC,181,19,37,8
+    PUSHBUTTON      "搜索设备",IDC_BUTTON_SOUSUO,17,266,56,16
+    CONTROL         "IPAddress1",IDC_IPADDRESS_NET_CH,"SysIPAddress32",
+                    WS_TABSTOP,227,71,87,15
+    LTEXT           "子网掩码:",IDC_STATIC,176,75,39,10
+    CONTROL         "IPAddress1",IDC_IPADDRESS_NET_WG,"SysIPAddress32",
+                    WS_TABSTOP,227,91,87,15
+    LTEXT           "网关:",IDC_STATIC,191,96,22,10
+    LTEXT           "DNS:",IDC_STATIC,177,112,17,8
+    LTEXT           "1:",IDC_STATIC,200,115,9,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS_DNS2,"SysIPAddress32",
+                    WS_TABSTOP,227,132,87,15
+    LTEXT           "2:",IDC_STATIC,201,131,9,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS_DNS1,"SysIPAddress32",
+                    WS_TABSTOP,227,112,87,15
+    CONTROL         "",IDC_CHECK_DHCP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    249,37,10,8
+    LTEXT           "自动获取IP地址:",IDC_STATIC,178,38,67,8
+    PUSHBUTTON      "更新设备信息",IDC_BUTTON_SETCONFIG,17,300,56,16
+    GROUPBOX        "当前修改的信息",IDC_STATIC,173,4,152,329,BS_CENTER
+    PUSHBUTTON      "升级所有设备固件",IDC_BUTTON_UPDATE_ALL,93,300,72,17
+    LTEXT           "主码流_码率：",IDC_STATIC,186,183,53,8
+    LTEXT           "次码流_码率：",IDC_STATIC,185,216,53,8
+    GROUPBOX        "码流设置",IDC_STATIC,180,171,141,109
+    EDITTEXT        IDC_EDIT_MAIN_CODE_RATE,242,180,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUB_CODE_RATE,242,212,40,12,ES_AUTOHSCROLL
+    LTEXT           "Kbps",IDC_STATIC,285,183,17,8
+    LTEXT           "Kbps",IDC_STATIC,286,215,17,8
+    CONTROL         "",IDC_CHECK_OSD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    232,155,10,8
+    LTEXT           "通道显示开:",IDC_STATIC,181,156,44,8
+    CONTROL         "",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    303,155,10,8
+    LTEXT           "时间显示开:",IDC_STATIC,252,156,45,8
+    LTEXT           "主码流_帧率：",IDC_STATIC,185,199,54,8
+    EDITTEXT        IDC_EDIT_MAIN_FPS,241,195,40,12,ES_AUTOHSCROLL
+    LTEXT           "QP：",IDC_STATIC,221,250,17,8
+    EDITTEXT        IDC_EDIT_QP,242,248,40,12,ES_AUTOHSCROLL
+    LTEXT           "fps",IDC_STATIC,285,197,13,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS_MANUAL,"SysIPAddress32",
+                    WS_TABSTOP,13,206,92,15
+    PUSHBUTTON      "手动连接",IDC_BUTTON_MANUAL,17,229,56,16
+    GROUPBOX        "人工手动连接设备",IDC_STATIC,10,193,156,57
+    LTEXT           "GOP：",IDC_STATIC,218,268,21,8
+    EDITTEXT        IDC_EDIT_GOP,242,266,40,12,ES_AUTOHSCROLL
+    CTEXT           "手动未连接",IDC_STATIC_STAUT,79,233,81,10
+    LTEXT           "次码流_帧率：",IDC_STATIC,186,233,53,8,0,0,HIDC_STATIC
+    EDITTEXT        IDC_EDIT_SUB_FPS,242,229,40,12,ES_AUTOHSCROLL
+    LTEXT           "fps",IDC_STATIC,285,231,13,8
+    PUSHBUTTON      "升级单台设备固件",IDC_BUTTON_UPDATE_ONE,93,264,72,17
+    PUSHBUTTON      "Button1",IDOK,307,262,11,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "删除选中的设备",IDC_BUTTON_DETTECT_LIST,105,168,61,17
+    LTEXT           "选中的设备：",IDC_STATIC,11,173,54,8
+    EDITTEXT        IDC_EDIT_CURENT_IP,68,170,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_USENAME,221,291,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,221,311,92,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "用户名:",IDC_STATIC,185,294,29,8
+    LTEXT           "密码:",IDC_STATIC,193,312,21,8
+    GROUPBOX        "ftp服务器",IDC_STATIC,179,281,144,49
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "anyka_TestTool Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "anyka_TestTool\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "anyka_TestTool.EXE\0"
+            VALUE "ProductName", "anyka_TestTool 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ANYKA_TESTTOOL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 333
+        TOPMARGIN, 4
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PASS         BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP_FAIL         BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+IDB_BITMAP_CONNET_PASS  BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_CONNET_FAIL  BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_BITMAP_WAIT_CONNET  BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 工程易用宝(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\anyka_TestTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="nds.nds32le-elf-mculib-v3.base.2135205042">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="nds.nds32le-elf-mculib-v3.base.2135205042" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.andestech.ide.cdt.managedbuilder.core.CROSS_GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="Turismo_FW" buildProperties="" description="" id="nds.nds32le-elf-mculib-v3.base.2135205042" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="nds.nds32le-elf-mculib-v3.base.2135205042.42063586" name="/" resourcePath="">
+						<toolChain id="nds.nds32le-elf-mculib-v3.base.1957709837" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.base">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_CPU.1924209620" name="CPU" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_CPU"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIST_CPU.133286435" name="LIST_CPU" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIST_CPU"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_CORE.67124326" name="CORE" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_CORE"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ARCH.1269860774" name="ARCH" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ARCH"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ISA_REDUCE_REGS.1218926938" name="ISA_REDUCE_REGS" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ISA_REDUCE_REGS"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_TARGET.637436180" name="TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_TARGET"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ENDIAN.1352613183" name="ENDIAN" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_ENDIAN"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIB_C_DEFAULT.1705376285" name="LIB_C_DEFAULT" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIB_C_DEFAULT"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIB_CPP_DEFAULT.1375951480" name="LIB_CPP_DEFAULT" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.NDS32_LIB_CPP_DEFAULT"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1239344464" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET"/>
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_CONNECT.408231202" name="RSE_CONNECT" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_CONNECT"/>
+							<targetPlatform archList="all" binaryParser="com.andestech.ide.cdt.managedbuilder.core.CROSS_GNU_ELF" id="target.nds.platform.base.1847054178" name="Debug Platform" osList="all" superClass="target.nds.platform.base"/>
+							<builder id="target.nds.builder.base.1920572475" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Andes Make Builder" superClass="target.nds.builder.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.726729859" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.base.273002110" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.base">
+								<inputType id="tool.nds.c.compiler.input.648976263" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.base.1824202010" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.base">
+								<option defaultValue="true" id="nds32le-elf-mculib-v3.c.link.option.noshared.base.1972851853" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v3.c.link.option.noshared.base" valueType="boolean"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.base.730051403" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.base">
+								<inputType id="tool.nds.assembler.input.2013117475" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.base.200901350" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.base.170632813" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.base.570580876" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.base.575093053" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.base.1927557130" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.base.374450038" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Turismo_FW.null.922380808" name="Turismo_FW"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="nds.nds32le-elf-mculib-v3.base.2135205042;nds.nds32le-elf-mculib-v3.base.2135205042.42063586;tool.nds32le-elf-mculib-v3.c.compiler.base.273002110;tool.nds.c.compiler.input.648976263">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

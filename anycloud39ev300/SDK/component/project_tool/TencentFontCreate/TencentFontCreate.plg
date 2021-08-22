@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TencentFontCreate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\yll\LOCALS~1\Temp\RSP156.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/TencentFontCreate.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"Z:\work\aimer39\TRUNK\Cloud39\tool\tool\TencentFontCreate\TencentFontCreateDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\yll\LOCALS~1\Temp\RSP156.tmp" 
+Creating temporary file "C:\DOCUME~1\yll\LOCALS~1\Temp\RSP157.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TencentFontCreate.pdb" /debug /machine:I386 /out:"Debug/TencentFontCreate.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\TencentFontCreate.obj
+.\Debug\TencentFontCreateDlg.obj
+.\Debug\TencentFontCreate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\yll\LOCALS~1\Temp\RSP157.tmp"
+<h3>Output Window</h3>
+Compiling...
+TencentFontCreateDlg.cpp
+Z:\work\aimer39\TRUNK\Cloud39\tool\tool\TencentFontCreate\TencentFontCreateDlg.cpp(252) : warning C4305: '=' : truncation from 'const int' to 'char'
+Z:\work\aimer39\TRUNK\Cloud39\tool\tool\TencentFontCreate\TencentFontCreateDlg.cpp(252) : warning C4309: '=' : truncation of constant value
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/TencentFontCreate.bsc"  .\Debug\StdAfx.sbr .\Debug\TencentFontCreate.sbr .\Debug\TencentFontCreateDlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TencentFontCreate.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

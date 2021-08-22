@@ -1,0 +1,137 @@
+#the main target
+
+ifdef CHIP_37XX
+PROJ = producer_37xx
+endif
+
+ifdef CHIP_39XX
+PROJ = producer_39xx
+endif
+
+
+# Pathes and Locations
+#ifndef SDKPATH
+#SDKPATH    = .
+#endif
+
+ifndef BUILDPATH
+BUILDPATH   = build
+endif
+
+ifndef M3LIBPATH
+M3LIBPATH   = c:/cygwin/tools
+endif
+
+TD   	= `/bin/date +%Y%m%d_%H%M%S`
+
+DEFINE		= -DOS_ANYKA=1
+
+ifdef CHIP_37XX
+DEFINE		+= -DCHIP_AK37XX=1
+SCATTER_FILE = -scatter scatter.scf
+CHIP        = AK37xx
+endif
+
+ifdef CHIP_39XX
+DEFINE		+= -DCHIP_AK39XX=1
+SCATTER_FILE = -scatter scatter39.scf
+CHIP        = ak39xx
+endif
+
+
+INCLUDE     = -I./main -I./fwl -I./library/memory -I./library/burnlib -I./library/filesystem -I./library/spiflash -I./library/driver
+
+ENDIANELF	    = elf32-little
+
+#CFLAGS 	= -g -O2 -apcs /interwork -cpu 4T -W -Ec $(DEFINE) $(INCLUDE)
+#ASFLAGS = -keep -apcs /interwork -cpu 4T $(INCLUDE)
+#LDFLAGS	= -info totals,sizes -noremove -map $(SCATTER_FILE) -entry START
+
+CFLAGS		= -mlittle-endian $(DEFINE) -O $(INCLUDE)
+ASFLAGS         =  -mlittle-endian -x assembler-with-cpp
+LDFLAGS		:= $(LDFLAGS) -T section.lds
+
+LIBS	= ./library/driver/drv_$(CHIP).a
+LIBS	+= ./library/memory/memory.a
+LIBS	+= ./library/burnlib/libpartition_uclibc.a
+
+
+# Tools
+PREFIX ?= arm-anykav200-linux-uclibcgnueabi-
+ifeq ($(PREFIX),arm-hisiv100-linux-uclibcgnueabi-)
+CROSS_PATH      = /opt/hisiv100
+CROSS_PREFIX    = arm-hisiv100-linux-uclibcgnueabi-
+ARM_LIBC_PATH   = $(CROSS_PATH)/target/usr/lib
+ARM_LIBGCC_PATH = $(CROSS_PATH)/lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1
+else
+CROSS_PATH      = /opt/arm-anykav200-crosstool
+CROSS_PREFIX    = arm-anykav200-linux-uclibcgnueabi-
+ARM_LIBC_PATH   = $(CROSS_PATH)/usr/arm-anykav200-linux-uclibcgnueabi/sysroot/usr/lib
+ARM_LIBGCC_PATH = $(CROSS_PATH)/usr/lib/gcc/arm-anykav200-linux-uclibcgnueabi/4.8.5
+endif
+
+CLIB := $(ARM_LIBC_PATH)/libm.a $(ARM_LIBC_PATH)/libc.a  $(ARM_LIBGCC_PATH)/libgcc.a
+
+CC	= $(PREFIX)gcc 
+AS	= $(PREFIX)as
+AR	= $(PREFIX)ar
+LD	= $(PREFIX)ld
+RM         	= rm -rf
+MKDIR      	= mkdir
+OBJDUMP	= $(PREFIX)objdump
+OBJCOPY	= $(PREFIX)objcopy
+
+SOBJS       = 	$(BUILDPATH)/head_gcc.o
+COBJS       = 	$(BUILDPATH)/main.o $(BUILDPATH)/eabi_compat.o $(BUILDPATH)/transc.o \
+                $(BUILDPATH)/Fwl_osMalloc.o \
+                $(BUILDPATH)/fwl_spiflash.o $(BUILDPATH)/fwl_nandflash.o $(BUILDPATH)/fwl_usb_transc.o \
+
+#build rule
+.PHONY: makedirs maketarget debug clean 
+
+release: makedirs maketarget 
+
+makedirs: $(BUILDPATH) 
+
+maketarget: $(BUILDPATH)/$(PROJ).elf $(BUILDPATH)/$(PROJ).bin
+
+$(BUILDPATH):
+	$(MKDIR) -p $@
+
+	
+$(BUILDPATH)/$(PROJ).bin:  $(BUILDPATH)/$(PROJ).elf
+	@echo ---------------------[build bin binary]----------------------------------	
+	$(OBJCOPY) -O binary $< $@ 
+	
+
+$(BUILDPATH)/$(PROJ).elf:  $(SOBJS) $(COBJS) $(LIBS)
+	@echo ---------------------[build out]----------------------------------
+	$(LD) $(LDFLAGS) -o $(BUILDPATH)/$(PROJ).elf $(SOBJS) $(COBJS) $(LIBS) $(CLIB)
+	$(OBJDUMP)  -h  -D  $(BUILDPATH)/$(PROJ).elf > $(PROJ).txt
+
+	
+clean: 
+	$(RM) $(BUILDPATH) *.bin *.txt
+
+help:
+	@echo "Usage:   make [TARGET] [VARIABLE=XXX]"
+	@echo "TARGET:" 
+	@echo "         debug:   Builds a debug version, default target"
+	@echo "         release: Builds a release version"
+	@echo "         clean:   Remove all created objects "
+	@echo "VARIABLES:" 
+	@echo "         PLATFORM: like CI2401, AI2301 etc."
+	@echo "         CHIP    : like AK3223, AK3224, AK322L"	
+
+vpath %.S ./main
+vpath %.c ./main
+vpath %.c ./fwl
+
+#Rules ----------------------------- c -> d
+$(BUILDPATH)/%.o: %.c
+	@echo ---------------------[$<]---------------------
+	$(CC) -c $(CFLAGS)  -o $@ $<
+	
+$(BUILDPATH)/%.o: %.S
+	@echo ---------------------[$<]----------------------------------
+	$(CC) -c $(CFLAGS) $(ASFLAGS)  -o $@ $<

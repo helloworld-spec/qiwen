@@ -1,0 +1,12 @@
+int start_check_disk( );
+int test_sector( off64_t i_sector, off64_t i_num );
+int write_disk(int fd, off64_t offset, unsigned char *buf, int len);
+int read_disk(int fd, off64_t offset, unsigned char *buf, int len);
+int erase_disk(int fd, off64_t offset, off64_t len);
+unsigned long long get_sector_offset( );
+void sleep_ms(int ms);
+unsigned long long get_sector_align( int i_sector );
+int fill_random_bytes( unsigned char *pc_buff , int i_len );
+int ak_format_tf( );
+int print_hex( unsigned char *pc_data , int i_len );
+int is_dev_file(const char *file_path);

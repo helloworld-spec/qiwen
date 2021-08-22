@@ -1,0 +1,25 @@
+
+LR_1 0x80000000
+{
+    ER_RO +0 
+    {
+        head.o (BOOT, +FIRST)    
+        * (+RO)
+    }
+
+    ER_RW +0 
+    {
+        * (+RW)
+    }
+    
+    init +0x0
+    {
+        *.o (__initcall_)
+    }
+        
+    ER_ZI +0 
+    {   
+        * (+ZI)
+    }    
+}
+

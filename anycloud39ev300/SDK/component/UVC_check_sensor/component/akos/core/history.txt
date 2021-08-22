@@ -1,0 +1,865 @@
+                                    Nucleus PLUS         
+
+                            *****************************
+
+**********************************************************************************
+Version 1.14                                                      October 16, 2002
+**********************************************************************************
+
+This update contains bug fixes and enhancements. The following is a description of
+the fixed bugs:
+
+Nucleus MMU code was imported from the 1.13ma release. This is discussed in more
+detail later.
+
+Nucleus Common Library is now included with Nucleus PLUS.  This supplies common 
+functions that many Nucleus PLUS products need, such as memory functions, string 
+functions and conversion functions.
+
+NU_DEBUG_MEMORY function was added.  This required creating the following
+functions in ERC.C:
+
+ERC_Allocate_Memory
+ERC_Deallocate_Memory
+ERC_Memory_To_Debug
+ERC_Append_Debug_Allocation
+ERC_Remove_Debug_Allocation
+
+The following data types and data structures were created for NU_DEBUG_MEMORY
+
+ER_DEBUG_ALLOCATION
+ERD_AllocationCount
+ERD_AllocationSequence
+ERD_TotalMemoryAllocated
+ERD_TotalMemoryAllocations
+ERD_MaxTotalMemoryAllocated
+ERD_MaxTotalMemoryAllocations
+ERD_RecentAllocation
+ERD_MemoryAllocationHead
+ERD_MemoryAllocationFoot
+
+NU_ASSERT and NU_CHECK macros were added to the ER module.
+
+The file profiler.h was created to rid warnings that are reported when 
+INCLUDE_PROVIEW is defined on certain platforms.  The information in profiler.h
+was moved from hi_defs.h.
+
+One ProView hook was logging data permaturely.  The hook was moved below the 
+code that calculates a value for the variable it was logging.
+
+The file sd_defs.h now includes macros that give default settings for the 
+serial driver so all Nucleus demos can use the same settings from the same 
+place in the future.
+
+A problem was fixed in the serial driver template.  ER_LISR was not reporting 
+unhandled interrupts properly.  This may not be implemented in every Nucleus PLUS 
+port, since this file is made specific from the template.
+
+TCFE_Task_Information function was added to verify no parameters are NULL.
+This function is not called when NU_NO_ERROR_CHECKING is defined.
+
+INT8 typedef is not explicitly unsigned.
+
+UNSIGNED_INT typedef was created.
+
+BOOLEAN typedef was created.  It is type DATA_ELEMENT.
+
+HUGE and FAR macros were added.
+
+Defect 1240 & 1268: The confusion surrounding the use of NU_MAX_LISRS has 
+been resolved.
+
+Defect 1335: A system with one task that uses time slices was never refreshed.
+This has been resolved.
+
+Defect 1358: Queue and pipes not use an "urgent" list in thier cleanup routines.
+
+Defect 1362: A conditional that determined if initialization was complete had 
+the wrong logical operator.  This fix was implemented in HIC_Make_History_Entry
+function found in hic.c.
+
+Defect 1364: NU_Get_Time_Remaining now works when the value is NU_NULL.
+
+**********************************************************************************
+Version 1.13ma                                                       June 19, 2002
+**********************************************************************************
+
+This update contains bug fixes related to the MMU/Module product. The following 
+is a description of the fixed bugs:
+
+DMS.C
+
+SYMPTOM:  Broken memory pool linked list.  After DMS_Allocate_Aligned_Memory is
+called a certain number of times the next pointer is bad.
+
+SOLUTION:  The front split code incorrectly determines the memory size in 
+respect to DM_OVERHEAD.  The result is a pointer to a struct that will be 
+placed at the end of the last allocated memory.  This is solved by updating the
+function to not update the free_size with DM_OVERHEAD.
+
+Old Code:
+    /* Adjust free_size for result of front split */
+    if(free_size > (split_size - DM_OVERHEAD))
+        free_size -= (split_size - DM_OVERHEAD);
+    else /* Can't adjust block beginning, so keep searching */
+        free_size = 0;
+
+New Code:
+    /* Adjust free_size for result of front split */
+    if (free_size > split_size)
+        free_size -= split_size;
+    else
+        /* Can't adjust block beginning, so keep searching */
+        free_size = 0;
+
+**********************************************************************************
+Version 1.13m                                                       April 18, 2002
+**********************************************************************************
+
+This update contains bug fixes and enhancements related to the MMU/Module
+product. The following is a description of the fixed bugs and enhancements:
+
+DM_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    DM_PCB_STRUCT
+    {
+        ...
+        DATA_ELEMENT dm_fifo_suspend -> BOOLEAN dm_fifo_suspend
+        ...
+    }
+    
+    DM_HEADER_STRUCT
+    {
+        ...
+        DATA_ELEMENT dm_memory_free -> BOOLEAN dm_memory_free
+        ...
+    }
+*******************************************************************************
+
+DM_EXTR.H
+
+Added the function prototype for DMS_Allocate_Aligned_Memory.
+
+STATUS DMS_Allocate_Aligned_Memory(NU_MEMORY_POOL *pool_ptr,
+                                   VOID **return_pointer, UNSIGNED size,
+                                   UNSIGNED alignment, UNSIGNED suspend);
+
+*******************************************************************************
+
+ER_EXTR.H
+
+Added additional macros NU_CHECK, NU_ASSERT and NU_ASSERT2.  These macros
+are only defined if NU_DEBUG is defined else they are defined to VOID.
+
+#define NU_ASSERT( test ) \
+    if ( !(test) ) ERC_Assert( #test, __FILE__, __LINE__ );  ((void) 0)
+
+#define NU_ASSERT2( test ) \
+    if ( !(test) ) ERC_Assert( #test, __FILE__, __LINE__ );  ((void) 0)
+
+#define NU_CHECK( test, statement ) \
+    NU_ASSERT2( test );  if ( !(test) ) { statement; }  ((void) 0)
+*******************************************************************************
+
+MB_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    MB_MCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT mb_message_present -> BOOLEAN mb_message_present
+    DATA_ELEMENT mb_fifo_suspend -> BOOLEAN mb_fifo_suspend
+    ...
+    }
+
+*******************************************************************************
+
+PI_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    PI_PCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT pi_fixed_size -> BOOLEAN pi_fixed_size
+    DATA_ELEMENT pi_fifo_suspend -> BOOLEAN pi_fifo_suspend
+    ...
+    }
+
+*******************************************************************************
+
+PM_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    PM_PCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT pm_fifo_suspend -> BOOLEAN pm_fifo_suspend
+    ...
+    }
+
+*******************************************************************************
+
+QU_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    QU_QCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT qu_fixed_size -> BOOLEAN qu_fixed_size
+    DATA_ELEMENT qu_fifo_suspend -> BOOLEAN qu_fifo_suspend
+    ...
+    }
+
+*******************************************************************************
+
+SM_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    SM_SCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT sm_fifo_suspend -> BOOLEAN sm_fifo_suspend
+    ...
+    }
+
+*******************************************************************************
+
+TC_DEFS.H
+
+Modified the task and HISR control blocks to change DATA_ELEMENT to BOOLEAN
+and to add tc_su_mode and tc_module to both control blocks.
+
+tc_su_mode is a mode switch counter.
+tc_module contains the address of the Module control block.
+
+These new fields are only in PLUS when NU_SUPERV_USER_MODE or NU_MODULE_SUPPORT
+are defined.
+
+    TC_TCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT tc_delayed_suspend -> BOOLEAN tc_delayed_suspend
+    DATA_ELEMENT tc_preemption -> BOOLEAN tc_preemption
+    DATA_ELEMENT tc_signal_active -> BOOLEAN tc_signal_active
+    DATA_ELEMENT tc_timer_active -> BOOLEAN tc_timer_active
+    ...
+    UNSIGNED tc_su_mode -> Added
+    UNSIGNED tc_module -> Added
+    }
+
+    TC_HCB_STRUCT 
+    {
+    ...
+    UNSIGNED tc_su_mode -> Added
+    UNSIGNED tc_module -> Added
+    }
+
+*******************************************************************************
+
+TC_EXTR.H
+
+Added function prototypes.  TCC_Validate_Resume is only defined when 
+NU_NO_ERROR_CHECKING is defined.
+
+BOOLEAN         TCC_Validate_Resume(OPTION resume_type, NU_TASK *task_ptr);
+
+These are target dependent functions.
+
+VOID            TCT_Restore_Interrupts(VOID);
+INT             TCT_Local_Control_Interrupts(INT new_level);
+
+Added macro NU_CHECK_STACK.  This macro is only defined when 
+NU_ENABLE_STACK_CHECK is defined else it is defined as VOID.
+
+#define NU_CHECK_STACK() TCT_Check_Stack()
+
+*******************************************************************************
+
+TM_DEFS.H
+
+SYMPTOM:  Compiler warning.  The BOOLEAN data type is defined at DATA_ELEMENT
+and some compilers issued a warning and possibly an error about casting.
+
+Solution structures using DATA_ELEMENT are redefined as BOOLEAN.
+
+    TM_APP_TCB_STRUCT 
+    {
+    ...
+    DATA_ELEMENT tm_enabled -> BOOLEAN tm_enabled
+    ...
+    }
+    
+*******************************************************************************
+
+ERC.C
+
+Created function ERC_Assert which increments a global variable ERD_Assert_Count
+This function only exists when NU_DEBUG is defined.
+
+void ERC_Assert(CHAR *test, CHAR *name, UNSIGNED line);
+
+*******************************************************************************
+
+ERD.C
+
+Defined the global variable ERD_Assert_Count.  This variable only exists when
+NU_DEBUG is defined
+
+UNSIGNED ERD_Assert_Count;
+
+*******************************************************************************
+
+ERI.C
+
+Added ERD_Assert_Count to the initialize function.  This variable is only
+initialized if it is defined by NU_DEBUG.
+
+*******************************************************************************
+
+INC.C
+
+Added calls to MRC_Initialize and MSC_Initialize.
+
+MRC_Initialize is the memory region initialization function.
+
+MSC_Initialize is the module support initialization function.
+
+These functions are only called when NU_MODULE_SUPPORT is defined.  These
+functions are part of the MMU\Module product and are maintained within that
+product.
+
+*******************************************************************************
+
+TCC.C
+
+Because of the high importance of threads to MMU\Module some initialization and
+function calls have been added to several parts of this file.
+
+To get access to the module support data types the header file ms_defs.h has
+been included.
+
+#if defined(NU_MODULE_SUPPORT) && (NU_MODULE_SUPPORT > 0)
+#include        "module/inc/ms_defs.h"      /* MS_Module typedef */
+#endif
+
+An external variable has been defined to determine the current module.
+Also 2 private functions have prototypes defined here.
+
+#if defined(NU_MODULE_SUPPORT) && (NU_MODULE_SUPPORT > 0)
+
+/* Define service routines "privately" imported from other components */
+extern MS_MODULE* msd_current_module;
+
+STATUS MSC_Bind_Module_HISR(MS_MODULE* module, TC_HCB* hisr);
+STATUS MSC_Bind_Module_Task(MS_MODULE* module, TC_TCB* task);
+
+#endif /* NU_MODULE_SUPPORT */
+
+The new field tc_su_mode in TC_TCB and TC_HCB are initialized in 
+TCC_Create_Task and TCC_Create_HISR respectively.
+
+TCC_Create_Task binds all new tasks to the current module.
+
+    if(TCD_Current_Thread != NU_NULL)
+    {
+        status = MSC_Bind_Module_Task(
+          (MS_MODULE*)(((TC_TCB*)(TCD_Current_Thread))->tc_module), task);
+    }
+    else /* It must be initialization time, so use the current module */
+    {
+        status = MSC_Bind_Module_Task(msd_current_module, task);
+    }
+    
+TCC_Delete_HISR binds all new HISRs to the current module.
+
+    if(TCD_Current_Thread != NU_NULL)
+    {
+        status = MSC_Bind_Module_HISR(
+          (MS_MODULE*)(((TC_TCB*)(TCD_Current_Thread))->tc_module), hisr);
+    }
+    else /* It must be initialization time, so use the current module */
+    {
+        status = MSC_Bind_Module_HISR(msd_current_module, hisr);
+    }
+    
+TCC_Signal_Shell does a force to User mode.
+
+        /* Call the application signal handling function, if there still is
+           one.  */
+        if (task -> tc_signal_handler)
+        {
+            NU_SUPERV_USER_VARIABLES
+
+#if (defined(NU_SUPERV_USER_MODE)) && (NU_SUPERV_USER_MODE > 0)
+            UNSIGNED savedMode = task->tc_su_mode;
+            task->tc_su_mode = 1;         /* Force transition to User mode */
+#endif
+            /* Switch to user mode */
+            NU_USER_MODE();
+
+            /* Call signal handler.  (always in User mode) */
+            (*(task -> tc_signal_handler))(signals);
+
+            /* Return to supervisor mode */
+            NU_SUPERVISOR_MODE();
+
+#if (defined(NU_SUPERV_USER_MODE)) && (NU_SUPERV_USER_MODE > 0)
+            task->tc_su_mode = savedMode;   /* Restore original nesting count */
+#endif
+        }
+        
+In TCC_Reset_Task since we are doing a complete reset we need to ensure that 
+tc_su_mode is 0 since the task will be started in user mode.  TCC_Task_Shell
+can not return and therefore left the task in supervisor mode when the task 
+completed. If we were to not re-initialize this field the task would become 
+locked in user mode and API would fail.
+
+#if (NU_SUPERV_USER_MODE == 1)
+        task -> tc_su_mode = 0;
+#endif
+
+**********************************************************************************
+Version 1.13                                                      October 31, 2000
+**********************************************************************************
+
+This update contains bug fixes and enhancements. The following is a description of
+the fixed bugs:
+
+- TCCE.C (2 fixes)  TCCE_Task_Sleep, TCCE_Suspend_Service
+
+SYMPTOM: Compiler warning
+
+SOLUTION:
+
+In file tcce.c, line 887, this warning is generated:
+
+"tcce.c", line 887: Warning: odd unsigned comparison with 0: '<='
+tcce.c: 1 warning, 0 errors, 0 serious errors
+
+The original line is :
+
+    /* If parameter is negative or zero, return */
+    if (ticks <= 0)
+        return;
+
+
+This was changed to:
+
+    /* If parameter is zero, return */
+    if (ticks == 0)
+        return;
+
+as this parameter is an unsigned and can never be less than zero.
+
+
+SYMPTOM: If the task state is terminated or finished when NU_Suspend_Task 
+is called we returned NU_SUCCESS (with error checking enabled). We should 
+return a failure code.  Note that no action is taken, the task is not moved 
+to a pure suspended state via the call.
+
+SOLUTION:
+
+In tcce.c, TCCE_Suspend_Service, we added the following check:
+
+ if ((task->tc_status == NU_FINISHED) || (task->tc_status == NU_TERMINATED))
+
+             /* Can't suspend a task in a finished or terminated state */
+             status =  NU_INVALID_SUSPEND;
+
+*****************************************************************************
+
+- DM_EXTR.H  DMC_Established_Memory_Pools, DMC_Memory_Pool_Information,
+             DMC_Memory_Pool_Pointers
+- SM_EXTR.H  SMC_Established_Memory_Pools, SMC_Memory_Pool_Information,
+             SMC_Memory_Pool_Pointers
+
+SYMPTOM: Compiler warnings
+
+SOLUTION: Replaced the DMC and SMC leading characters to DMF and SMF 
+respectively.
+
+
+/* Information retrieval functions.  */
+
+UNSIGNED        DMC_Established_Memory_Pools(VOID);
+STATUS          DMC_Memory_Pool_Information(NU_MEMORY_POOL *pool_ptr, 
+                  CHAR *name, VOID **start_address, UNSIGNED *pool_size,
+                  UNSIGNED *min_allocation, UNSIGNED *available,
+                  OPTION *suspend_type, UNSIGNED *tasks_waiting, 
+                  NU_TASK **first_task);
+UNSIGNED        DMC_Memory_Pool_Pointers(NU_MEMORY_POOL **pointer_list, 
+                                                UNSIGNED maximum_pointers)
+
+The function names were wrong.  They should be DMF_Established_Memory_Pools(),
+etc, ie so we replaced DMC_ with DMF_. Same for SMC_ changed to SMF_.
+
+*****************************************************************************
+
+- HIC.C  HIC_Make_History_Entry
+
+SYMPTOM: Exception due to no current active thread at time of function call.
+
+SOLUTION:
+
+In HIC.C (Generic) the function HIC_Make_History_Entry has the macro 
+TCT_Get_Current_Protect(). This can be invoked before there is a current 
+thread. This will cause an exception in MNT as well as any port having 
+either MMU support or no physical memory at location 0 + protect offset.
+
+This code:
+
+/* Pickup current protection.  */
+    save_protect =  TCT_Get_Current_Protect();
+
+was changed as follows to fix this problem, assuring we are not in 
+initialization before calling TCT_Get_Current_Protect:
+
+/* If we are not in initialization, get the current protection state */
+    if (INC_Initialize_State !=  INC_END_INITIALIZE)
+
+        /* Pickup current protection.  */
+        save_protect =  TCT_Get_Current_Protect();
+
+    else
+        /* we are in initialization, just clear save_protect */
+        save_protect = 0; 
+
+*****************************************************************************
+
+- TMSE.C  TMSE_Create_Timer
+
+SYMPTOM: Timer doesn't expire for an exceptionally long time period.
+
+SOLUTION:
+
+If NU_Create_Timer() sets a timer to expire in 0 ticks, it does not in fact 
+expire until 2^32 ticks have occurred, due to in the routine
+TMT_Timer_Interrupt, the value of the count-down timer is decremented before
+it is tested against zero.
+
+We added this check to TMSE_Create_Timer to determine if a parameter of 0 
+is used and return an error code:
+
+     else if (initial_time == 0) 
+    
+        /* Invalid time value.  */
+        status =  NU_INVALID_OPERATION;
+
+*****************************************************************************
+
+- PICE.C  PICE_Receive_From_Pipe, PICE_Send_To Pipe,
+          PISE_Broadcast_To_Pipe, PISE_Send_To_Front_Of_Pipe, 
+- QUCE.C  QUCE_Send_To_Queue, QUCE_Receive_From_Queue
+          QUSE_Broadcast_To_Queue, QUSE_Send_To_Front_Of_Queue
+
+
+SYMPTOM: Memory gets corrupted as we can overwrite an area the size of the
+largest INT value, in bytes.
+
+SOLUTION:
+
+We added this check:
+
+else if (size == 0)
+    
+        /* Indicate that the message size is invalid.  */
+        status =  NU_INVALID_SIZE;
+
+as we do not allow 0-sized messages to be sent/received from 
+pipes or queues.
+
+*****************************************************************************
+
+- TCI.C
+
+SYMPTOM: None, just legacy code that needed removing.
+
+SOLUTION:
+
+In tci.c:
+
+extern VOID            *TCD_Protect_Thread
+
+This was legacy code, not used and was removed.
+
+*****************************************************************************
+
+- TMC.C  TMC_Start_Timer
+
+SYMPTOM: System could crash. An overflow occurs and the timer will never
+return.
+
+SOLUTION:
+
+In the file TMC.C, line 417:
+
+   if (!TMD_Active_List_Busy)
+   {
+      /* Calculate the elapsed amount of time from the last timer
+         request.  */
+      elapsed =  TMD_Timer_Start -  TMT_Read_Timer();
+
+      /* Adjust the first entry in the timer list and the timer
+         start value accordingly.  */
+      TMD_Timer_Start =  TMD_Timer_Start - elapsed;
+      list_ptr -> tm_remaining_time =
+                      list_ptr -> tm_remaining_time - elapsed;
+   }
+
+When the variable "elapsed" is greater than "tm_remaining_time" an overflow
+occurs and the timer will never return.
+
+Corrected the code as follows:
+
+if (!TMD_Active_List_Busy)
+{
+   /* Calculate the elapsed amount of time from the last timer request.  */
+
+   elapsed =  TMD_Timer_Start -  TMT_Read_Timer();
+
+   /* Adjust the first entry in the timer list and the timer
+      start value accordingly.  */
+   TMD_Timer_Start =  TMD_Timer_Start - elapsed;
+      
+   /* Make sure the remaining time is never below zero! */
+   if (list_ptr -> tm_remaining_time > elapsed)
+   {
+      list_ptr -> tm_remaining_time = list_ptr -> tm_remaining_time - elapsed;
+   }
+   else
+   {
+      list_ptr -> tm_remaining_time = 0;
+   }
+}
+
+*****************************************************************************
+
+- TCC.C  TCC_Task_Timeout
+
+SYMPTOM: Task never wakes after signal sent to it. When you activate a 
+signal the target tasks' current state is placed in tc_saved_status and 
+tc_status is made NU_READY. When the signal handler finishes the 
+tc_saved_status is placed back int tc_status restoring the task state. 
+When the NU_Sleep() expires tc_status is made NU_READY. 
+
+Unfortunately this means that when the signal handler finishes the saved 
+sleep state is restored and the task never wakes.
+
+SOLUTION:
+
+Instead of blindly passing tc_status to resume task, a test must be made 
+to see if the task has a signal active. If a signal is active then 
+tc_saved_status should be passed to resume task.
+
+Replace
+
+    /* Pickup the suspension protection saved-off when the task was 
+       suspended.  */
+    suspend_protect =  task -> tc_suspend_protect;
+     task_status =      task -> tc_status;  
+
+with
+
+    /* Pickup the suspension protection saved-off when the task was 
+       suspended.  */
+    suspend_protect =  task -> tc_suspend_protect;
+    
+    /* Is a signal handler currently running?*/ 
+    if (task -> tc_signal_active)
+
+        /* Use the saved status for current task status */
+        task_status =      task -> tc_saved_status;
+    else
+
+        /* Just use the current task status */     
+        task_status =      task -> tc_status;  
+
+*****************************************************************************
+
+- TC_DEFS.H
+
+SYMPTOM: Compiler warning
+
+SOLUTION:
+
+#define         TC_MAX_GROUPS           TC_PRIORITIES/8
+
+was changed to:
+
+#define         TC_MAX_GROUPS           (TC_PRIORITIES/8)
+
+*****************************************************************************
+
+- *i.c
+
+SYMPTOM: Compiler warnings
+
+SOLUTION:
+
+All the initialization code modules (eg tmi.c) omit to #include the 
+relevant prototypes (eg #include "tm_extr.h") and thus provoke warnings 
+when you ask the compiler to check that all functions definitions have a 
+corresponding declaration.  (In general Nucleus conforms to this coding 
+convention, except for the initialization modules.)
+
+All *.i.c files now #include the _defs.h and _extr.h files for that 
+component.
+
+*****************************************************************************
+- TCS.C  TCS_Change_Time_Slice
+
+SYMPTOM: If a call to NU_Change_Time_Slice is made dynamically and the
+task was not created with a time slice, the time slice is set for that task
+but no task switches occur due to the new time slice.
+
+
+SOLUTION: Added the following "system notification" so PLUS is aware
+the task has a defined time slice:
+
+task -> tc_time_slice =      time_slice;
+task -> tc_cur_time_slice =  time_slice;
+
+/* Bug fix. Let the system know we have started a new time slice */
+TMD_Time_Slice_State = TM_ACTIVE;
+
+
+/* Release protection of information.  */
+TCT_Unprotect();
+
+****************************************************************************
+
+The sole enhancement to this release is we added a new function. In tmf.c, 
+the new function TMF_Get_Remaining_Time(NU_TIMER *timer_ptr) returns the 
+remaining time before expiration for the specified timer. Please see the 
+Nucleus PLUS Reference Manual and Internal Manual for a more full 
+description of this function.
+
+*****************************************************************************
+Nucleus PLUS generic version 1.13a was created on 04/10/01 by Chris Sheppard and
+contains the following changes:
+
+This release of the Nucleus PLUS kernel has been instrumented for Nucleus 
+ProView.  For more information about Nucleus ProView, consult an ATI sales 
+representative.
+
+The following files that had the macros changed from RTVIEW_PROF to 
+INCLUDE_PROVIEW are: 
+tms.c, tmc.c, tcs.c, tcc.c, pis.c, pic.c, ioc.c, sms.c, smc.c, 
+hi_defs.h, qus.c, quc.c, mbs.c, evc.c, dmc.c, mbc.c, pmc.c.
+
+
+*****************************************************************************
+
+- CSC.C 
+
+Added checks for use of inline functions to avoid ARM Tools errors.
+
+*****************************************************************************
+
+TCC.C  (3 fixes) TCC_Register_LISR 
+
+SYMPTOM: Users can't register a LISR for the last interrupt source because 
+the check (vector >= NU_MAX_VECTORS) erroneously reports it as an invalid 
+vector number.
+
+SOLUTION: Changed the conditional to read (vector > NU_MAX_VECTORS).
+
+
+SYMPTOM: While searching the TCD_LISR_Pointers list the last entry is
+ignored. 
+
+SOLUTION: Changed the following code:
+
+while ((TCD_LISR_Pointers[index] != NU_NULL) && (index < NU_MAX_LISRS))
+   
+   index++;
+                
+   /* Determine if an empty slot was found.  */
+   if (index < NU_MAX_LISRS)
+
+to
+
+while ((TCD_LISR_Pointers[index] != NU_NULL) && (index <= NU_MAX_LISRS))
+   
+   index++;
+                
+   /* Determine if an empty slot was found.  */
+   if (index <= NU_MAX_LISRS)
+
+*****************************************************************************
+
+TCD.C
+
+Changed 
+
+VOID    (*TCD_LISR_Pointers[NU_MAX_LISRS])(INT vector);
+
+to
+
+VOID    (*TCD_LISR_Pointers[NU_MAX_LISRS+1])(INT vector);
+
+as the index to search this list is set to 1 before the search.
+
+****************************************************************************
+
+MBS.C  MBS_Broadcast_To_Mailbox
+
+SYMPTOM:  The list of tasks suspended waiting on a mailbox may get corrupted
+during a NU_Broadcast_To_Mailbox call.
+
+SOLUTION: Added a new local variable, MB_SUSPEND *next_suspend_ptr; to
+hold a pointer to the next task on the suspend list.
+
+The old code looked like:
+
+   /* Wakeup each task waiting.  */
+   preempt =  preempt |
+              TCC_Resume_Task((NU_TASK *) suspend_ptr -> mb_suspended_task,
+                                                        NU_MAILBOX_SUSPEND);
+
+   /* Move the suspend pointer along to the next block. */
+   suspend_ptr =  (MB_SUSPEND *) suspend_ptr -> mb_suspend_link.cs_next;
+
+} while (suspend_ptr != suspend_head);
+  
+
+This was changed to save off the suspend pointer BEFORE we do the 
+Resume_Task and then
+
+   /* Move the suspend pointer along to the next block. */
+   next_suspend_ptr =  (MB_SUSPEND *) suspend_ptr -> mb_suspend_link.cs_next;
+
+   /* Wakeup each task waiting.  */
+   preempt =  preempt |
+              TCC_Resume_Task((NU_TASK *) suspend_ptr -> mb_suspended_task,
+                                                        NU_MAILBOX_SUSPEND);
+   suspend_ptr = next_suspend_ptr;             
+
+} while (suspend_ptr != suspend_head);
+
+*****************************************************************************

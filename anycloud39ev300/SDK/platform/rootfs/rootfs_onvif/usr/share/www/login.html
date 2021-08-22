@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+	.changecolor0{color:#f00;}
+	.changecolor1{color:#0f0;}
+	.changecolor2{color:#00f;}
+	.changecolor3{color:#f0f;}
+	.changecolor4{color:#0ff;}
+	.changecolor5{color:#000;}
+</style>
+</head>
+
+<body>
+<div style="height:220px; width:100%"></div>
+<div style="height:60%; width:100%; text-align:center; font-size:36px">
+<span><a id="remaincolor" href="index.html">对不起，您还未登录，点击登录！</a></span>
+</div>
+<script type="text/javascript">
+	var i=0;
+	function blink(){
+		document.getElementById("remaincolor").className="changecolor"+i%6;
+		i++;
+	}
+	setInterval(blink, 500);
+</script>
+</body>
+</html>
+<!--
+<title>文字闪烁</title>
+<style type="text/css">
+	.changecolor0{color:#f00;}
+	.changecolor1{color:#0f0;}
+	.changecolor2{color:#00f;}
+	.changecolor3{color:#f0f;}
+	.changecolor4{color:#0ff;}
+	.changecolor5{color:#000;}
+</style>
+<span id="remaincolor">文字闪烁效果</span>
+<script type="text/javascript">
+	var i=0;
+	function blink(){
+		document.getElementById("remaincolor").className="changecolor"+i%6;
+		i++;
+	}
+	setInterval(blink, 500);
+</script>
+-->

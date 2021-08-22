@@ -1,0 +1,49 @@
+
+/*
+ * Driver Configuration
+ */
+#define CONFIG_FTDMAC100 1
+#define CONFIG_FB_FTLCDC100 1
+#define CONFIG_PANEL_AUA036QN01 1
+#undef CONFIG_PANEL_AUA070VW04
+#define CONFIG_FFB_MODE_RGB 1
+#undef CONFIG_COLOR_DEPTH16
+#define CONFIG_COLOR_DEPTH24 1
+#define CONFIG_FTSDC010 1
+#if CONFIG_PLAT_QEMU
+#define CONFIG_SD_PIO 1
+#else
+#define CONFIG_SD_DMA 1
+#undef CONFIG_SD_PIO
+#endif
+#define CONFIG_FTSSP010 1
+#define CONFIG_FTUART010 1
+
+/*
+ * Bottom half driver priority
+ */
+
+#if defined(CONFIG_OS_UCOS_II) || defined(CONFIG_OS_UCOS_III)
+
+#define CONFIG_DMAD_HISR_PRIORITY	11
+#define CONFIG_SDD_HISR_PRIORITY	8
+#define CONFIG_TSD_HISR_PRIORITY	12
+#define CONFIG_MACD_HISR_PRIORITY	17
+
+#elif defined(CONFIG_OS_FREERTOS)
+
+#define CONFIG_DMAD_HISR_PRIORITY	8
+#define CONFIG_SDD_HISR_PRIORITY	7
+#define CONFIG_TSD_HISR_PRIORITY	6
+#define CONFIG_MACD_HISR_PRIORITY	5
+
+#elif defined(CONFIG_OS_THREADX)
+
+#define CONFIG_DMAD_HISR_PRIORITY   11
+#define CONFIG_SDD_HISR_PRIORITY    8
+#define CONFIG_TSD_HISR_PRIORITY    12
+#define CONFIG_MACD_HISR_PRIORITY   17
+
+#else
+#  error "No valid OS is defined!"
+#endif

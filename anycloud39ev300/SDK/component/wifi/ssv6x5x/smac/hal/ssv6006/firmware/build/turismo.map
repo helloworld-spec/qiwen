@@ -1,0 +1,2389 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+xQueueRegistry      0x50              ./rtos/freertos/kernel/Source/queue.o
+bh                  0x20              ./app/bh/bh.o
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/bsp.o
+ .text          0x00000000        0x0 ./bsp/bsp.o
+ .bss           0x00000000        0x0 ./bsp/bsp.o
+ .text.BSP_Mem_Init
+                0x00000000       0x10 ./bsp/bsp.o
+ .text.BSP_Intc_Init
+                0x00000000       0x10 ./bsp/bsp.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/turismo/turismo.o
+ .text          0x00000000        0x0 ./bsp/turismo/turismo.o
+ .data          0x00000000        0x0 ./bsp/turismo/turismo.o
+ .bss           0x00000000        0x0 ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_mask
+                0x00000000       0x6e ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_unmask
+                0x00000000        0x6 ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_clean_all
+                0x00000000        0x8 ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_disable
+                0x00000000       0x1a ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_disable_all
+                0x00000000        0x8 ./bsp/turismo/turismo.o
+ .text.hal_intc_irq_set_priority
+                0x00000000        0xa ./bsp/turismo/turismo.o
+ .text.hal_intc_swi_disable
+                0x00000000       0x14 ./bsp/turismo/turismo.o
+ .text.hal_intc_get_all_pend
+                0x00000000        0x6 ./bsp/turismo/turismo.o
+ .text.hal_intc_swi_clean
+                0x00000000       0x14 ./bsp/turismo/turismo.o
+ .text.hal_intc_swi_trigger
+                0x00000000       0x14 ./bsp/turismo/turismo.o
+ .text.hal_timer_irq_mask
+                0x00000000       0x1e ./bsp/turismo/turismo.o
+ .text.hal_timer_irq_unmask
+                0x00000000        0x6 ./bsp/turismo/turismo.o
+ .text.hal_timer_set_upward
+                0x00000000       0x2a ./bsp/turismo/turismo.o
+ .text.hal_timer_stop
+                0x00000000       0x1e ./bsp/turismo/turismo.o
+ .text.hal_timer_read
+                0x00000000       0x16 ./bsp/turismo/turismo.o
+ .text.hal_timer_count_read
+                0x00000000       0x10 ./bsp/turismo/turismo.o
+ .text.hal_timer_irq_status
+                0x00000000        0xa ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000      0x562 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x64 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x64 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000      0x8bc ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x58 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x16 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x2e ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x1c ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x1c ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000      0xd1f ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x28 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0xb0 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000     0x3168 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x16 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000       0x44 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000      0x209 ./bsp/turismo/turismo.o
+ .debug_macro   0x00000000      0xc38 ./bsp/turismo/turismo.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./bsp/CPU_DEF/cache.o
+ .text          0x00000000        0x0 ./bsp/CPU_DEF/cache.o
+ .data          0x00000000        0x0 ./bsp/CPU_DEF/cache.o
+ .bss           0x00000000        0x0 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_invalidate
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_flush
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_icache_flush
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_clean_range
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_dma_clean_range
+                0x00000000        0x6 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_invalidate_range
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_flush_range
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.n12_dcache_writeback_range
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .text.unaligned_cache_line_move
+                0x00000000       0x12 ./bsp/CPU_DEF/cache.o
+ .text.n12_dma_inv_range
+                0x00000000       0xdc ./bsp/CPU_DEF/cache.o
+ .text.n12_dma_flush_range
+                0x00000000        0x6 ./bsp/CPU_DEF/cache.o
+ .text.n12_icache_invalidate_range
+                0x00000000        0x2 ./bsp/CPU_DEF/cache.o
+ .debug_info    0x00000000      0x555 ./bsp/CPU_DEF/cache.o
+ .debug_abbrev  0x00000000      0x254 ./bsp/CPU_DEF/cache.o
+ .debug_loc     0x00000000      0x184 ./bsp/CPU_DEF/cache.o
+ .debug_aranges
+                0x00000000       0x78 ./bsp/CPU_DEF/cache.o
+ .debug_ranges  0x00000000       0x68 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0x71 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000      0x562 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0x64 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0x64 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0x1c ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000      0xd1f ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0x28 ./bsp/CPU_DEF/cache.o
+ .debug_macro   0x00000000       0xb0 ./bsp/CPU_DEF/cache.o
+ .debug_line    0x00000000      0x290 ./bsp/CPU_DEF/cache.o
+ .debug_str     0x00000000     0x6823 ./bsp/CPU_DEF/cache.o
+ .comment       0x00000000       0x30 ./bsp/CPU_DEF/cache.o
+ .debug_frame   0x00000000       0xf0 ./bsp/CPU_DEF/cache.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/portISR.o
+ .text          0x00000000        0x0 ./rtos/freertos/portISR.o
+ .data          0x00000000        0x0 ./rtos/freertos/portISR.o
+ .bss           0x00000000        0x0 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/portISR.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/portISR.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/port.o
+ .text          0x00000000        0x0 ./rtos/freertos/port.o
+ .data          0x00000000        0x0 ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x2e ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/port.o
+ .debug_macro   0x00000000     0x3168 ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0x8bc ./rtos/freertos/port.o
+ .debug_macro   0x00000000      0xc38 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x7e ./rtos/freertos/port.o
+ .debug_macro   0x00000000       0x7c ./rtos/freertos/port.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/tasks.o
+ .text.prvTaskIsTaskSuspended
+                0x00000000       0x28 ./rtos/freertos/kernel/Source/tasks.o
+ .text.prvListTaskWithinSingleList
+                0x00000000       0x98 ./rtos/freertos/kernel/Source/tasks.o
+ .text.eTaskGetState
+                0x00000000       0x84 ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000       0x30 ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskPrioritySet
+                0x00000000       0xfa ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskResume
+                0x00000000       0xb2 ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000       0xc8 ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x32 ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000       0x28 ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0xc ./rtos/freertos/kernel/Source/tasks.o
+ .text.pcTaskGetTaskName
+                0x00000000       0x12 ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskGetIdleTaskHandle
+                0x00000000        0xc ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000       0x7e ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskGetSystemState
+                0x00000000       0xe4 ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskSetApplicationTaskTag
+                0x00000000       0x2e ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskGetApplicationTaskTag
+                0x00000000       0x30 ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskCallApplicationTaskHook
+                0x00000000       0x24 ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskSuspend
+                0x00000000       0xde ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x8e ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskRemoveFromUnorderedEventList
+                0x00000000       0x8e ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskGetTaskNumber
+                0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskSetTaskNumber
+                0x00000000        0x8 ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskGetStackHighWaterMark
+                0x00000000       0x22 ./rtos/freertos/kernel/Source/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x2c ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/kernel/Source/tasks.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/queue.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/queue.o
+ .data          0x00000000        0x0 ./rtos/freertos/kernel/Source/queue.o
+ .bss           0x00000000        0x0 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueCreateMutex
+                0x00000000       0x6e ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x00000000       0x3a ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueAltGenericSend
+                0x00000000      0x10e ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueAltGenericReceive
+                0x00000000      0x166 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x00000000       0x42 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000       0x76 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0x42 ./rtos/freertos/kernel/Source/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x24 ./rtos/freertos/kernel/Source/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x28 ./rtos/freertos/kernel/Source/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/queue.o
+ .text.uxQueueGetQueueNumber
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/queue.o
+ .text.vQueueSetQueueNumber
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/queue.o
+ .text.ucQueueGetQueueType
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0xa ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x10 ./rtos/freertos/kernel/Source/queue.o
+ .text.vQueueUnregisterQueue
+                0x00000000       0x2a ./rtos/freertos/kernel/Source/queue.o
+ .text.vQueueDelete
+                0x00000000       0x30 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/queue.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/list.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/list.o
+ .data          0x00000000        0x0 ./rtos/freertos/kernel/Source/list.o
+ .bss           0x00000000        0x0 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/list.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/timers.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/timers.o
+ .data          0x00000000        0x0 ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerCreate
+                0x00000000       0x54 ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x00000000        0xc ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerIsTimerActive
+                0x00000000       0x26 ./rtos/freertos/kernel/Source/timers.o
+ .text.pvTimerGetTimerID
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerPendFunctionCallFromISR
+                0x00000000       0x2a ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerPendFunctionCall
+                0x00000000       0x2a ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x00000000       0x91 ./rtos/freertos/kernel/Source/timers.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/event_groups.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/event_groups.o
+ .data          0x00000000        0x0 ./rtos/freertos/kernel/Source/event_groups.o
+ .bss           0x00000000        0x0 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupCreate
+                0x00000000       0x28 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupWaitBits
+                0x00000000       0xe0 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupClearBits
+                0x00000000       0x2a ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupClearBitsFromISR
+                0x00000000       0x2a ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupSetBits
+                0x00000000       0x84 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupSync
+                0x00000000       0xc6 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.vEventGroupSetBitsCallback
+                0x00000000       0x10 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.vEventGroupDelete
+                0x00000000       0x46 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.xEventGroupSetBitsFromISR
+                0x00000000       0x24 ./rtos/freertos/kernel/Source/event_groups.o
+ .text.uxEventGroupGetNumber
+                0x00000000        0x6 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_info    0x00000000      0xa49 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_abbrev  0x00000000      0x281 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_loc     0x00000000      0x915 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_aranges
+                0x00000000       0x68 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_ranges  0x00000000       0x70 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0x15e ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x91 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_macro   0x00000000       0x12 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_line    0x00000000      0x6f3 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_str     0x00000000     0xa5ef ./rtos/freertos/kernel/Source/event_groups.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/event_groups.o
+ .debug_frame   0x00000000      0x1a0 ./rtos/freertos/kernel/Source/event_groups.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .text          0x00000000        0x0 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .text.xPortGetFreeHeapSize
+                0x00000000        0xc ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0x2 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x5d ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fgets.o
+ .text          0x00000000        0x0 ./libc/stdio/fgets.o
+ .data          0x00000000        0x0 ./libc/stdio/fgets.o
+ .bss           0x00000000        0x0 ./libc/stdio/fgets.o
+ .text.fgets    0x00000000       0x42 ./libc/stdio/fgets.o
+ .text.getc     0x00000000       0x10 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0x562 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x1c ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0xd1f ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x28 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0xb0 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000     0x3168 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x16 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x44 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0x209 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0x8bc ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0xc38 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x58 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x16 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x2e ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x1c ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x40 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0x131 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0xb1 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x1f ./libc/stdio/fgets.o
+ .debug_macro   0x00000000      0x31b ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x73 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x69 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0xb0 ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x7e ./libc/stdio/fgets.o
+ .debug_macro   0x00000000       0x7c ./libc/stdio/fgets.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fputs.o
+ .text          0x00000000        0x0 ./libc/stdio/fputs.o
+ .data          0x00000000        0x0 ./libc/stdio/fputs.o
+ .bss           0x00000000        0x0 ./libc/stdio/fputs.o
+ .text.fputs    0x00000000       0x1c ./libc/stdio/fputs.o
+ .text.putc     0x00000000       0x10 ./libc/stdio/fputs.o
+ .text.puts     0x00000000       0x12 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000      0x562 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000       0x58 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000       0x16 ./libc/stdio/fputs.o
+ .debug_macro   0x00000000       0x2e ./libc/stdio/fputs.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/fprintf.o
+ .text          0x00000000        0x0 ./libc/stdio/fprintf.o
+ .data          0x00000000        0x0 ./libc/stdio/fprintf.o
+ .bss           0x00000000        0x0 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000      0x562 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000       0x58 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000       0x16 ./libc/stdio/fprintf.o
+ .debug_macro   0x00000000       0x2e ./libc/stdio/fprintf.o
+ .group         0x00000000        0x8 ./libc/stdio/do_printf.o
+ .group         0x00000000        0x8 ./libc/stdio/do_printf.o
+ .group         0x00000000        0x8 ./libc/stdio/do_printf.o
+ .group         0x00000000        0x8 ./libc/stdio/do_printf.o
+ .text          0x00000000        0x0 ./libc/stdio/do_printf.o
+ .data          0x00000000        0x0 ./libc/stdio/do_printf.o
+ .bss           0x00000000        0x0 ./libc/stdio/do_printf.o
+ .debug_macro   0x00000000      0x562 ./libc/stdio/do_printf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/do_printf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/do_printf.o
+ .debug_macro   0x00000000       0x58 ./libc/stdio/do_printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/stdio/printf.o
+ .text          0x00000000        0x0 ./libc/stdio/printf.o
+ .data          0x00000000        0x0 ./libc/stdio/printf.o
+ .bss           0x00000000        0x0 ./libc/stdio/printf.o
+ .text.vsprintf_help
+                0x00000000        0xc ./libc/stdio/printf.o
+ .text.vsprintf
+                0x00000000       0x26 ./libc/stdio/printf.o
+ .text.sprintf  0x00000000       0x22 ./libc/stdio/printf.o
+ .debug_macro   0x00000000      0x562 ./libc/stdio/printf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/printf.o
+ .debug_macro   0x00000000       0x64 ./libc/stdio/printf.o
+ .debug_macro   0x00000000       0x58 ./libc/stdio/printf.o
+ .debug_macro   0x00000000       0x16 ./libc/stdio/printf.o
+ .debug_macro   0x00000000       0x2e ./libc/stdio/printf.o
+ .group         0x00000000        0x8 ./libc/string/memcpy.o
+ .group         0x00000000        0x8 ./libc/string/memcpy.o
+ .group         0x00000000        0x8 ./libc/string/memcpy.o
+ .text          0x00000000        0x0 ./libc/string/memcpy.o
+ .data          0x00000000        0x0 ./libc/string/memcpy.o
+ .bss           0x00000000        0x0 ./libc/string/memcpy.o
+ .debug_macro   0x00000000      0x562 ./libc/string/memcpy.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memcpy.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memcpy.o
+ .group         0x00000000        0x8 ./libc/string/memmove.o
+ .group         0x00000000        0x8 ./libc/string/memmove.o
+ .group         0x00000000        0x8 ./libc/string/memmove.o
+ .text          0x00000000        0x0 ./libc/string/memmove.o
+ .data          0x00000000        0x0 ./libc/string/memmove.o
+ .bss           0x00000000        0x0 ./libc/string/memmove.o
+ .text.memmove  0x00000000       0x2c ./libc/string/memmove.o
+ .debug_info    0x00000000       0xc5 ./libc/string/memmove.o
+ .debug_abbrev  0x00000000       0x94 ./libc/string/memmove.o
+ .debug_loc     0x00000000       0xad ./libc/string/memmove.o
+ .debug_aranges
+                0x00000000       0x20 ./libc/string/memmove.o
+ .debug_ranges  0x00000000       0x10 ./libc/string/memmove.o
+ .debug_macro   0x00000000       0x41 ./libc/string/memmove.o
+ .debug_macro   0x00000000      0x562 ./libc/string/memmove.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memmove.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memmove.o
+ .debug_line    0x00000000       0xe2 ./libc/string/memmove.o
+ .debug_str     0x00000000     0x1c4e ./libc/string/memmove.o
+ .comment       0x00000000       0x30 ./libc/string/memmove.o
+ .debug_frame   0x00000000       0x20 ./libc/string/memmove.o
+ .group         0x00000000        0x8 ./libc/string/memset.o
+ .group         0x00000000        0x8 ./libc/string/memset.o
+ .group         0x00000000        0x8 ./libc/string/memset.o
+ .text          0x00000000        0x0 ./libc/string/memset.o
+ .data          0x00000000        0x0 ./libc/string/memset.o
+ .bss           0x00000000        0x0 ./libc/string/memset.o
+ .debug_macro   0x00000000      0x562 ./libc/string/memset.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memset.o
+ .debug_macro   0x00000000       0x64 ./libc/string/memset.o
+ .group         0x00000000        0x8 ./libc/string/strcat.o
+ .group         0x00000000        0x8 ./libc/string/strcat.o
+ .group         0x00000000        0x8 ./libc/string/strcat.o
+ .text          0x00000000        0x0 ./libc/string/strcat.o
+ .data          0x00000000        0x0 ./libc/string/strcat.o
+ .bss           0x00000000        0x0 ./libc/string/strcat.o
+ .text.strcat   0x00000000       0x22 ./libc/string/strcat.o
+ .text.strncat  0x00000000       0x26 ./libc/string/strcat.o
+ .debug_info    0x00000000       0xf2 ./libc/string/strcat.o
+ .debug_abbrev  0x00000000       0xa2 ./libc/string/strcat.o
+ .debug_loc     0x00000000       0xfe ./libc/string/strcat.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/string/strcat.o
+ .debug_ranges  0x00000000       0x18 ./libc/string/strcat.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strcat.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strcat.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcat.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcat.o
+ .debug_line    0x00000000      0x127 ./libc/string/strcat.o
+ .debug_str     0x00000000     0x1c4f ./libc/string/strcat.o
+ .comment       0x00000000       0x30 ./libc/string/strcat.o
+ .debug_frame   0x00000000       0x58 ./libc/string/strcat.o
+ .group         0x00000000        0x8 ./libc/string/strcasecmp.o
+ .group         0x00000000        0x8 ./libc/string/strcasecmp.o
+ .group         0x00000000        0x8 ./libc/string/strcasecmp.o
+ .text          0x00000000        0x0 ./libc/string/strcasecmp.o
+ .data          0x00000000        0x0 ./libc/string/strcasecmp.o
+ .bss           0x00000000        0x0 ./libc/string/strcasecmp.o
+ .text.strcasecmp
+                0x00000000       0x26 ./libc/string/strcasecmp.o
+ .text.strncasecmp
+                0x00000000       0x2e ./libc/string/strcasecmp.o
+ .debug_info    0x00000000       0xd1 ./libc/string/strcasecmp.o
+ .debug_abbrev  0x00000000       0x8f ./libc/string/strcasecmp.o
+ .debug_loc     0x00000000       0xd7 ./libc/string/strcasecmp.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/string/strcasecmp.o
+ .debug_ranges  0x00000000       0x18 ./libc/string/strcasecmp.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strcasecmp.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strcasecmp.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcasecmp.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcasecmp.o
+ .debug_line    0x00000000      0x12d ./libc/string/strcasecmp.o
+ .debug_str     0x00000000     0x1c50 ./libc/string/strcasecmp.o
+ .comment       0x00000000       0x30 ./libc/string/strcasecmp.o
+ .debug_frame   0x00000000       0x64 ./libc/string/strcasecmp.o
+ .group         0x00000000        0x8 ./libc/string/strcmp.o
+ .group         0x00000000        0x8 ./libc/string/strcmp.o
+ .group         0x00000000        0x8 ./libc/string/strcmp.o
+ .text          0x00000000        0x0 ./libc/string/strcmp.o
+ .data          0x00000000        0x0 ./libc/string/strcmp.o
+ .bss           0x00000000        0x0 ./libc/string/strcmp.o
+ .text.strcmp   0x00000000       0x1e ./libc/string/strcmp.o
+ .text.strncmp  0x00000000       0x28 ./libc/string/strcmp.o
+ .debug_info    0x00000000       0xd1 ./libc/string/strcmp.o
+ .debug_abbrev  0x00000000       0x8f ./libc/string/strcmp.o
+ .debug_loc     0x00000000       0xd7 ./libc/string/strcmp.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/string/strcmp.o
+ .debug_ranges  0x00000000       0x18 ./libc/string/strcmp.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strcmp.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strcmp.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcmp.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcmp.o
+ .debug_line    0x00000000      0x113 ./libc/string/strcmp.o
+ .debug_str     0x00000000     0x1c44 ./libc/string/strcmp.o
+ .comment       0x00000000       0x30 ./libc/string/strcmp.o
+ .debug_frame   0x00000000       0x48 ./libc/string/strcmp.o
+ .group         0x00000000        0x8 ./libc/string/strcpy.o
+ .group         0x00000000        0x8 ./libc/string/strcpy.o
+ .group         0x00000000        0x8 ./libc/string/strcpy.o
+ .text          0x00000000        0x0 ./libc/string/strcpy.o
+ .data          0x00000000        0x0 ./libc/string/strcpy.o
+ .bss           0x00000000        0x0 ./libc/string/strcpy.o
+ .text.strcpy   0x00000000       0x16 ./libc/string/strcpy.o
+ .text.strncpy  0x00000000       0x1e ./libc/string/strcpy.o
+ .debug_info    0x00000000      0x104 ./libc/string/strcpy.o
+ .debug_abbrev  0x00000000       0xad ./libc/string/strcpy.o
+ .debug_loc     0x00000000      0x119 ./libc/string/strcpy.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/string/strcpy.o
+ .debug_ranges  0x00000000       0x18 ./libc/string/strcpy.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strcpy.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strcpy.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcpy.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strcpy.o
+ .debug_line    0x00000000      0x10f ./libc/string/strcpy.o
+ .debug_str     0x00000000     0x1c54 ./libc/string/strcpy.o
+ .comment       0x00000000       0x30 ./libc/string/strcpy.o
+ .debug_frame   0x00000000       0x58 ./libc/string/strcpy.o
+ .group         0x00000000        0x8 ./libc/string/strdup.o
+ .group         0x00000000        0x8 ./libc/string/strdup.o
+ .group         0x00000000        0x8 ./libc/string/strdup.o
+ .group         0x00000000        0x8 ./libc/string/strdup.o
+ .text          0x00000000        0x0 ./libc/string/strdup.o
+ .data          0x00000000        0x0 ./libc/string/strdup.o
+ .bss           0x00000000        0x0 ./libc/string/strdup.o
+ .text.strdup   0x00000000       0x3e ./libc/string/strdup.o
+ .text.strndup  0x00000000       0x3e ./libc/string/strdup.o
+ .debug_info    0x00000000      0x1f4 ./libc/string/strdup.o
+ .debug_abbrev  0x00000000       0xe3 ./libc/string/strdup.o
+ .debug_loc     0x00000000      0x105 ./libc/string/strdup.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/string/strdup.o
+ .debug_ranges  0x00000000       0x18 ./libc/string/strdup.o
+ .debug_macro   0x00000000       0x4a ./libc/string/strdup.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strdup.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strdup.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strdup.o
+ .debug_macro   0x00000000       0x1c ./libc/string/strdup.o
+ .debug_line    0x00000000      0x12d ./libc/string/strdup.o
+ .debug_str     0x00000000     0x1ca9 ./libc/string/strdup.o
+ .comment       0x00000000       0x30 ./libc/string/strdup.o
+ .debug_frame   0x00000000       0x60 ./libc/string/strdup.o
+ .group         0x00000000        0x8 ./libc/string/strlen.o
+ .group         0x00000000        0x8 ./libc/string/strlen.o
+ .group         0x00000000        0x8 ./libc/string/strlen.o
+ .text          0x00000000        0x0 ./libc/string/strlen.o
+ .data          0x00000000        0x0 ./libc/string/strlen.o
+ .bss           0x00000000        0x0 ./libc/string/strlen.o
+ .text.strnlen  0x00000000       0x16 ./libc/string/strlen.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strlen.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strlen.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strlen.o
+ .group         0x00000000        0x8 ./libc/string/strstr.o
+ .group         0x00000000        0x8 ./libc/string/strstr.o
+ .group         0x00000000        0x8 ./libc/string/strstr.o
+ .text          0x00000000        0x0 ./libc/string/strstr.o
+ .data          0x00000000        0x0 ./libc/string/strstr.o
+ .bss           0x00000000        0x0 ./libc/string/strstr.o
+ .text.strstr   0x00000000       0x48 ./libc/string/strstr.o
+ .debug_info    0x00000000       0xa4 ./libc/string/strstr.o
+ .debug_abbrev  0x00000000       0x7b ./libc/string/strstr.o
+ .debug_loc     0x00000000       0xfb ./libc/string/strstr.o
+ .debug_aranges
+                0x00000000       0x20 ./libc/string/strstr.o
+ .debug_ranges  0x00000000       0x10 ./libc/string/strstr.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strstr.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strstr.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strstr.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strstr.o
+ .debug_line    0x00000000      0x127 ./libc/string/strstr.o
+ .debug_str     0x00000000     0x1c54 ./libc/string/strstr.o
+ .comment       0x00000000       0x30 ./libc/string/strstr.o
+ .debug_frame   0x00000000       0x38 ./libc/string/strstr.o
+ .group         0x00000000        0x8 ./libc/string/strupr.o
+ .group         0x00000000        0x8 ./libc/string/strupr.o
+ .group         0x00000000        0x8 ./libc/string/strupr.o
+ .text          0x00000000        0x0 ./libc/string/strupr.o
+ .data          0x00000000        0x0 ./libc/string/strupr.o
+ .bss           0x00000000        0x0 ./libc/string/strupr.o
+ .text.strupr   0x00000000       0x24 ./libc/string/strupr.o
+ .debug_info    0x00000000       0x7d ./libc/string/strupr.o
+ .debug_abbrev  0x00000000       0x65 ./libc/string/strupr.o
+ .debug_loc     0x00000000       0x6f ./libc/string/strupr.o
+ .debug_aranges
+                0x00000000       0x20 ./libc/string/strupr.o
+ .debug_ranges  0x00000000       0x10 ./libc/string/strupr.o
+ .debug_macro   0x00000000       0x41 ./libc/string/strupr.o
+ .debug_macro   0x00000000      0x562 ./libc/string/strupr.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strupr.o
+ .debug_macro   0x00000000       0x64 ./libc/string/strupr.o
+ .debug_line    0x00000000       0xdb ./libc/string/strupr.o
+ .debug_str     0x00000000     0x1c3e ./libc/string/strupr.o
+ .comment       0x00000000       0x30 ./libc/string/strupr.o
+ .debug_frame   0x00000000       0x34 ./libc/string/strupr.o
+ .group         0x00000000        0x8 ./libc/string/wchar.o
+ .group         0x00000000        0x8 ./libc/string/wchar.o
+ .group         0x00000000        0x8 ./libc/string/wchar.o
+ .text          0x00000000        0x0 ./libc/string/wchar.o
+ .data          0x00000000        0x0 ./libc/string/wchar.o
+ .bss           0x00000000        0x0 ./libc/string/wchar.o
+ .text.wcscat   0x00000000       0x20 ./libc/string/wchar.o
+ .text.wcscmp   0x00000000       0x2a ./libc/string/wchar.o
+ .text.wcsncmp  0x00000000       0x2a ./libc/string/wchar.o
+ .text.wcscpy   0x00000000       0x12 ./libc/string/wchar.o
+ .text.wcsncpy  0x00000000       0x1e ./libc/string/wchar.o
+ .text.wcslen   0x00000000       0x10 ./libc/string/wchar.o
+ .text.wcsupr   0x00000000       0x22 ./libc/string/wchar.o
+ .text.wcslwr   0x00000000       0x22 ./libc/string/wchar.o
+ .debug_info    0x00000000      0x28b ./libc/string/wchar.o
+ .debug_abbrev  0x00000000       0xda ./libc/string/wchar.o
+ .debug_loc     0x00000000      0x2cc ./libc/string/wchar.o
+ .debug_aranges
+                0x00000000       0x58 ./libc/string/wchar.o
+ .debug_ranges  0x00000000       0x48 ./libc/string/wchar.o
+ .debug_macro   0x00000000       0x41 ./libc/string/wchar.o
+ .debug_macro   0x00000000      0x562 ./libc/string/wchar.o
+ .debug_macro   0x00000000       0x64 ./libc/string/wchar.o
+ .debug_macro   0x00000000       0x64 ./libc/string/wchar.o
+ .debug_line    0x00000000      0x28d ./libc/string/wchar.o
+ .debug_str     0x00000000     0x1ca2 ./libc/string/wchar.o
+ .comment       0x00000000       0x30 ./libc/string/wchar.o
+ .debug_frame   0x00000000       0xcc ./libc/string/wchar.o
+ .group         0x00000000        0x8 ./libc/stdlib/qsort.o
+ .group         0x00000000        0x8 ./libc/stdlib/qsort.o
+ .group         0x00000000        0x8 ./libc/stdlib/qsort.o
+ .text          0x00000000        0x0 ./libc/stdlib/qsort.o
+ .data          0x00000000        0x0 ./libc/stdlib/qsort.o
+ .bss           0x00000000        0x0 ./libc/stdlib/qsort.o
+ .text.swap     0x00000000       0x1e ./libc/stdlib/qsort.o
+ .text.qsort    0x00000000      0x150 ./libc/stdlib/qsort.o
+ .debug_info    0x00000000      0x31d ./libc/stdlib/qsort.o
+ .debug_abbrev  0x00000000      0x18b ./libc/stdlib/qsort.o
+ .debug_loc     0x00000000      0x3c2 ./libc/stdlib/qsort.o
+ .debug_aranges
+                0x00000000       0x28 ./libc/stdlib/qsort.o
+ .debug_ranges  0x00000000       0x18 ./libc/stdlib/qsort.o
+ .debug_macro   0x00000000       0x33 ./libc/stdlib/qsort.o
+ .debug_macro   0x00000000      0x562 ./libc/stdlib/qsort.o
+ .debug_macro   0x00000000       0x64 ./libc/stdlib/qsort.o
+ .debug_macro   0x00000000       0x64 ./libc/stdlib/qsort.o
+ .debug_line    0x00000000      0x21d ./libc/stdlib/qsort.o
+ .debug_str     0x00000000     0x1c5c ./libc/stdlib/qsort.o
+ .comment       0x00000000       0x30 ./libc/stdlib/qsort.o
+ .debug_frame   0x00000000       0x54 ./libc/stdlib/qsort.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./driver/uart/uart.o
+ .text          0x00000000        0x0 ./driver/uart/uart.o
+ .data          0x00000000        0x0 ./driver/uart/uart.o
+ .bss           0x00000000        0x0 ./driver/uart/uart.o
+ .debug_macro   0x00000000      0x562 ./driver/uart/uart.o
+ .debug_macro   0x00000000       0x64 ./driver/uart/uart.o
+ .debug_macro   0x00000000       0x64 ./driver/uart/uart.o
+ .debug_macro   0x00000000     0x3168 ./driver/uart/uart.o
+ .debug_macro   0x00000000       0x16 ./driver/uart/uart.o
+ .debug_macro   0x00000000       0x44 ./driver/uart/uart.o
+ .debug_macro   0x00000000      0x209 ./driver/uart/uart.o
+ .debug_macro   0x00000000      0x8bc ./driver/uart/uart.o
+ .debug_macro   0x00000000      0xc38 ./driver/uart/uart.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./rtos/freertos/hal/hal.o
+ .text          0x00000000        0x0 ./rtos/freertos/hal/hal.o
+ .data          0x00000000        0x0 ./rtos/freertos/hal/hal.o
+ .bss           0x00000000        0x0 ./rtos/freertos/hal/hal.o
+ .text.hal_register_isr
+                0x00000000       0x18 ./rtos/freertos/hal/hal.o
+ .text.hal_system_error
+                0x00000000       0x56 ./rtos/freertos/hal/hal.o
+ .text.hal_global_int_ctl
+                0x00000000       0x1a ./rtos/freertos/hal/hal.o
+ .text.hal_current
+                0x00000000        0x4 ./rtos/freertos/hal/hal.o
+ .text.hal_ms2ticks
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_malloc
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_free
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_get_pid_current
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_destroy_semaphore
+                0x00000000       0x1a ./rtos/freertos/hal/hal.o
+ .text.hal_post_semaphore_in_isr
+                0x00000000       0x76 ./rtos/freertos/hal/hal.o
+ .text.hal_post_queue_from_lisr
+                0x00000000       0x78 ./rtos/freertos/hal/hal.o
+ .text.hal_create_mutex
+                0x00000000       0x14 ./rtos/freertos/hal/hal.o
+ .text.hal_destroy_mutex
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_wait_for_mutex
+                0x00000000       0x12 ./rtos/freertos/hal/hal.o
+ .text.hal_release_mutex
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .text.hal_create_queue
+                0x00000000       0x22 ./rtos/freertos/hal/hal.o
+ .text.hal_destroy_queue
+                0x00000000       0x1a ./rtos/freertos/hal/hal.o
+ .text.hal_pend_queue
+                0x00000000       0x32 ./rtos/freertos/hal/hal.o
+ .text.hal_post_queue
+                0x00000000       0x26 ./rtos/freertos/hal/hal.o
+ .text.hal_destroy_thread
+                0x00000000       0x16 ./rtos/freertos/hal/hal.o
+ .text.hal_destroy_bh
+                0x00000000       0x1a ./rtos/freertos/hal/hal.o
+ .text.hal_register_bh
+                0x00000000        0x4 ./rtos/freertos/hal/hal.o
+ .text.hal_raise_bh
+                0x00000000       0x10 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0x562 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x64 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0xd1f ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x28 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000     0x3168 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x44 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0x209 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0x8bc ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0xc38 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x58 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x16 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x2e ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x1c ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x40 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0x131 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0xb1 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x1f ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000      0x31b ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x73 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x69 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0xb0 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x7e ./rtos/freertos/hal/hal.o
+ .debug_macro   0x00000000       0x7c ./rtos/freertos/hal/hal.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .group         0x00000000        0x8 ./app/bh/bh.o
+ .text          0x00000000        0x0 ./app/bh/bh.o
+ .data          0x00000000        0x0 ./app/bh/bh.o
+ .bss           0x00000000        0x0 ./app/bh/bh.o
+ .debug_macro   0x00000000      0x562 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x64 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x64 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x1c ./app/bh/bh.o
+ .debug_macro   0x00000000      0xd1f ./app/bh/bh.o
+ .debug_macro   0x00000000       0x28 ./app/bh/bh.o
+ .debug_macro   0x00000000       0xb0 ./app/bh/bh.o
+ .debug_macro   0x00000000     0x3168 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x16 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x44 ./app/bh/bh.o
+ .debug_macro   0x00000000      0x209 ./app/bh/bh.o
+ .debug_macro   0x00000000      0x8bc ./app/bh/bh.o
+ .debug_macro   0x00000000      0xc38 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x58 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x16 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x2e ./app/bh/bh.o
+ .debug_macro   0x00000000       0x1c ./app/bh/bh.o
+ .debug_macro   0x00000000       0x40 ./app/bh/bh.o
+ .debug_macro   0x00000000      0x131 ./app/bh/bh.o
+ .debug_macro   0x00000000       0xb1 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x1f ./app/bh/bh.o
+ .debug_macro   0x00000000      0x31b ./app/bh/bh.o
+ .debug_macro   0x00000000       0x73 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x69 ./app/bh/bh.o
+ .debug_macro   0x00000000       0xb0 ./app/bh/bh.o
+ .debug_macro   0x00000000       0x7e ./app/bh/bh.o
+ .debug_macro   0x00000000       0x7c ./app/bh/bh.o
+ .data          0x00000000        0x0 ./bsp/start.o
+ .bss           0x00000000        0x0 ./bsp/start.o
+ .data          0x00000000        0x0 ./bsp/turismo/vector_32ivic.o
+ .bss           0x00000000        0x0 ./bsp/turismo/vector_32ivic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./bsp/bsp.o
+LOAD ./bsp/turismo/turismo.o
+LOAD ./bsp/CPU_DEF/cache.o
+LOAD ./rtos/freertos/portISR.o
+LOAD ./rtos/freertos/port.o
+LOAD ./rtos/freertos/kernel/Source/tasks.o
+LOAD ./rtos/freertos/kernel/Source/queue.o
+LOAD ./rtos/freertos/kernel/Source/list.o
+LOAD ./rtos/freertos/kernel/Source/timers.o
+LOAD ./rtos/freertos/kernel/Source/event_groups.o
+LOAD ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+LOAD ./libc/stdio/fgets.o
+LOAD ./libc/stdio/fputs.o
+LOAD ./libc/stdio/fprintf.o
+LOAD ./libc/stdio/do_printf.o
+LOAD ./libc/stdio/printf.o
+LOAD ./libc/string/memcpy.o
+LOAD ./libc/string/memmove.o
+LOAD ./libc/string/memset.o
+LOAD ./libc/string/strcat.o
+LOAD ./libc/string/strcasecmp.o
+LOAD ./libc/string/strcmp.o
+LOAD ./libc/string/strcpy.o
+LOAD ./libc/string/strdup.o
+LOAD ./libc/string/strlen.o
+LOAD ./libc/string/strstr.o
+LOAD ./libc/string/strupr.o
+LOAD ./libc/string/wchar.o
+LOAD ./libc/stdlib/qsort.o
+LOAD ./driver/uart/uart.o
+LOAD ./rtos/freertos/hal/hal.o
+LOAD ./app/bh/bh.o
+LOAD ./bsp/start.o
+LOAD ./bsp/turismo/vector_32ivic.o
+LOAD ./rtos/freertos/nds32/os_cpu_a.o
+LOAD /opt/Andestech/BSPv401/toolchains/nds32le-elf-mculib-v3m/bin/../lib/gcc/nds32le-elf/4.9.2/mcmodel-large/libgcc.a
+LOAD /opt/Andestech/BSPv401/toolchains/nds32le-elf-mculib-v3m/bin/../lib/gcc/nds32le-elf/4.9.2/../../../../nds32le-elf/lib/mcmodel-large/libc.a
+LOAD /opt/Andestech/BSPv401/toolchains/nds32le-elf-mculib-v3m/bin/../lib/gcc/nds32le-elf/4.9.2/../../../../nds32le-elf/lib/mcmodel-large/libgloss.a
+LOAD /opt/Andestech/BSPv401/toolchains/nds32le-elf-mculib-v3m/bin/../lib/gcc/nds32le-elf/4.9.2/mcmodel-large/libgcc.a
+                0x00500000                PROVIDE (__executable_start, 0x500000)
+                0x00500000                NDS_SAG_LMA = 0x500000
+                0x00500000                . = 0x500000
+
+.nds32_init     0x00500000      0x290
+ *(.nds32_init)
+ .nds32_init    0x00500000      0x290 ./bsp/turismo/vector_32ivic.o
+                0x00500000                OS_Int_Vectors
+                0x00500290                OS_Int_Vectors_End
+
+.interp
+ *(.interp)
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text      0x00500290        0x0
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text.BSP_Tmr_TickInit
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.BSP_Mem_Init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.BSP_Intc_Init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.BSP_Init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.hal_intc_irq_mask
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.hal_intc_init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.hal_timer_init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.n12_dma_inv_range
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vPortISRStartFirstTask
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vPreemptiveTick
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vPortEndScheduler
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.pxPortInitialiseStack
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvAddCurrentTaskToDelayedList
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskGenericCreate
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskDelete
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.eTaskGetState
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPrioritySet
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskResume
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskResumeFromISR
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskStartScheduler
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskIncrementTick
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskResumeAll
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskDelayUntil
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskDelay
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvIdleTask
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.uxTaskGetSystemState
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskSwitchContext
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskSuspend
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPlaceOnEventList
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPlaceOnUnorderedEventList
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPlaceOnEventListRestricted
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskRemoveFromEventList
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTaskRemoveFromUnorderedEventList
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPriorityInherit
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vTaskPriorityDisinherit
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvCopyDataToQueue
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvCopyDataFromQueue
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xQueueGenericReset
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xQueueGenericCreate
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xQueueCreateMutex
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vQueueAddToRegistry
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vQueueUnregisterQueue
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vQueueDelete
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvCheckForValidListAndQueue
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTimerCreate
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xTimerGenericCommand
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvSwitchTimerLists
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.prvTimerTask
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.xEventGroupCreate
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.vEventGroupDelete
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.pvPortMalloc
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.fgetc
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.fputc
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.fprintf
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.do_printf
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.strdup
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.strndup
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.BH_Init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text.APP_Init
+                0x00000000        0x0 ./bsp/bsp.o
+ .rela.text     0x00000000        0x0 ./bsp/bsp.o
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro*)
+
+.rela.data.rel.ro
+ *(.rel.data.rel.ro*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.tdata
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+
+.rela.tdata
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+
+.rel.tbss
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+
+.rela.tbss
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rela.dyn       0x00500290        0x0
+ *(rela.dyn)
+ *(.rela__libc_subfreeres)
+ *(.rela__libc_atexit)
+ *(.rela__libc_thread_subfreeres)
+ *(.rela.init_array)
+ *(.rela.fini_array)
+ .rela.nds32_init
+                0x00000000        0x0 ./bsp/bsp.o
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.sdata
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+
+.rela.sdata
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+
+.rel.sbss
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+
+.rela.sbss
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+
+.rel.sdata2
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+
+.rela.sdata2
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+
+.rel.sbss2
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+
+.rela.sbss2
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt
+ *(.plt)
+
+.text           0x00500290     0x1d4c
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.OS_Trap_Default_Handler
+                0x00500290        0x2 ./bsp/bsp.o
+                0x00500290                OS_Trap_Default_Handler
+ .text.BSP_Tmr_TickInit
+                0x00500292       0x56 ./bsp/bsp.o
+                0x00500292                BSP_Tmr_TickInit
+ .text.BSP_Init
+                0x005002e8       0x22 ./bsp/bsp.o
+                0x005002e8                BSP_Init
+ .text.hal_mem_init
+                0x0050030a        0x2 ./bsp/turismo/turismo.o
+                0x0050030a                hal_mem_init
+ .text.hal_intc_irq_clean
+                0x0050030c       0x2c ./bsp/turismo/turismo.o
+                0x0050030c                hal_intc_irq_clean
+ .text.hal_intc_irq_enable
+                0x00500338       0x18 ./bsp/turismo/turismo.o
+                0x00500338                hal_intc_irq_enable
+ .text.hal_intc_irq_config
+                0x00500350        0x2 ./bsp/turismo/turismo.o
+                0x00500350                hal_intc_irq_config
+ .text.hal_intc_swi_enable
+                0x00500352       0x12 ./bsp/turismo/turismo.o
+                0x00500352                hal_intc_swi_enable
+ .text.hal_intc_init
+                0x00500364       0x40 ./bsp/turismo/turismo.o
+                0x00500364                hal_intc_init
+ .text.hal_timer_irq_clear
+                0x005003a4       0x26 ./bsp/turismo/turismo.o
+                0x005003a4                hal_timer_irq_clear
+ .text.hal_timer_set_period
+                0x005003ca       0x14 ./bsp/turismo/turismo.o
+                0x005003ca                hal_timer_set_period
+ .text.hal_timer_irq_control
+                0x005003de       0x30 ./bsp/turismo/turismo.o
+                0x005003de                hal_timer_irq_control
+ .text.hal_timer_start
+                0x0050040e       0x1e ./bsp/turismo/turismo.o
+                0x0050040e                hal_timer_start
+ .text.hal_timer_init
+                0x0050042c       0x7c ./bsp/turismo/turismo.o
+                0x0050042c                hal_timer_init
+ .text.vPortISRStartFirstTask
+                0x005004a8        0x8 ./rtos/freertos/portISR.o
+                0x005004a8                vPortISRStartFirstTask
+ .text.vPreemptiveTick
+                0x005004b0       0x22 ./rtos/freertos/portISR.o
+                0x005004b0                vPreemptiveTick
+ .text.vPortEndScheduler
+                0x005004d2       0x12 ./rtos/freertos/port.o
+                0x005004d2                vPortEndScheduler
+ .text.pxPortInitialiseStack
+                0x005004e4       0x8a ./rtos/freertos/port.o
+                0x005004e4                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x0050056e        0xa ./rtos/freertos/port.o
+                0x0050056e                xPortStartScheduler
+ .text.vPortYield
+                0x00500578        0xe ./rtos/freertos/port.o
+                0x00500578                vPortYield
+ .text.vPortEnterCritical
+                0x00500586       0x30 ./rtos/freertos/port.o
+                0x00500586                vPortEnterCritical
+ .text.vPortExitCritical
+                0x005005b6       0x26 ./rtos/freertos/port.o
+                0x005005b6                vPortExitCritical
+ .text.ulPortSetInterruptMask
+                0x005005dc        0xe ./rtos/freertos/port.o
+                0x005005dc                ulPortSetInterruptMask
+ .text.vPortClearInterruptMask
+                0x005005ea        0xe ./rtos/freertos/port.o
+                0x005005ea                vPortClearInterruptMask
+ .text.prvResetNextTaskUnblockTime
+                0x005005f8       0x22 ./rtos/freertos/kernel/Source/tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x0050061a       0x4e ./rtos/freertos/kernel/Source/tasks.o
+ .text.xTaskGenericCreate
+                0x00500668      0x1b2 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500668                xTaskGenericCreate
+ .text.vTaskDelete
+                0x0050081a       0x6e ./rtos/freertos/kernel/Source/tasks.o
+                0x0050081a                vTaskDelete
+ .text.vTaskStartScheduler
+                0x00500888       0x50 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500888                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x005008d8       0x10 ./rtos/freertos/kernel/Source/tasks.o
+                0x005008d8                vTaskSuspendAll
+ .text.xTaskGetTickCount
+                0x005008e8       0x14 ./rtos/freertos/kernel/Source/tasks.o
+                0x005008e8                xTaskGetTickCount
+ .text.xTaskIncrementTick
+                0x005008fc      0x108 ./rtos/freertos/kernel/Source/tasks.o
+                0x005008fc                xTaskIncrementTick
+ .text.xTaskResumeAll
+                0x00500a04       0xce ./rtos/freertos/kernel/Source/tasks.o
+                0x00500a04                xTaskResumeAll
+ .text.vTaskDelay
+                0x00500ad2       0x32 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500ad2                vTaskDelay
+ .text.prvIdleTask
+                0x00500b04       0x6c ./rtos/freertos/kernel/Source/tasks.o
+ .text.vTaskSwitchContext
+                0x00500b70       0x74 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500b70                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x00500be4       0x40 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500be4                vTaskPlaceOnEventList
+ .text.vTaskPlaceOnEventListRestricted
+                0x00500c24       0x2a ./rtos/freertos/kernel/Source/tasks.o
+                0x00500c24                vTaskPlaceOnEventListRestricted
+ .text.xTaskRemoveFromEventList
+                0x00500c4e       0x68 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500c4e                xTaskRemoveFromEventList
+ .text.vTaskSetTimeOutState
+                0x00500cb6       0x12 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500cb6                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00500cc8       0x46 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500cc8                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x00500d0e        0xa ./rtos/freertos/kernel/Source/tasks.o
+                0x00500d0e                vTaskMissedYield
+ .text.xTaskGetCurrentTaskHandle
+                0x00500d18        0x8 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500d18                xTaskGetCurrentTaskHandle
+ .text.xTaskGetSchedulerState
+                0x00500d20       0x1c ./rtos/freertos/kernel/Source/tasks.o
+                0x00500d20                xTaskGetSchedulerState
+ .text.vTaskPriorityInherit
+                0x00500d3c       0x88 ./rtos/freertos/kernel/Source/tasks.o
+                0x00500d3c                vTaskPriorityInherit
+ .text.vTaskPriorityDisinherit
+                0x00500dc4       0x4e ./rtos/freertos/kernel/Source/tasks.o
+                0x00500dc4                vTaskPriorityDisinherit
+ .text.prvCopyDataToQueue
+                0x00500e12       0x74 ./rtos/freertos/kernel/Source/queue.o
+ .text.prvCopyDataFromQueue
+                0x00500e86       0x26 ./rtos/freertos/kernel/Source/queue.o
+ .text.prvUnlockQueue
+                0x00500eac       0x70 ./rtos/freertos/kernel/Source/queue.o
+ .text.xQueueGenericReset
+                0x00500f1c       0x5a ./rtos/freertos/kernel/Source/queue.o
+                0x00500f1c                xQueueGenericReset
+ .text.xQueueGenericCreate
+                0x00500f76       0x4c ./rtos/freertos/kernel/Source/queue.o
+                0x00500f76                xQueueGenericCreate
+ .text.xQueueCreateCountingSemaphore
+                0x00500fc2       0x14 ./rtos/freertos/kernel/Source/queue.o
+                0x00500fc2                xQueueCreateCountingSemaphore
+ .text.xQueueGenericSend
+                0x00500fd6       0xe6 ./rtos/freertos/kernel/Source/queue.o
+                0x00500fd6                xQueueGenericSend
+ .text.xQueueGenericSendFromISR
+                0x005010bc       0x60 ./rtos/freertos/kernel/Source/queue.o
+                0x005010bc                xQueueGenericSendFromISR
+ .text.xQueueGenericReceive
+                0x0050111c      0x112 ./rtos/freertos/kernel/Source/queue.o
+                0x0050111c                xQueueGenericReceive
+ .text.vQueueAddToRegistry
+                0x0050122e       0x26 ./rtos/freertos/kernel/Source/queue.o
+                0x0050122e                vQueueAddToRegistry
+ .text.vQueueWaitForMessageRestricted
+                0x00501254       0x42 ./rtos/freertos/kernel/Source/queue.o
+                0x00501254                vQueueWaitForMessageRestricted
+ .text.vListInitialise
+                0x00501296       0x14 ./rtos/freertos/kernel/Source/list.o
+                0x00501296                vListInitialise
+ .text.vListInitialiseItem
+                0x005012aa        0x6 ./rtos/freertos/kernel/Source/list.o
+                0x005012aa                vListInitialiseItem
+ .text.vListInsertEnd
+                0x005012b0       0x18 ./rtos/freertos/kernel/Source/list.o
+                0x005012b0                vListInsertEnd
+ .text.vListInsert
+                0x005012c8       0x30 ./rtos/freertos/kernel/Source/list.o
+                0x005012c8                vListInsert
+ .text.uxListRemove
+                0x005012f8       0x24 ./rtos/freertos/kernel/Source/list.o
+                0x005012f8                uxListRemove
+ .text.prvCheckForValidListAndQueue
+                0x0050131c       0x4e ./rtos/freertos/kernel/Source/timers.o
+ .text.prvInsertTimerInActiveList
+                0x0050136a       0x36 ./rtos/freertos/kernel/Source/timers.o
+ .text.xTimerCreateTimerTask
+                0x005013a0       0x30 ./rtos/freertos/kernel/Source/timers.o
+                0x005013a0                xTimerCreateTimerTask
+ .text.xTimerGenericCommand
+                0x005013d0       0x54 ./rtos/freertos/kernel/Source/timers.o
+                0x005013d0                xTimerGenericCommand
+ .text.prvSwitchTimerLists
+                0x00501424       0x6a ./rtos/freertos/kernel/Source/timers.o
+ .text.prvTimerTask
+                0x0050148e      0x160 ./rtos/freertos/kernel/Source/timers.o
+ .text.pvPortMalloc
+                0x005015ee       0xce ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+                0x005015ee                pvPortMalloc
+ .text.vPortFree
+                0x005016bc       0x3e ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+                0x005016bc                vPortFree
+ .text.fgetc    0x005016fa       0x2a ./libc/stdio/fgets.o
+                0x005016fa                fgetc
+ .text.getchar  0x00501724        0xa ./libc/stdio/fgets.o
+                0x00501724                getchar
+ .text.fputc    0x0050172e       0x18 ./libc/stdio/fputs.o
+                0x0050172e                fputc
+ .text.putchar  0x00501746        0xa ./libc/stdio/fputs.o
+                0x00501746                putchar
+ .text.fprintf  0x00501750       0x1c ./libc/stdio/fprintf.o
+                0x00501750                fprintf
+ .text.do_printf
+                0x0050176c      0x274 ./libc/stdio/do_printf.o
+                0x0050176c                do_printf
+ .text.vprintf_help
+                0x005019e0        0xa ./libc/stdio/printf.o
+ .text.vprintf  0x005019ea        0xe ./libc/stdio/printf.o
+                0x005019ea                vprintf
+ .text.printf   0x005019f8       0x1c ./libc/stdio/printf.o
+                0x005019f8                printf
+ .text.memcpy   0x00501a14       0x16 ./libc/string/memcpy.o
+                0x00501a14                memcpy
+ .text.memset   0x00501a2a        0xe ./libc/string/memset.o
+                0x00501a2a                memset
+ .text.strlen   0x00501a38        0xe ./libc/string/strlen.o
+                0x00501a38                strlen
+ .text.drv_uart_set_baudrate
+                0x00501a46       0x34 ./driver/uart/uart.o
+                0x00501a46                drv_uart_set_baudrate
+ .text.drv_uart_is_kbd_hit
+                0x00501a7a        0xa ./driver/uart/uart.o
+                0x00501a7a                drv_uart_is_kbd_hit
+ .text.drv_uart_get_char
+                0x00501a84       0x16 ./driver/uart/uart.o
+                0x00501a84                drv_uart_get_char
+ .text.drv_uart_put_char
+                0x00501a9a       0x16 ./driver/uart/uart.o
+                0x00501a9a                drv_uart_put_char
+ .text.drv_uart_init
+                0x00501ab0       0x3c ./driver/uart/uart.o
+                0x00501ab0                drv_uart_init
+ .text.hal_sleep
+                0x00501aec       0x18 ./rtos/freertos/hal/hal.o
+                0x00501aec                hal_sleep
+ .text.hal_create_semaphore
+                0x00501b04       0x40 ./rtos/freertos/hal/hal.o
+                0x00501b04                hal_create_semaphore
+ .text.hal_pend_semaphore
+                0x00501b44       0x4c ./rtos/freertos/hal/hal.o
+                0x00501b44                hal_pend_semaphore
+ .text.hal_post_semaphore
+                0x00501b90       0x38 ./rtos/freertos/hal/hal.o
+                0x00501b90                hal_post_semaphore
+ .text.hal_create_thread
+                0x00501bc8       0x30 ./rtos/freertos/hal/hal.o
+                0x00501bc8                hal_create_thread
+ .text.hal_create_bh
+                0x00501bf8       0x18 ./rtos/freertos/hal/hal.o
+                0x00501bf8                hal_create_bh
+ .text.hal_init_os
+                0x00501c10        0x2 ./rtos/freertos/hal/hal.o
+                0x00501c10                hal_init_os
+ .text.hal_start_os
+                0x00501c12        0x8 ./rtos/freertos/hal/hal.o
+                0x00501c12                hal_start_os
+ .text.bh_test  0x00501c1a       0x26 ./app/bh/bh.o
+                0x00501c1a                bh_test
+ .text.TaskBH   0x00501c40       0x16 ./app/bh/bh.o
+                0x00501c40                TaskBH
+ .text.BH_Init  0x00501c56       0x50 ./app/bh/bh.o
+                0x00501c56                BH_Init
+ .text.APP_Init
+                0x00501ca6       0x3e ./app/bh/bh.o
+                0x00501ca6                APP_Init
+ .text          0x00501ce4       0xdc ./bsp/start.o
+                0x00501ce4                OS_Init_Nds32
+                0x00501ce4                _start
+                0x00501d00                __pre_c_init
+                0x00501d94                __post_c_init
+                0x00501da8                main
+ .text          0x00501dc0       0xc2 ./bsp/turismo/vector_32ivic.o
+                0x00501dc0                OS_Trap_TLB_Misc
+                0x00501dc0                OS_Trap_Debug_Related
+                0x00501dc0                OS_Trap_General_Exception
+                0x00501dc0                OS_Trap_PTE_Not_Present
+                0x00501dc0                OS_Trap_TLB_VLPT_Miss
+                0x00501dc0                OS_Trap_Syscall
+                0x00501dc0                OS_Trap_Machine_Error
+                0x00501dc0                OS_Trap_TLB_Fill
+ .text          0x00501e82      0x15a ./rtos/freertos/nds32/os_cpu_a.o
+                0x00501e82                CtxRestore
+                0x00501eac                OS_Trap_Interrupt_SWI
+                0x00501f1e                OS_Trap_Int_Comm
+ *(.text.*personality*)
+ *(.gnu.warning)
+                0x00501fdc                . = ALIGN (0x4)
+
+.fini
+ *(.fini)
+
+.ex9.itable
+ *(.ex9.itable)
+                0x00501fdc                PROVIDE (__etext, .)
+                0x00501fdc                PROVIDE (_etext, .)
+                0x00501fdc                PROVIDE (etext, .)
+
+.rodata         0x00501fdc      0x2a4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00501fdc       0x25 ./bsp/bsp.o
+                                 0x28 (size before relaxing)
+ *fill*         0x00502001        0x3 
+ .rodata        0x00502004       0x14 ./bsp/bsp.o
+ .rodata.str1.4
+                0x00502018       0x2e ./bsp/turismo/turismo.o
+                                 0x3c (size before relaxing)
+ *fill*         0x00502046        0x2 
+ .rodata        0x00502048       0x30 ./bsp/turismo/turismo.o
+ .rodata.str1.4
+                0x00502078       0x1e ./rtos/freertos/port.o
+                                 0x20 (size before relaxing)
+ *fill*         0x00502096        0x2 
+ .rodata.str1.4
+                0x00502098        0x5 ./rtos/freertos/kernel/Source/tasks.o
+                                  0x8 (size before relaxing)
+ *fill*         0x0050209d        0x3 
+ .rodata.str1.4
+                0x005020a0       0x10 ./rtos/freertos/kernel/Source/timers.o
+ .rodata.str1.4
+                0x005020b0       0xe4 ./rtos/freertos/hal/hal.o
+                                 0xf0 (size before relaxing)
+ .rodata        0x00502194       0x8c ./rtos/freertos/hal/hal.o
+ .rodata.str1.4
+                0x00502220       0x60 ./app/bh/bh.o
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+                0x00502280                . = ALIGN (0x20)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+ *(.gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+                0x00502280                . = ALIGN (0x4)
+                0x00502280                PROVIDE (__preinit_array_start, .)
+
+.preinit_array
+ *(.preinit_array)
+                0x00502280                PROVIDE (__preinit_array_end, .)
+                0x00502280                PROVIDE (__init_array_start, .)
+
+.init_array
+ *(.init_array)
+                0x00502280                PROVIDE (__init_array_end, .)
+                0x00502280                PROVIDE (__fini_array_start, .)
+
+.fini_array
+ *(.fini_array)
+                0x00502280                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin*.o(.ctors)
+ *(EXCLUDE_FILE(*crtend*.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin*.o(.dtors)
+ *(EXCLUDE_FILE(*crtend*.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local)
+ *(.data.rel.ro*)
+
+.dynamic
+ *(.dynamic)
+
+.data           0x00502280       0x90
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00502280       0x80 ./bsp/bsp.o
+                0x00502280                OS_CPU_Vector_Table
+ .data          0x00502300        0x4 ./rtos/freertos/kernel/Source/tasks.o
+ .data          0x00502304        0x4 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .data          0x00502308        0x8 ./rtos/freertos/nds32/os_cpu_a.o
+                0x0050230c                OSIntNesting
+ *(.gnu.linkonce.d.*personality*)
+                0x00502310                . = ALIGN (0x8)
+
+.data1          0x00502310        0x0
+ *(.data1)
+                0x00502310                . = ALIGN (0x8)
+                0x00502310                . = ALIGN (0x4)
+
+.got
+ *(.got.plt)
+ *(.got)
+
+.sdata_d
+ *(.sdata_d .sdata_d.*)
+
+.sdata_w
+ *(.sdata_w .sdata_w.*)
+
+.sdata_h
+ *(.sdata_h .sdata_h.*)
+
+.sdata_b
+ *(.sdata_b .sdata_b.*)
+
+.sdata_f
+ *(.sdata_f .sdata_f.*)
+                0x00502310                . = ALIGN (0x4)
+                0x00502310                _edata = .
+                0x00502310                PROVIDE (edata, .)
+                0x00502310                __bss_start = .
+                0x00502310                PROVIDE (__sbss_start, .)
+                0x00502310                PROVIDE (___sbss_start, .)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.sbss_f
+ *(.sbss_f .sbss_f.*)
+ *(.scommon_f .scommon_f.*)
+
+.sbss_b         0x00502310        0x0
+ *(.sbss_b .sbss_b.*)
+ *(.scommon_b .scommon_b.*)
+                0x00502310                . = ALIGN (0x2)
+
+.sbss_h         0x00502310        0x0
+ *(.sbss_h .sbss_h.*)
+ *(.scommon_h .scommon_h.*)
+                0x00502310                . = ALIGN (0x4)
+
+.sbss_w         0x00502310        0x0
+ *(.sbss_w .sbss_w.*)
+ *(.scommon_w .scommon_w.*)
+ *(.dynsbss)
+ *(.scommon)
+                0x00502310                . = ALIGN (0x8)
+
+.sbss_d
+ *(.sbss_d .sbss_d.*)
+ *(.scommon_d .scommon_d.*)
+
+.bss            0x00502310     0x1700
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00502310        0xc ./rtos/freertos/port.o
+                0x00502310                psw_1
+                0x00502314                ulCriticalNesting
+ .bss           0x0050231c      0x22c ./rtos/freertos/kernel/Source/tasks.o
+                0x0050231c                pxCurrentTCB
+ .bss           0x00502548       0x3c ./rtos/freertos/kernel/Source/timers.o
+ .bss           0x00502584       0x14 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .bss           0x00502598     0x1408 ./rtos/freertos/nds32/os_cpu_a.o
+ *(COMMON)
+ COMMON         0x005039a0       0x50 ./rtos/freertos/kernel/Source/queue.o
+                0x005039a0                xQueueRegistry
+ COMMON         0x005039f0       0x20 ./app/bh/bh.o
+                0x005039f0                bh
+                0x00503a10                . = ALIGN (0x4)
+                0x00503a10                PROVIDE (__sbss_end, .)
+                0x00503a10                PROVIDE (___sbss_end, .)
+                0x00503a10                . = ALIGN (0x4)
+                0x00503a10                _end = .
+                0x00503a10                PROVIDE (end, .)
+                0x08000000                PROVIDE (_stack, 0x8000000)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.note.nds32
+ *(.note.nds32)
+ *(.note.nds32.*)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f ./bsp/bsp.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 ./bsp/turismo/turismo.o
+ .comment       0x00000000       0x30 ./rtos/freertos/portISR.o
+ .comment       0x00000000       0x30 ./rtos/freertos/port.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/tasks.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/queue.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/list.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/timers.o
+ .comment       0x00000000       0x30 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .comment       0x00000000       0x30 ./libc/stdio/fgets.o
+ .comment       0x00000000       0x30 ./libc/stdio/fputs.o
+ .comment       0x00000000       0x30 ./libc/stdio/fprintf.o
+ .comment       0x00000000       0x30 ./libc/stdio/do_printf.o
+ .comment       0x00000000       0x30 ./libc/stdio/printf.o
+ .comment       0x00000000       0x30 ./libc/string/memcpy.o
+ .comment       0x00000000       0x30 ./libc/string/memset.o
+ .comment       0x00000000       0x30 ./libc/string/strlen.o
+ .comment       0x00000000       0x30 ./driver/uart/uart.o
+ .comment       0x00000000       0x30 ./rtos/freertos/hal/hal.o
+ .comment       0x00000000       0x30 ./app/bh/bh.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x880
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x40 ./bsp/bsp.o
+ .debug_aranges
+                0x00000040       0xf8 ./bsp/turismo/turismo.o
+ .debug_aranges
+                0x00000138       0x28 ./rtos/freertos/portISR.o
+ .debug_aranges
+                0x00000160       0x58 ./rtos/freertos/port.o
+ .debug_aranges
+                0x000001b8      0x188 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_aranges
+                0x00000340       0xf8 ./rtos/freertos/kernel/Source/queue.o
+ .debug_aranges
+                0x00000438       0x40 ./rtos/freertos/kernel/Source/list.o
+ .debug_aranges
+                0x00000478       0x78 ./rtos/freertos/kernel/Source/timers.o
+ .debug_aranges
+                0x000004f0       0x38 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_aranges
+                0x00000528       0x38 ./libc/stdio/fgets.o
+ .debug_aranges
+                0x00000560       0x40 ./libc/stdio/fputs.o
+ .debug_aranges
+                0x000005a0       0x20 ./libc/stdio/fprintf.o
+ .debug_aranges
+                0x000005c0       0x20 ./libc/stdio/do_printf.o
+ .debug_aranges
+                0x000005e0       0x48 ./libc/stdio/printf.o
+ .debug_aranges
+                0x00000628       0x20 ./libc/string/memcpy.o
+ .debug_aranges
+                0x00000648       0x20 ./libc/string/memset.o
+ .debug_aranges
+                0x00000668       0x28 ./libc/string/strlen.o
+ .debug_aranges
+                0x00000690       0x40 ./driver/uart/uart.o
+ .debug_aranges
+                0x000006d0      0x110 ./rtos/freertos/hal/hal.o
+ .debug_aranges
+                0x000007e0       0x38 ./app/bh/bh.o
+ .debug_aranges
+                0x00000818       0x20 ./bsp/start.o
+ .debug_aranges
+                0x00000838       0x28 ./bsp/turismo/vector_32ivic.o
+ .debug_aranges
+                0x00000860       0x20 ./rtos/freertos/nds32/os_cpu_a.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x8ed0
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x3e8 ./bsp/bsp.o
+ .debug_info    0x000003e8      0xc12 ./bsp/turismo/turismo.o
+ .debug_info    0x00000ffa      0x19c ./rtos/freertos/portISR.o
+ .debug_info    0x00001196      0x772 ./rtos/freertos/port.o
+ .debug_info    0x00001908     0x2149 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_info    0x00003a51     0x1834 ./rtos/freertos/kernel/Source/queue.o
+ .debug_info    0x00005285      0x2c7 ./rtos/freertos/kernel/Source/list.o
+ .debug_info    0x0000554c     0x10ff ./rtos/freertos/kernel/Source/timers.o
+ .debug_info    0x0000664b      0x361 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_info    0x000069ac      0x259 ./libc/stdio/fgets.o
+ .debug_info    0x00006c05      0x1d7 ./libc/stdio/fputs.o
+ .debug_info    0x00006ddc      0x100 ./libc/stdio/fprintf.o
+ .debug_info    0x00006edc      0x2af ./libc/stdio/do_printf.o
+ .debug_info    0x0000718b      0x310 ./libc/stdio/printf.o
+ .debug_info    0x0000749b       0x91 ./libc/string/memcpy.o
+ .debug_info    0x0000752c       0x8b ./libc/string/memset.o
+ .debug_info    0x000075b7       0xc8 ./libc/string/strlen.o
+ .debug_info    0x0000767f      0x142 ./driver/uart/uart.o
+ .debug_info    0x000077c1     0x122f ./rtos/freertos/hal/hal.o
+ .debug_info    0x000089f0      0x3dd ./app/bh/bh.o
+ .debug_info    0x00008dcd       0x4c ./bsp/start.o
+ .debug_info    0x00008e19       0x58 ./bsp/turismo/vector_32ivic.o
+ .debug_info    0x00008e71       0x5f ./rtos/freertos/nds32/os_cpu_a.o
+
+.debug_abbrev   0x00000000     0x2337
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x18c ./bsp/bsp.o
+ .debug_abbrev  0x0000018c      0x32a ./bsp/turismo/turismo.o
+ .debug_abbrev  0x000004b6      0x134 ./rtos/freertos/portISR.o
+ .debug_abbrev  0x000005ea      0x2dc ./rtos/freertos/port.o
+ .debug_abbrev  0x000008c6      0x400 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_abbrev  0x00000cc6      0x322 ./rtos/freertos/kernel/Source/queue.o
+ .debug_abbrev  0x00000fe8      0x10b ./rtos/freertos/kernel/Source/list.o
+ .debug_abbrev  0x000010f3      0x31f ./rtos/freertos/kernel/Source/timers.o
+ .debug_abbrev  0x00001412      0x1d2 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_abbrev  0x000015e4      0x12e ./libc/stdio/fgets.o
+ .debug_abbrev  0x00001712       0xc0 ./libc/stdio/fputs.o
+ .debug_abbrev  0x000017d2       0xe1 ./libc/stdio/fprintf.o
+ .debug_abbrev  0x000018b3      0x143 ./libc/stdio/do_printf.o
+ .debug_abbrev  0x000019f6      0x140 ./libc/stdio/printf.o
+ .debug_abbrev  0x00001b36       0x7e ./libc/string/memcpy.o
+ .debug_abbrev  0x00001bb4       0x7b ./libc/string/memset.o
+ .debug_abbrev  0x00001c2f       0xa2 ./libc/string/strlen.o
+ .debug_abbrev  0x00001cd1       0xe8 ./driver/uart/uart.o
+ .debug_abbrev  0x00001db9      0x3b0 ./rtos/freertos/hal/hal.o
+ .debug_abbrev  0x00002169      0x194 ./app/bh/bh.o
+ .debug_abbrev  0x000022fd       0x14 ./bsp/start.o
+ .debug_abbrev  0x00002311       0x12 ./bsp/turismo/vector_32ivic.o
+ .debug_abbrev  0x00002323       0x14 ./rtos/freertos/nds32/os_cpu_a.o
+
+.debug_line     0x00000000     0x7349
+ *(.debug_line)
+ .debug_line    0x00000000      0x4f2 ./bsp/bsp.o
+ .debug_line    0x000004f2      0x6ec ./bsp/turismo/turismo.o
+ .debug_line    0x00000bde      0x3bf ./rtos/freertos/portISR.o
+ .debug_line    0x00000f9d      0x601 ./rtos/freertos/port.o
+ .debug_line    0x0000159e     0x154c ./rtos/freertos/kernel/Source/tasks.o
+ .debug_line    0x00002aea      0xedf ./rtos/freertos/kernel/Source/queue.o
+ .debug_line    0x000039c9      0x48a ./rtos/freertos/kernel/Source/list.o
+ .debug_line    0x00003e53      0x7ff ./rtos/freertos/kernel/Source/timers.o
+ .debug_line    0x00004652      0x544 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_line    0x00004b96      0x4ef ./libc/stdio/fgets.o
+ .debug_line    0x00005085      0x188 ./libc/stdio/fputs.o
+ .debug_line    0x0000520d       0xec ./libc/stdio/fprintf.o
+ .debug_line    0x000052f9      0x356 ./libc/stdio/do_printf.o
+ .debug_line    0x0000564f      0x198 ./libc/stdio/printf.o
+ .debug_line    0x000057e7       0xcf ./libc/string/memcpy.o
+ .debug_line    0x000058b6       0xcf ./libc/string/memset.o
+ .debug_line    0x00005985       0xfd ./libc/string/strlen.o
+ .debug_line    0x00005a82      0x3d2 ./driver/uart/uart.o
+ .debug_line    0x00005e54      0x910 ./rtos/freertos/hal/hal.o
+ .debug_line    0x00006764      0x59f ./app/bh/bh.o
+ .debug_line    0x00006d03      0x209 ./bsp/start.o
+ .debug_line    0x00006f0c      0x2cd ./bsp/turismo/vector_32ivic.o
+ .debug_line    0x000071d9      0x170 ./rtos/freertos/nds32/os_cpu_a.o
+
+.debug_frame    0x00000000     0x18f8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xb8 ./bsp/bsp.o
+ .debug_frame   0x000000b8      0x234 ./bsp/turismo/turismo.o
+ .debug_frame   0x000002ec       0x58 ./rtos/freertos/portISR.o
+ .debug_frame   0x00000344       0xcc ./rtos/freertos/port.o
+ .debug_frame   0x00000410      0x604 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_frame   0x00000a14      0x3fc ./rtos/freertos/kernel/Source/queue.o
+ .debug_frame   0x00000e10       0x60 ./rtos/freertos/kernel/Source/list.o
+ .debug_frame   0x00000e70      0x1bc ./rtos/freertos/kernel/Source/timers.o
+ .debug_frame   0x0000102c       0x84 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_frame   0x000010b0       0xac ./libc/stdio/fgets.o
+ .debug_frame   0x0000115c       0xc4 ./libc/stdio/fputs.o
+ .debug_frame   0x00001220       0x38 ./libc/stdio/fprintf.o
+ .debug_frame   0x00001258       0x40 ./libc/stdio/do_printf.o
+ .debug_frame   0x00001298       0xdc ./libc/stdio/printf.o
+ .debug_frame   0x00001374       0x20 ./libc/string/memcpy.o
+ .debug_frame   0x00001394       0x20 ./libc/string/memset.o
+ .debug_frame   0x000013b4       0x30 ./libc/string/strlen.o
+ .debug_frame   0x000013e4       0x74 ./driver/uart/uart.o
+ .debug_frame   0x00001458      0x410 ./rtos/freertos/hal/hal.o
+ .debug_frame   0x00001868       0x90 ./app/bh/bh.o
+
+.debug_str      0x00000000    0x222b5
+ *(.debug_str)
+ .debug_str     0x00000000    0x1f05b ./bsp/bsp.o
+                              0x1f237 (size before relaxing)
+ .debug_str     0x0001f05b      0x248 ./bsp/turismo/turismo.o
+                              0x1c350 (size before relaxing)
+ .debug_str     0x0001f2a3       0x7c ./rtos/freertos/portISR.o
+                               0x99dd (size before relaxing)
+ .debug_str     0x0001f31f      0x183 ./rtos/freertos/port.o
+                              0x1fdde (size before relaxing)
+ .debug_str     0x0001f4a2     0x189a ./rtos/freertos/kernel/Source/tasks.o
+                               0xb241 (size before relaxing)
+ .debug_str     0x00020d3c      0x6d8 ./rtos/freertos/kernel/Source/queue.o
+                               0xabdd (size before relaxing)
+ .debug_str     0x00021414       0x64 ./rtos/freertos/kernel/Source/list.o
+                               0x9553 (size before relaxing)
+ .debug_str     0x00021478      0x46d ./rtos/freertos/kernel/Source/timers.o
+                               0xb1a1 (size before relaxing)
+ .debug_str     0x000218e5      0x34e ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+                               0x9bc3 (size before relaxing)
+ .debug_str     0x00021c33       0x64 ./libc/stdio/fgets.o
+                              0x1ef8b (size before relaxing)
+ .debug_str     0x00021c97       0x33 ./libc/stdio/fputs.o
+                               0x1e57 (size before relaxing)
+ .debug_str     0x00021cca       0x4b ./libc/stdio/fprintf.o
+                               0x1e5f (size before relaxing)
+ .debug_str     0x00021d15       0xee ./libc/stdio/do_printf.o
+                               0x1e98 (size before relaxing)
+ .debug_str     0x00021e03       0x3f ./libc/stdio/printf.o
+                               0x1ebc (size before relaxing)
+ .debug_str     0x00021e42       0x1a ./libc/string/memcpy.o
+                               0x1c3c (size before relaxing)
+ .debug_str     0x00021e5c       0x15 ./libc/string/memset.o
+                               0x1c37 (size before relaxing)
+ .debug_str     0x00021e71       0x24 ./libc/string/strlen.o
+                               0x1c4b (size before relaxing)
+ .debug_str     0x00021e95       0xed ./driver/uart/uart.o
+                              0x1688c (size before relaxing)
+ .debug_str     0x00021f82      0x2ef ./rtos/freertos/hal/hal.o
+                              0x1f46a (size before relaxing)
+ .debug_str     0x00022271       0x44 ./app/bh/bh.o
+                              0x1f051 (size before relaxing)
+
+.debug_loc      0x00000000     0x4e29
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xa4 ./bsp/bsp.o
+ .debug_loc     0x000000a4      0x438 ./bsp/turismo/turismo.o
+ .debug_loc     0x000004dc       0x2b ./rtos/freertos/portISR.o
+ .debug_loc     0x00000507      0x16a ./rtos/freertos/port.o
+ .debug_loc     0x00000671     0x14e0 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_loc     0x00001b51     0x1263 ./rtos/freertos/kernel/Source/queue.o
+ .debug_loc     0x00002db4       0x81 ./rtos/freertos/kernel/Source/list.o
+ .debug_loc     0x00002e35      0x856 ./rtos/freertos/kernel/Source/timers.o
+ .debug_loc     0x0000368b      0x256 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_loc     0x000038e1      0x1d6 ./libc/stdio/fgets.o
+ .debug_loc     0x00003ab7      0x124 ./libc/stdio/fputs.o
+ .debug_loc     0x00003bdb       0x92 ./libc/stdio/fprintf.o
+ .debug_loc     0x00003c6d      0x589 ./libc/stdio/do_printf.o
+ .debug_loc     0x000041f6      0x22e ./libc/stdio/printf.o
+ .debug_loc     0x00004424       0x5c ./libc/string/memcpy.o
+ .debug_loc     0x00004480       0x5e ./libc/string/memset.o
+ .debug_loc     0x000044de       0xf7 ./libc/string/strlen.o
+ .debug_loc     0x000045d5       0x82 ./driver/uart/uart.o
+ .debug_loc     0x00004657      0x762 ./rtos/freertos/hal/hal.o
+ .debug_loc     0x00004db9       0x70 ./app/bh/bh.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(turismo.elf elf32-nds32le)
+
+.debug_ranges   0x00000000      0x7d8
+ .debug_ranges  0x00000000       0x30 ./bsp/bsp.o
+ .debug_ranges  0x00000030       0xe8 ./bsp/turismo/turismo.o
+ .debug_ranges  0x00000118       0x18 ./rtos/freertos/portISR.o
+ .debug_ranges  0x00000130       0x48 ./rtos/freertos/port.o
+ .debug_ranges  0x00000178      0x1f8 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_ranges  0x00000370       0xe8 ./rtos/freertos/kernel/Source/queue.o
+ .debug_ranges  0x00000458       0x30 ./rtos/freertos/kernel/Source/list.o
+ .debug_ranges  0x00000488       0x68 ./rtos/freertos/kernel/Source/timers.o
+ .debug_ranges  0x000004f0       0x70 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_ranges  0x00000560       0x40 ./libc/stdio/fgets.o
+ .debug_ranges  0x000005a0       0x30 ./libc/stdio/fputs.o
+ .debug_ranges  0x000005d0       0x10 ./libc/stdio/fprintf.o
+ .debug_ranges  0x000005e0       0x10 ./libc/stdio/do_printf.o
+ .debug_ranges  0x000005f0       0x38 ./libc/stdio/printf.o
+ .debug_ranges  0x00000628       0x10 ./libc/string/memcpy.o
+ .debug_ranges  0x00000638       0x10 ./libc/string/memset.o
+ .debug_ranges  0x00000648       0x18 ./libc/string/strlen.o
+ .debug_ranges  0x00000660       0x30 ./driver/uart/uart.o
+ .debug_ranges  0x00000690      0x100 ./rtos/freertos/hal/hal.o
+ .debug_ranges  0x00000790       0x28 ./app/bh/bh.o
+ .debug_ranges  0x000007b8       0x20 ./bsp/turismo/vector_32ivic.o
+
+.debug_macro    0x00000000     0x7b01
+ .debug_macro   0x00000000      0x1aa ./bsp/bsp.o
+ .debug_macro   0x000001aa      0x562 ./bsp/bsp.o
+ .debug_macro   0x0000070c       0x64 ./bsp/bsp.o
+ .debug_macro   0x00000770       0x64 ./bsp/bsp.o
+ .debug_macro   0x000007d4       0x1c ./bsp/bsp.o
+ .debug_macro   0x000007f0      0xd1f ./bsp/bsp.o
+ .debug_macro   0x0000150f       0x28 ./bsp/bsp.o
+ .debug_macro   0x00001537       0xb0 ./bsp/bsp.o
+ .debug_macro   0x000015e7       0x16 ./bsp/bsp.o
+ .debug_macro   0x000015fd       0x16 ./bsp/bsp.o
+ .debug_macro   0x00001613       0x44 ./bsp/bsp.o
+ .debug_macro   0x00001657      0x209 ./bsp/bsp.o
+ .debug_macro   0x00001860       0x28 ./bsp/bsp.o
+ .debug_macro   0x00001888     0x3168 ./bsp/bsp.o
+ .debug_macro   0x000049f0      0x8bc ./bsp/bsp.o
+ .debug_macro   0x000052ac      0xc38 ./bsp/bsp.o
+ .debug_macro   0x00005ee4       0x58 ./bsp/bsp.o
+ .debug_macro   0x00005f3c       0x16 ./bsp/bsp.o
+ .debug_macro   0x00005f52       0x2e ./bsp/bsp.o
+ .debug_macro   0x00005f80       0x1c ./bsp/bsp.o
+ .debug_macro   0x00005f9c       0x40 ./bsp/bsp.o
+ .debug_macro   0x00005fdc      0x131 ./bsp/bsp.o
+ .debug_macro   0x0000610d       0xb1 ./bsp/bsp.o
+ .debug_macro   0x000061be       0x1f ./bsp/bsp.o
+ .debug_macro   0x000061dd      0x31b ./bsp/bsp.o
+ .debug_macro   0x000064f8       0x73 ./bsp/bsp.o
+ .debug_macro   0x0000656b       0x69 ./bsp/bsp.o
+ .debug_macro   0x000065d4       0xb0 ./bsp/bsp.o
+ .debug_macro   0x00006684       0x7e ./bsp/bsp.o
+ .debug_macro   0x00006702       0x7c ./bsp/bsp.o
+ .debug_macro   0x0000677e       0xf1 ./bsp/turismo/turismo.o
+ .debug_macro   0x0000686f      0x117 ./rtos/freertos/portISR.o
+ .debug_macro   0x00006986       0x58 ./rtos/freertos/portISR.o
+ .debug_macro   0x000069de       0x5d ./rtos/freertos/portISR.o
+ .debug_macro   0x00006a3b      0x1ad ./rtos/freertos/port.o
+ .debug_macro   0x00006be8       0x22 ./rtos/freertos/port.o
+ .debug_macro   0x00006c0a      0x1a3 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00006dad       0x91 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00006e3e       0x16 ./rtos/freertos/kernel/Source/tasks.o
+ .debug_macro   0x00006e54      0x160 ./rtos/freertos/kernel/Source/queue.o
+ .debug_macro   0x00006fb4      0x105 ./rtos/freertos/kernel/Source/list.o
+ .debug_macro   0x000070b9      0x142 ./rtos/freertos/kernel/Source/timers.o
+ .debug_macro   0x000071fb      0x132 ./rtos/freertos/kernel/Source/portable/MemMang/heap_2.o
+ .debug_macro   0x0000732d      0x18c ./libc/stdio/fgets.o
+ .debug_macro   0x000074b9       0x72 ./libc/stdio/fputs.o
+ .debug_macro   0x0000752b       0x68 ./libc/stdio/fprintf.o
+ .debug_macro   0x00007593       0x8a ./libc/stdio/do_printf.o
+ .debug_macro   0x0000761d       0x72 ./libc/stdio/printf.o
+ .debug_macro   0x0000768f       0x41 ./libc/string/memcpy.o
+ .debug_macro   0x000076d0       0x41 ./libc/string/memset.o
+ .debug_macro   0x00007711       0x41 ./libc/string/strlen.o
+ .debug_macro   0x00007752       0x9b ./driver/uart/uart.o
+ .debug_macro   0x000077ed      0x182 ./rtos/freertos/hal/hal.o
+ .debug_macro   0x0000796f      0x192 ./app/bh/bh.o

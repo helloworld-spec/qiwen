@@ -1,0 +1,86 @@
+#include "anyka_types.h"
+#include "ak_aenc.h"
+
+const char* ak_aenc_get_version(void)
+{
+  return NULL;    
+}
+
+/**
+ * ak_aenc_open - open anyka audio encode
+ * @param[IN]: audio pcm data encode param
+ * return: audio encode handle, NULL failed
+ */
+void* ak_aenc_open(const struct audio_param *param)
+{
+  return NULL;
+}
+
+/**
+ * ak_aenc_send_frame - send pcm data(frame) to encode 
+ * @enc_handle[IN]: encode handle
+ * @frame[IN]: the audio pcm raw data info
+ * @stream[OUT]: encode out stream info
+ * return: >=0 encoded size, -1 failed 
+ */
+int ak_aenc_send_frame(void *enc_handle, 
+					const struct frame *frame, 
+					struct audio_stream *stream)
+{
+  return 0;
+}
+
+
+/**
+ * ak_aenc_close - close anyka audio encode
+ * @handle[in]: opened encode handle
+ * return: 0 success, otherwise failed 
+ */
+int ak_aenc_close(void *enc_handle)
+{
+  return 0;
+}
+
+/**
+ * ak_aenc_request_stream - request audio data stream according to handle
+ * @ai_handle[IN]: audio input handle
+ * @enc_handle[IN]: audio encode handle
+ * return: stream handle, NULL failed
+ * notes: 
+ */
+void* ak_aenc_request_stream(void *ai_handle, void *enc_handle)
+{
+  return 0;  
+}
+
+/**
+ * ak_aenc_get_stream - get audio encoded data, stream
+ * @stream_handle[IN]: opened stream handle
+ * @stream_head[IN]: stream list head, we'll add audio stream to tail.
+ * return: 0 success, -1 failed
+ * notes: IMPORTANT, you must call INIT_LIST_HEAD to init stream head firstly.
+ */
+int ak_aenc_get_stream(void *stream_handle, struct list_head *stream_head)
+{
+  return 0;  
+}
+
+/**
+ * ak_aenc_release_stream -  release audio data stream
+ * @entry[IN]: audio stream entry from ak_aenc_get_stream
+ * return: 0 success, -1 failed
+ */
+int ak_aenc_release_stream(struct aenc_entry *entry)
+{
+  return 0;
+}
+
+/**
+ * ak_aenc_cancel_stream -  cancel audio data stream according to stream handle
+ * @stream_handle[IN]: opened stream handle
+ * return: 0 success, -1 failed 
+ */
+int ak_aenc_cancel_stream(void *stream_handle)
+{
+  return 0;
+}

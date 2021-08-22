@@ -1,0 +1,2 @@
+make clean
+make BURNTOOL=1 DRV_SUPPORT_SPI_NAND=1

@@ -1,0 +1,2358 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="m.css" />
+<script type="text/javascript" src="js/language.js"></script>
+<meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7"> 
+<!--Title -->
+<title>NETSurveillance WEB</title>
+<link id="css-link" rel="stylesheet" href="config-cold.css">
+<link rel="stylesheet" href="Calendar/jquery.ui.all.css">
+<link rel="stylesheet" href="Calendar/demos.css">
+<link rel="stylesheet" media="all" type="text/css" href="js/jquery-ui-timepicker-addon.css" />
+<script type="text/javascript" src="js/u2g.js"></script>
+<script type="text/javascript">document.write("<scr"+"ipt src=\""+getDefaultLanguage()+"\" id=\"js_lang\" ></sc"+"ript>");</script>
+<script type="text/javascript" src="jquery.min.js"></script><!--jQuery.min -->
+<script type="text/javascript" src="js/jquery.json-2.3.min.js"></script>
+<script type="text/javascript" src="js/xml2json.js"></script>
+<script type="text/javascript" src="js/base64.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/lenght.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/slider1.js"></script>
+<script type="text/javascript" src="js/netsdk.js"></script>
+<script src="Calendar/jquery.ui.core.js"></script>
+<script src="Calendar/jquery.ui.widget.js"></script>
+<script src="Calendar/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="js/jquery-ui-timepicker-addon.js" ></script>
+<script type="text/javascript" src="js/swfupload.js"></script>
+<script type="text/javascript" src="js/jquery.swfupload.js"></script>
+<script type="text/javascript" src="js/swfobject.js" ></script>
+	<script language='javascript' for="DHiMPlayer" event="InitInstance(ID,sInfo)">
+// Test 1 - statically load the script (This is the basis for the hack)
+// Works on IE8, IE9, IE10 and IE11		
+</script>
+<script language="javascript">
+var bMessageAlert = false;
+</script>
+<script language='javascript' for="DHiMPlayer" event="LDBClick(x,y)">
+	DHiMPlayer.FullScreen(bFullScreen = !bFullScreen);	
+</script>
+<script language='javascript' for="DHiMPlayer" event="ConRefuse(res)">
+	var RefuseMsg = langstr.connect_refuse;
+	if (!bMessageAlert)
+	{
+		alert(RefuseMsg);
+		bMessageAlert = true;
+	}	
+</script>
+<script language="JavaScript">
+	function Logout(){
+		location='index.html';
+	}
+</script>
+ <script type="text/javascript">
+    	function ChangeLang1(index){ 
+       switch(index){
+       	    case 0:
+       		setLanguage('zh-cn');
+       	break;
+       	    case 1:
+       	    setLanguage('en');
+       	break;
+//     		case 2:
+//     	    setLanguage('zh-tw');
+//     	break;
+//     		case 3:
+//     	    setLanguage('tr');
+//     	break;
+//     		case 4:
+//     	    setLanguage('fa');
+//     	break;
+       	   
+       }
+    }
+  
+	function BodyOnLoad()
+    {
+		alert("hello");
+		//$('#xtld').title = 'asdfsadfsdaf';
+		//$("#xtld").attr("title","newValue");
+		//document.getElementById( "xtld" ).title = "跳转到百度";
+		//document.getElementById('xtld').style.title = '1212121';
+	}
+ 
+    </script>
+</head>
+<body onload="BodyOnLoad">
+   <div id="m">
+        <div id="backGround" style="background: url(images/bg.jpg) repeat;">
+            <div id="ma">
+                <div style="width: 950px;">
+                    <div id="maa">
+                    </div>
+                    <div id="mab">
+                    </div>
+                    <div id="mac">
+                      <div style="width:126px;height:100%;position:relative;">
+                    </div>
+                    </div>
+                    <div id="mad">
+                    </div>
+                    <div id="kwick">
+                        <ul class="kwicks">
+                            <li><span id='mtyl' class="kwick a" onclick="cslshine(0);"><script type="text/javascript">document.write(langstr.preview);</script></span></li>
+                            <li><span id='mtsbpz' class="kwick c" onclick="cslshine(1);"><script type="text/javascript">document.write(langstr.devicecfg);</script></span></li>
+                            <li><span id='mttc' class="kwick d" onclick="Logout()"><script type="text/javascript">document.write(langstr.logout);</script></span></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div id="mae">
+                    </div>
+                </div>
+                 <div id='lang' style="position: relative; float: right;margin:-22px 30px 0px 0px;">     
+             <span onClick="ChangeLang1(0);"><a href="#"><font color="#000000">简体中文</font></a></span>&nbsp;&nbsp;
+              <span onClick="ChangeLang1(1);"><a href="#"><font color="#000000">English</font></a></span> 
+             </div>
+            </div>
+            <div id="mb">
+                <div id="mba" style="float: left; padding: 0 0 0 5px;">
+                    <div class="mpad">
+                        <div id='dra' style="height: 29px; background: url(images/m_dram.jpg); position: relative;">
+                            <div style="height: 29px; width: 8px; background: url(images/m_dral.jpg); float: left">
+                            </div>
+                            <div style="height: 29px; width: 8px; background: url(images/m_drar.jpg); float: right;
+                                margin: 0 0px 0 0; cursor: move;">
+                            </div>
+                        </div>
+                        <div id='dcl'>
+                            <div id='mbal' style="height: 533px; position: relative; background: url(images/mb_bg.jpg) repeat-x;
+                                overflow: auto; margin: 0px; padding: 0px;">
+                                 <ul id="cl" style="margin:10px 0px 0px 5px;">
+                                   <li>
+                                   	<a id="mast" title="main_stream"  class="zhu" onclick="preview_stream(0);" style="outline-style: none;  outline-width: medium; width: 25px;"></a>
+											<script >
+												var obj=$("#mast");
+												obj.attr("title", langstr.main_stream);
+											</script>       
+                                   	<a id="aust" title="sub_stream" class="fu"  onclick="preview_stream(1);"></a>
+											<script >
+												var obj=$("#aust");
+												obj.attr("title", langstr.sub_stream);
+											</script>       
+                                   	<span id="deviceName" style="position: absolute; margin: 3px 0px 0px; white-space: nowrap; color: #FFF;"><script type="text/javascript">document.write(langstr.channel1)</script></span>
+                                   <!--<td width="35%"><input class="overlay_channelName" id="overlay_channelName" name="channelName" type="text" onKeyUp="check();"></td>-->
+                                   <!-- <input type="text" id="deviceName" style="width: 50px; " disabled="true"/></br> -->
+                                   </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mbb" style="width: 650px; height: 500px; float: left; left: 120px; padding: 0 0 0 5px;">
+                    <div id="drb" style="width: 100%; height: 29px; background: url(images/m_dram.jpg);color:#fff;line-height: 29px;">
+                    		<div class="window-preview1" id="st" style="height: 29px;color:#fff;line-height: 29px;">
+                    	<div class="title-window" id="stream_info" style="text-align: center; width: 100%;">
+                    		<script type="text/javascript">document.write(langstr.main_stream);</script></div>
+                        </div>
+                        <div style="height: 29px; width: 8px; background: url(images/m_dral.jpg); float: left">
+                        </div>
+                        <div style="height: 29px; width: 8px; background: url(images/m_drar.jpg); float: right;
+                            margin: 0 0 0 0;">
+                        </div>
+                    </div>
+                <div id='pla' style="width: 100%; height: 100%; float: left; padding: 0px;">
+	           <!-- <div class="title-window" id="stream_info"><script type="text/javascript">document.write(langstr.main_stream);</script></div>-->
+                <div id="manual_download_div" class="w_imagebtn k_imgbtn" onClick="javascript:location.href='./IpcOcxLite.exe';"></div>
+				<!-- <div style="display:none"><input style="width:150px" id="time_pc" value="0" ></div> -->
+				<div id="ipcam_display">
+				</div>
+                <div class="mask_ipcam"><script type="text/javascript">document.write(langstr.install_hinit);</script></div>
+                 <!--Preview-->
+                <!-- <div class="mask_ipcam"><script type="text/javascript">document.write(langstr.install_hinit);</script></div>               	 -->
+				    </div>
+                    <div id='plc' style="width: 100%; float: left; height: 33px; background: url(images/plcb11.jpg);
+                        margin: 2px 0 0 0;">
+                        <div style="width: 7px; height: 33px; float: left; background: url(images/plcbl.jpg);">
+                        </div>
+                        <div style="width: 7px; height: 33px; float: right; background: url(images/plcbr.jpg);">
+                        </div>
+                        <!--	<div id='pbh' style="background:url(plcb.jpg);width:580px;height:33px;position:absolute;"></div>-->
+                        <div id='pb' style="height: 26px; margin: 2px 0 0 10px; position: relative;">
+                            <div id='pc'>
+                                <!--<div style="margin: 0 0 0 0px">
+                                    <a id='xp0'  title="全屏" class="p0" onclick="fullscreen_func();"></a>
+                                </div>-->
+                                <!--<div style="margin: 0 0 0 5px">
+                                    <a id='xp1' class="p1" href="javascript:;" onclick="ocx.ChangeShowWndNum(1,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp2' class="p2" href="javascript:;" onclick="ocx.ChangeShowWndNum(4,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp3' class="p3" href="javascript:;" onclick="ocx.ChangeShowWndNum(9,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp4' class="p4" href="javascript:;" onclick="ocx.ChangeShowWndNum(16,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp5' class="p5" href="javascript:;" onclick="ocx.ChangeShowWndNum(25,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp6' class="p6" href="javascript:;" onclick="ocx.ChangeShowWndNum(36,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='xp7' class="p11" href="javascript:;" onclick="ocx.ChangeShowWndNum(64,true,0,0)">
+                                    </a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='startPlayAll' class="p7" href="javascript:;" onclick="startPlayAll()"></a>
+                                </div>
+                                <div style="margin: 0 0 0 5px">
+                                    <a id='stopPlayAll' class="p72" href="javascript:;" onclick="StopPlayAll()"></a>
+                                </div>-->
+                                <div style="margin: 0 0 0 5px;">
+                                    <a title="snapshot" id='snap' class="p8" onclick="Snapshot()">
+											<script >
+												var obj=$('#snap')
+												obj.attr("title", langstr.snapshot);
+											</script>  
+                                    </a>
+                                </div>
+                                <!--<div style="margin: 0 0 0 5px">
+                                    <a id='recordAll' class="p9" href="javascript:;" onclick="recordAll()"></a>
+                                </div>-->
+                                <!--<div style="margin: 0 0 0 5px">
+                                    <a id='stopRecordAll' class="p92" href="javascript:;" onclick="stopRecordAll()"></a>
+                                </div>-->
+                                <div style="margin: 0 17px 0 0; float: right">
+                                    <a title="audio" id='Audio' class="p102" onclick="AudioSwitch()">
+											<script >
+												var obj=$("#Audio");
+												obj.attr("title", langstr.audio);
+											</script>  
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mbc" style="float: left; padding: 0 0 0 5px; width: 140px;">
+                    <div style="background: url(images/mb_bg.jpg); width: 100%; overflow: hidden;">
+                    
+                        <div id='drc' style="height: 29px; width: 100%; background: url(images/m_dram.jpg); position: relative;">
+                        <div style=" no-repeat; margin-top: 5px;  margin-top:5px; width:100%;height:100%;z-index:10;position:absolute;top:0px;left:0px;"></div>
+                            <div style="height: 29px; width: 8px; background: url(images/m_dral.jpg); float: left">
+                            </div>
+                            <div style="height: 29px; width: 8px; background: url(images/m_drar.jpg); float: right;
+                                margin: 0 0px 0 0; cursor: move;">
+                            </div>
+                        </div>
+                        <div id='yt' style="height: 220px; width: 125px; position: relative; padding: 8px 8px 0 8px">
+                            <div style="width: 40px; height: 35px; padding: 0px 0 0 0px;">
+                                <a class="y1"></a>
+                            </div>
+                            <div style="width: 45px; height: 35px; padding: 0px 0 0 0px;">
+                                <a class="y2" id="ptz-up"></a>
+                            </div>
+                            <div style="width: 39px; height: 35px; padding: 0px 0 0 0px;">
+                                <a class="y3"></a>
+                            </div>
+                            <div style="width: 40px; height: 50px; padding: 0px 0 0 0px;">
+                                <a class="y4" id="ptz-left"></a>
+                            </div>
+                            <div style="width: 22px; height: 50px;">
+                                <a  class="y5"></a>
+                            </div>
+                            <div style="width: 22px; height: 50px;">
+                                <a  id="menu" class="y10" href="javascript:;"></a>
+                            </div>
+                            <div style="width: 39px; height: 50px; padding: 0px 0 0 0px;">
+                                <a class="y6" id="ptz-right"></a>
+                            </div>
+                            <div style="width: 40px; height: 45px; padding: 0 0 0 0px;">
+                                <a class="y7"></a>
+                            </div>
+                            <div style="width: 45px; height: 35px; padding: 0 0 0 0px;">
+                                <a class="y8" id="ptz-down"></a>
+                            </div>
+                            <div style="width: 39px; height: 35px; padding: 0 0 0 0px;">
+                                <a class="y9" href="javascript:;"></a>
+                            </div>
+                        </div>
+                        <!--<div style="width: 132px; height: 20px; padding: 0 0 0 8px; position: relative; overflow: hidden;">
+                            <div id='xbc' class="divt" style="color: #FFFFFF; float: left;">
+                                步长(1-8):</div>
+                            <div style="width: 53px; height: 18px; background: url(ytabg.jpg); padding: 0 0 0 3px;
+                                float: left;">
+                                <input class="inputyt" type="text" id="ps" value="5" maxlength="1" onkeyup="value=value.replace(/[^\d]/g,'')"
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <a href="javascript:;" class="yta1" onclick="showmu1()"></a>
+                            </div>
+                        </div>-->
+                        <div id="smu1" style="display: none">
+                            <ul>
+                                <li><a href='javascript:;' onclick='onmu1(1)'>1</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(2)'>2</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(3)'>3</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(4)'>4</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(5)'>5</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(6)'>6</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(7)'>7</a></li>
+                                <li><a href='javascript:;' onclick='onmu1(8)'>8</a></li>
+                            </ul>
+                        </div>
+                        <!--<div id='yt1' style="width: 132px; height: 90px; position: relative; margin: 0 5px 0 5px;">
+                            <div style="padding: 0 0 5px 14px;">
+                                <a class="y1" href="javascript:;"></a>
+                            </div>
+                            <div id='xbb' style="color: #FFFFFF; height: 18px; width: 50px; padding: 8px 0 0 0;
+                                text-align: center;">
+                               <script type="text/javascript">document.write(langstr.zoom);</script></div>
+                            <div style="padding: 0 0 5px 0;">
+                                <a class="y2" href="javascript:;"></a>
+                            </div>
+                            <div style="padding: 0 0 5px 14px;">
+                                <a class="y1" href="javascript:;" id="zoom-in"></a>
+                            </div>
+                            <div id='xbj' style="color: #FFFFFF; height: 18px; width: 50px; padding: 8px 0 0 0;
+                                text-align: center;">
+                                 <script type="text/javascript">document.write(langstr.fs);</script></div>
+                            <div style="padding: 0 0 5px 0;">
+                                <a class="y2" href="javascript:;" id="zoom-out"></a>
+                            </div>
+                            <div style="padding: 0 0 5px 14px;">
+                                <a class="y1" href="javascript:;"></a>
+                            </div>
+                            <div id='xgq' style="color: #FFFFFF; height: 18px; width: 50px; padding: 8px 0 0 0;
+                                text-align: center;">
+                                <script type="text/javascript">document.write(langstr.lris);</script></div>
+                            <div style="padding: 0 0 5px 0;">
+                                <a class="y2" href="javascript:;"></a>
+                            </div>
+                        </div>-->
+                        <div id='yt2' style="height: 100%; position: relative; padding: 0 0 0 4px;">
+                            <!--<div>
+                                 预置点处理 
+                                <div id="ytPoint">
+                                    <div id='mbcyzd' style="color: #FFFFFF; padding: 0 80px 0 0px; margin: 0 0 0 3px;">
+                                        预置点：
+                                    </div>
+                                    <div>
+                                        <input id="preSet" value="1" maxlength="3" onkeyup="value=value.replace(/[^\d]/g,''); if (value > 255) value = 255;"
+                                            style="margin: 3px 0 0 5px; color: #555; border: none; background: #F4F4F4; width: 30px;
+                                            height: 17px;" />
+                                    </div>
+                                    <div id="goPreset">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZCtrlGotoPreset(-1,$('preSet').value)">
+                                        </a>
+                                    </div>
+                                    <div id="addPreset">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZCtrlSetPreset(-1,$('preSet').value,true)">
+                                        </a>
+                                    </div>
+                                    <div id="delPreset">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZCtrlSetPreset(-1,$('preSet').value,false)">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <!--<div>
+                                 轮询处理 
+                                <div id="ytCruise">
+                                    <div id='mbcdjxh' style="color: #FFFFFF; padding: 0 70px 0 0px; margin: 0px 10px 0 3px;">
+                                        点间巡航：
+                                    </div>
+                                    <div>
+                                        <input id="cruise" value="1" maxlength="3" onkeyup="value=value.replace(/[^\d]/g,''); if (value > 255) value = 255;"
+                                            style="margin: 2px 0 3px 5px; color: #555; border: none; background: #F4F4F4;
+                                            width: 30px; height: 17px;" />
+                                    </div>
+                                    <div id="goCruise">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZCtrlTour(-1,$('cruise').value,true)">
+                                        </a>
+                                    </div>
+                                    <div id="stopCruise">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZCtrlTour(-1,$('cruise').value,false)">
+                                        </a>
+                                    </div>
+                                    <div id="editCruise">
+                                        <a style="width: 24px; height: 25px;" href="javascript:;" onclick="ocx.PTZEditTure($('cruise').value)">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                    
+                    <!--
+                    <div id='taba' style="float: left; margin: 0px 0 0 0; width: 140px;">
+                    	
+                    	
+                        <div style="float: center;">
+                            <a id='taba1' class="t1"><script type="text/javascript">document.write(langstr.color);</script></a></div>
+                            
+                        
+                        <div style="float: left;">
+                            <a id='taba2' class="t2"><script type="text/javascript">document.write(langstr.other);</script></a></div>
+                  
+                    </div>
+                     -->
+                    <div class="mpad2" style="float: left;">
+                        <!--<div id='yt3' style=" height:287px;position:relative; overflow:hidden; margin:0 0 0 4px;">-->
+                        <div id='yt3' style="height: 287px; position: relative; overflow: hidden; margin: 0 0 0 4px;">
+                            <div id='yt3t1' style="height: 100%;">
+                                <div id='yt3t1a'>
+                                    <div style="margin: 5px 0 0 0;">
+                                        <div id='xtld' style='width: 21px; height: 21px; background: url(images/tx1.jpg)' title="brightness">
+											<script >
+												var obj=$("#xtld");
+												obj.attr("title",langstr.brightness);
+											</script>
+                                        </div>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sal" href="javascript:;" id="lum_pa"></a>
+                                            
+                                        </div>
+                                        <td height="15px">
+                                        	<input type="hidden" id="juan_envload#color@lum">
+						<script language="JavaScript">
+							var A_TPL1 = {
+								'b_vertical' : false,
+								'b_watch': true,
+								'n_controlWidth': 70,
+								'n_controlHeight': 15,
+								'n_sliderWidth': 11,
+								'n_sliderHeight': 15,
+								'n_pathLeft' : 0,
+								'n_pathTop' : 0,
+								'n_pathLength' : 59,
+								's_imgControl': 'images/sas.png',
+								's_imgSlider': 'images/sks.gif',
+								'n_zIndex': 1
+							}
+							var A_INIT3 = {
+						//		's_form' : 0,
+								's_name': 'juan_envload#color@lum',
+								'n_minValue' : 0,
+								'n_maxValue' : 255,
+								'n_value' : brightness,
+								'n_step' : 1
+							}
+							slider_lum=new slider(A_INIT3, A_TPL1);
+						     </script>
+					                </td>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sar" href="javascript:;" id="lum_pl"></a>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 5px 0 0 0;">
+                                        <div id='xtdbd' style='width: 21px; height: 21px; background: url(images/tx2.jpg)' title='contrast'>
+											<script >
+												var obj=$("#xtdbd");
+												obj.attr("title",langstr.contrast);
+											</script>
+                                        </div>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sal" href="javascript:;" id="con_pa"></a>
+                                        </div>
+                                        <td height="15px">
+                                        	<input type="hidden" id="juan_envload#color@con" >
+						            <script language="JavaScript">
+						             	var A_INIT2 = {
+						                //		's_form' : 0,
+								        's_name': 'juan_envload#color@con',
+								        'n_minValue' : 0,
+								        'n_maxValue' : 255,
+								        'n_value' : contrast,
+							           	'n_step' : 1
+							            }
+						            	slider_con=new slider(A_INIT2, A_TPL1);
+						            </script>
+					                </td>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sar" href="javascript:;" id="con_pl"></a>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 5px 0 0 0;">
+                                        <div id='xtbhd' style='width: 21px; height: 21px; background: url(images/tx3.jpg)' title='saturation'>
+											<script >
+												var obj=$("#xtbhd");
+												obj.attr("title", langstr.saturation);
+											</script>
+                                        </div>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sal" href="javascript:;" id="sat_pa"></a>
+                                        </div>
+                                        <td height="15px">
+                                        	<input type="hidden" id="juan_envload#color@sat" >
+						            <script language="JavaScript">
+						                 var A_INIT4 = {
+					                     //		's_form' : 0,
+							            's_name': 'juan_envload#color@sat',
+							            'n_minValue' : 0,
+							            'n_maxValue' : 255,
+						                'n_value' : saturation,
+						               	'n_step' : 1
+					                	}
+						            slider_sat=new slider(A_INIT4, A_TPL1);
+					              	</script>
+				                    </td>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sar" href="javascript:;" id="sat_pl"></a>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 5px 0 0 0;">
+                                        <div id='xtsd' style='width: 21px; height: 21px; background: url(images/tx4.jpg)' title='hue'>
+											<script >
+												var obj=$("#xtsd");
+												obj.attr("title", langstr.hue);
+											</script>                                    
+                                        </div>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sal" href="javascript:;" id="hue_pa"></a>
+                                        </div>
+                                        <td height="15px">
+                                        	<input type="hidden" id="juan_envload#color@hue" >
+						                <script language="JavaScript">
+						                var A_INIT5 = {
+					                      //		's_form' : 0,
+							            's_name': 'juan_envload#color@hue',
+							            'n_minValue' : 0,
+							            'n_maxValue' : 255,
+							            'n_value' : hue,
+							            'n_step' : 1
+						                }
+					                 	slider_hue=new slider(A_INIT5, A_TPL1);
+						               </script>
+				                       </td>
+                                        <div style="margin: 4px 0 0 4px;">
+                                            <a class="sar" href="javascript:;" id="hue_pl"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0 0 0;">
+                                    <a id='xcz' class="cbt" onclick="image_default();"><script type="text/javascript">
+										document.write(langstr.deft);
+									</script></a></div>
+                            </div>
+                            <div id="message_here" style="padding:130px 0 0 0">
+                            </div>
+                            <div id='yt3t2' style="height: 100%; display: none;">
+                                <div class='cbtd'>
+                                    <a id='xcqsb' class="cbt" style="margin: 20px 0 0 0px;" href="javascript:;" title="" onclick="reboot();"><script type="text/javascript">document.write(langstr.reboot);</script></a></div>
+                                           <div class='cbtd'>
+                                <a id='DVRcolor' class="cbt" style="margin: 20px 0 0 0px;" href="javascript:;"title=""><script type="text/javascript">document.write(langstr.icolor);</script></a></div>
+                                    <div class='cbtd'>
+                                <a id='ratio' class="cbt" style="margin: 20px 0 0 0px;" href="javascript:;" title="" onclick="ChangeRadio();"><script type="text/javascript">document.write(langstr.ratio);</script></a></div>
+                                    <div class='cbtd'>
+                                    <a id='PlayAudio' class="cbt" style="margin: 20px 0 0 0px;display:none" href="javascript:;" title=""></a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="settings" style="display:none" >
+            	<div id="menus">
+            		<a id="video-image" class="btn-left btn-left-active" style="margin: 0px 10px 10px 0px;"><script type="text/javascript">document.write(langstr.media);</script></a>
+		            <a id="network" class="btn-left btn-left-active" style="margin: 0px 10px 10px 0px;"><script type="text/javascript">document.write(langstr.network);</script></a>
+		            <a id="advanced" class="btn-left btn-left-active" style="margin: 0px 10px 10px 0px;"><script type="text/javascript">document.write(langstr.advance_setup)</script></a>
+		            <a id="system" class="btn-left btn-left-active" style="margin: 0px 10px 10px 0px;"><script type="text/javascript">document.write(langstr.system);</script></a>
+		        </div>
+		        <div style="width: 100%; height: 150px; text-align: left; background-color: #3E3E3E;">
+		        <div class="video-image" style="width:75px; margin: 0px 0px 0px 0px; background-color: #3E3E3E;">
+            	   <!--<span class="video-image" >-->
+		            <ul class="video-pm">
+			          <li class="submenu_current"><a class="mainMenu" id="video" ><script type="text/javascript">document.write(langstr.video);</script></a></li>
+			          <li><a class="mainMenu" id="image"><script type="text/javascript">document.write(langstr.image);</script></a></li>
+                      <li><a class="mainMenu" id="isp"><script type="text/javascript">document.write(langstr.isp);</script></a></li>
+                      <li><a class="mainMenu" id="cover"><script type="text/javascript">document.write(langstr.cover);</script></a></li>
+		            </ul>
+		           <!--</span>-->
+            	</div>
+		
+		<div class="network hidden" style="width:75px; margin: -133px 0px 0px 0px; margin-left: 75px; background-color: #3E3E3E;">
+            		<!--<span class="network hidden">-->
+		<ul id="ul_network" class="video-pm">
+			<li><a class="mainMenu" id="local-network"><script type="text/javascript">document.write(langstr.local);</script></a></li>
+			<li><a class="mainMenu" id="remote-network"><script type="text/javascript">document.write(langstr.remote);</script></a></li>
+			<li><a class="mainMenu" id="wireless"><script type="text/javascript">document.write(langstr.wireless);</script></a></li>
+		</ul>
+		<!--</span>-->
+            	</div>
+		
+		<div class="advanced hidden" style="width:75px; margin: -103px 0px 0px 0px;margin-left: 150px; background-color: #3E3E3E">
+            		<!--<span class="advanced hidden">-->
+		<ul id="ul_advance" class="video-pm">
+			<li><a class="mainMenu" id="user-management"><script type="text/javascript">document.write(langstr.usermanage)</script></a></li>
+            <li><a class="mainMenu" id="record" onClick="record_load_content();"><script type="text/javascript">document.write(langstr.record)</script></a></li>
+            <li><a class="mainMenu" id="playback"><script type="text/javascript">document.write(langstr.playback)</script></a></li>
+			<!--<li><a id="capture">抓拍设置</a></li>
+			<li><a id="email">电子邮件设置</a></li>-->
+		</ul>
+		<!--</span>-->
+            	</div>
+		
+		
+            	<div class="system hidden" style="width:75px; margin: -163px 0px 0px 0px; margin-left: 225px; background-color: #3E3E3E;">
+            		<!--<span class="system hidden">-->
+		<ul class="video-pm">
+			<li><a class="mainMenu" id="time"><script type="text/javascript">document.write(langstr.time);</script></a></li>
+			<li><a class="mainMenu" id="initialize"><script type="text/javascript">document.write(langstr.initial);</script></a></li>
+			<li><a class="mainMenu" id="devinfo"><script type="text/javascript">document.write(langstr.devinfo);</script></a></li>
+		</ul>
+		<!--</span>-->
+            	</div>
+            	</div>
+            </div>
+            
+            
+            <div id="stage" style="display:none">
+  <!--Stage-->
+  
+  <div id="left">
+    <!--logo-config-->
+	<ul id="area-stage-left" class="hidden">
+    <li class="btn-left btn-left-active" id="video-image" ><a ><script type="text/javascript">document.write(langstr.media);</script></a>
+        <ul class="hidden">
+			<li class="submenu_current"><a class="mainMenu" id="video"><script type="text/javascript">document.write(langstr.video);</script></a></li>
+			<!-- <li><a class="mainMenu" id="image"><script type="text/javascript">document.write(langstr.image);</script></a></li> -->
+            <li><a class="mainMenu" id="isp"><script type="text/javascript">document.write(langstr.isp);</script></a></li>
+            <li><a class="mainMenu" id="audio"><script type="text/javascript">document.write(langstr.audio);</script></a></li>
+		</ul>
+    </li>
+	<li class="btn-left" id="network" ><a ><script type="text/javascript">document.write(langstr.network);</script></a>
+		<ul id="ul_network" class="hidden">
+			<li><a class="mainMenu" id="local-network"><script type="text/javascript">document.write(langstr.local);</script></a></li>
+			<!--<li><a class="mainMenu" id="remote-network"><script type="text/javascript">document.write(langstr.remote);</script></a></li>-->
+            <li><a class="mainMenu" id="wireless"><script type="text/javascript">document.write(langstr.wireless);</script></a></li>
+            <!--<li><a class="mainMenu" id="danale">Danale</a></li>-->
+		</ul>
+	</li>
+	<!--a id="alarm" class="btn-left">报警设置</a>
+		<span class="alarm hidden">
+		<ul>
+			<li><a id="alarmin">报警输入设置</a></li>
+			<li><a id="alarm-time-setting">报警时间设置</a></li>
+			<li><a id="motion-detection">移动侦测</a></li>
+		</ul>
+		</span>
+	<a id="ptzconf" class="btn-left">云台设置</a>
+		<span class="ptzconf hidden">
+		<ul>
+			<li><a id="ptz">云台设置（旧）</a></li>
+			<li><a id="">待添加</a></li>
+		</ul>
+		</span>
+	<a id="record" class="btn-left">录像设置</a>
+		<span class="record hidden">
+		<ul>
+			<li><a id="">待添加</a></li>
+			<li><a id="">待添加</a></li>
+		</ul>
+		</span-->
+	<li class="btn-left" id="advanced" ><a ><script type="text/javascript">document.write(langstr.advance_setup)</script></a>
+		<ul id="ul_advance" class="hidden">
+			<li><a class="mainMenu" id="user-management"><script type="text/javascript">document.write(langstr.usermanage)</script></a></li>
+            <!--<li><a class="mainMenu" id="record" onClick="record_load_content();"><script type="text/javascript">document.write(langstr.record)</script></a></li>
+            <li><a class="mainMenu" id="playback"><script type="text/javascript">document.write(langstr.playback)</script></a></li>-->
+			<!--<li><a id="capture">抓拍设置</a></li>
+			<li><a id="email">电子邮件设置</a></li.-->
+		</ul>
+
+	</li>
+	<li class="btn-left" id="system"><a><script type="text/javascript">document.write(langstr.system);</script></a>
+		<ul class="hidden">
+			<li><a class="mainMenu" id="time"><script type="text/javascript">document.write(langstr.time);</script></a></li>
+			<li><a class="mainMenu" id="initialize"><script type="text/javascript">document.write(langstr.initial);</script></a></li>
+			<li><a class="mainMenu" id="devinfo"><script type="text/javascript">document.write(langstr.devinfo);</script></a></li>
+		</ul>
+	</li>
+    <!--    <div id="btn-apply" class="btn">应用</div>  -->
+    
+	<!-- Menu -->
+	<!--<div id="message_here"></div>-->
+	</ul>
+	<!--area-stage-left-->
+	
+    <!--Consoler-->
+  </div>  
+  <!--Left-->
+
+  <div id="area-stage-right" class="hidden">
+         
+    <div class="video">
+      
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+
+          <div class="title-window"><script type="text/javascript">document.write(langstr.video);</script></div>
+          <div class="mainer">
+		  	<table class="table-common">
+		  		<!--
+            	<tr>
+					<td width="30%" class="table-top-radius-left-f"><script type="text/javascript">document.write(langstr.inputFbase);</script></td>
+					<td width="65%" class="table-top-radius-right-f" colspan="2">
+						<select id="encode_Fbase">
+                        <option value="50">50HZ</option>
+                        <option value="60">60HZ</option>
+						</select>
+                    </td>   
+                </tr>
+               -->
+				<tr>
+					<td width="30%" class="table-top-h264profile-left-f"><script type="text/javascript">document.write(langstr.h264profile);</script></td>
+					<td width="65%" class="table-top-h264profile-right-f" colspan="2">
+						<select id="h264_profile">
+                        <option value="baseline"><script type="text/javascript">document.write(langstr.baseline);</script></option>
+                        <option value="main"><script type="text/javascript">document.write(langstr.main);</script></option>
+ 						<option value="high"><script type="text/javascript">document.write(langstr.high);</script></option>
+						</select>
+                    </td>   
+                </tr>
+				<tr>
+					<td width="30%" class="table-top-radius-left-f"><script type="text/javascript">document.write(langstr.h264profile);</script><!--<span id="encode_tittle"></span>--></td>
+					<td width="65%" class="table-top-radius-right-f" colspan="2">
+						<select id="codecType" onChange="codeType_changed();"  >
+                        <option value="H.264"><script type="text/javascript">document.write(langstr.h264);</script></option>
+                        <option value="H.265"><script type="text/javascript">document.write(langstr.h265);</script></option>
+						<option value="H.264+"><script type="text/javascript">document.write(langstr.h264smart);</script></option>
+                        <option value="H.265+"><script type="text/javascript">document.write(langstr.h265smart);</script></option>
+						</select>
+                    </td>   
+                </tr>
+				<tr>
+					<td width="30%" class="table-top-radius-left-f"><script type="text/javascript">document.write(langstr.encodeType);</script><!--<span id="encode_tittle"></span>--></td>
+					<td width="65%" class="table-top-radius-right-f" colspan="2">
+						<select id="encodeType">
+                        <option value="false"><script type="text/javascript">document.write(langstr.videoOnly);</script></option>
+                        <option value="true"><script type="text/javascript">document.write(langstr.audioVideo);</script></option>
+						</select>
+					</td>  
+				</tr>	
+				<tr>
+					<td width="30%" class="table-top-radius-left-f"><script type="text/javascript">document.write(langstr.substream);</script><!--<span id="encode_tittle"></span>--></td>
+					<td width="65%" class="table-top-radius-right-f" colspan="2">
+						<select id="encode_id" onChange="encode_load_content();" >
+                        <option value="101"><script type="text/javascript">document.write(langstr.substream1);</script></option>
+                        <option value="102"><script type="text/javascript">document.write(langstr.substream2);</script></option>
+                        <!--<option value="103"><script type="text/javascript">document.write(langstr.substream3);</script></option>-->
+						</select>
+                    </td>   
+                </tr>
+                <tr>
+					<td width="30%"><script type="text/javascript">document.write(langstr.channelName);</script></td>
+					<td width="35%"><input class="overlay_channelName" id="overlay_channelName" name="channelName" type="text" onKeyUp="check();"></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.resolution);</script></td>
+					<td id="overlay_freeresolution_0">
+						<select id="overlay_resolution">
+						</select>
+                        </td>
+                        <td id="overlay_freeresolution_1" style=" display:none;">
+                        <input id="overlay_resolutionWidth" onKeyUp="value=value.replace(/[^\d]/g,'')" type="text" style=" float:left; width:65px; height:24px; text-align:center;"/>
+                        <input id="overlay_X" type="text" value="X" style=" border:0px; background-color:#f1f1f1; float:left; width:20px; text-align:center;"/>  
+                        <input id="overlay_resolutionHeight" onKeyUp="value=value.replace(/[^\d]/g,'')" type="text" style=" float:left; width:65px; height:24px; text-align:center;"/>
+                        </td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.bitRateControlType);</script></td>
+					<td>
+						<select id="overlay_bitRateControlType" >
+                        <option value="CBR"><script type="text/javascript">document.write(langstr.CBR);</script></option>
+						<option value="VBR"><script type="text/javascript">document.write(langstr.VBR);</script></option>
+						</select>
+					</td>
+                    <td></td>
+				</tr>
+                <tr>
+					<td id="constantBitRate_td"><script type="text/javascript">document.write(langstr.constantBitRate);</script></td>
+					<td colspan="2"><input id="overlay_constantBitRate" onKeyUp="this.value=this.value.replace(/[^\d]/g,'')" type="text"/>&nbsp;&nbsp;&nbsp;<script type="text/javascript">document.write(langstr.BitRate_unit);</script></td>
+ 
+				</tr>
+                <tr class="table-bottom-radius-s">
+					<td class="table-bottom-radius-left-s" id="frameRate_td"><script type="text/javascript">document.write(langstr.frameRate);</script></td>
+					<td class="table-bottom-radius-right-s" colspan="2"><input id="overlay_frameRate" onKeyUp="value=value.replace(/[^\d]/g,'')" type="text" value="" />&nbsp;&nbsp;&nbsp;<script type="text/javascript">document.write(langstr.frameRate_unit);</script></td>               
+				</tr>
+                </table>
+				<tr>
+				  <td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+            <!-- <button class="save_button" onClick="incoming_save_fbase();"><script type="text/javascript">document.write(langstr.save_video);</script></button> -->
+            <button class="save_button" onClick="encode_save_content();"><script type="text/javascript">document.write(langstr.save_video);</script></button>
+            <br>
+		  </div>
+        </div>
+      </div>
+    <div id="bottom"></div> 
+</div>
+     </div>
+	<!--video-->
+	
+    <div class="image hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.image);</script></div>
+          <div class="mainer">
+            <table class="table-special" align="center">
+                 <tr>
+				  <td id="preview_board" colspan="3" align="center" bordercolor="#333333">
+					<div id="display_board">
+					</div>
+                  </td>
+                </tr> 
+                <!--<tr class="table-radius-normal">
+					<td width="160px;"><script type="text/javascript">document.write(langstr.contrast);</script></td>
+                	<td width="auto;">
+						<script language="JavaScript">
+							var A_TPL = {
+								'b_vertical' : false,
+								'b_watch': true,
+								'n_controlWidth': 230,
+								'n_controlHeight': 16,
+								'n_sliderWidth': 16,
+								'n_sliderHeight': 15,
+								'n_pathLeft' : 1,
+								'n_pathTop' : 1,
+								'n_pathLength' : 213,
+								's_imgControl': 'images/slider.png',
+								's_imgSlider': 'images/disc.png',
+								'n_zIndex': 1
+							}
+							var A_INIT2 = {
+						//		's_form' : 0,
+								's_name': 'juan_envload#color@con',
+								'n_minValue' : 0,
+								'n_maxValue' : 255,
+								'n_value' : contrast,
+								'n_step' : 1
+							}
+							slider_con=new slider(A_INIT2, A_TPL);
+						</script>
+					</td>
+                  	<td width="240px"><input name="text" type="text" id="juan_envload#color@con" size="3" readonly/></td>
+                </tr>
+                <tr class="table-radius-normal">
+                  <td><script type="text/javascript">document.write(langstr.brightness);</script></td>
+                  <td>
+						<script language="JavaScript">
+							var A_INIT3 = {
+						//		's_form' : 0,
+								's_name': 'juan_envload#color@lum',
+								'n_minValue' : 0,
+								'n_maxValue' : 255,
+								'n_value' : brightness,
+								'n_step' : 1
+							}
+							slider_lum=new slider(A_INIT3, A_TPL);
+						</script>
+				  </td>
+                  <td><input name="text" type="text" id="juan_envload#color@lum" size="3" readonly/></td>
+                </tr>
+                <tr class="table-radius-normal">
+                  <td><script type="text/javascript">document.write(langstr.saturation);</script></td>
+                  <td>
+						<script language="JavaScript">
+						var A_INIT4 = {
+					//		's_form' : 0,
+							's_name': 'juan_envload#color@sat',
+							'n_minValue' : 0,
+							'n_maxValue' : 255,
+							'n_value' : saturation,
+							'n_step' : 1
+						}
+						slider_sat=new slider(A_INIT4, A_TPL);
+						</script>
+				  </td>
+                  <td><input name="text" type="text" id="juan_envload#color@sat" size="3" readonly/></td>
+                </tr>
+                 <tr class="table-radius-normal">
+                  <td><script type="text/javascript">document.write(langstr.hue);</script></td>
+                  <td>
+						<script language="JavaScript">
+						var A_INIT5 = {
+					//		's_form' : 0,
+							's_name': 'juan_envload#color@hue',
+							'n_minValue' : 0,
+							'n_maxValue' : 255,
+							'n_value' : hue,
+							'n_step' : 1
+						}
+						slider_hue=new slider(A_INIT5, A_TPL);
+						</script>
+				  </td>
+                  <td><input name="text" type="text" id="juan_envload#color@hue" size="3" readonly/></td>
+                </tr>-->
+                <tr class="table-radius-normal">
+                  <td><script type="text/javascript">document.write(langstr.sharpen);</script></td>
+                  <td>
+						<script language="JavaScript">
+							var A_TPL = {
+								'b_vertical' : false,
+								'b_watch': true,
+								'n_controlWidth': 230,
+								'n_controlHeight': 16,
+								'n_sliderWidth': 16,
+								'n_sliderHeight': 15,
+								'n_pathLeft' : 1,
+								'n_pathTop' : -2,
+								'n_pathLength' : 213,
+								's_imgControl': 'images/slider.png',
+								's_imgSlider': 'images/disc.png',
+								'n_zIndex': 1
+							}
+						var A_INIT6 = {
+					//		's_form' : 0,
+							's_name': 'isp@sharpness',
+							'n_minValue' : 0, 
+							'n_maxValue' : 255,
+							'n_value' : sharpen,
+							'n_step' : 1
+						}
+						slider_sha=new slider1(A_INIT6, A_TPL);
+						</script>
+				  </td>
+                  <td><input name="text" type="text" id="isp@sharpness" size="3" readonly/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="manualSharpness"/><script type="text/javascript">document.write(langstr.manualSharpness);</script></td>
+                </tr>
+                 <tr>
+                  <td class="table-bottom-radius-left"><input type="checkbox" id="Flip" onClick="image_preview_content(id);"/><script type="text/javascript">document.write(langstr.flip);</script></td>
+                  <td class="table-bottom-radius-center"><input type="checkbox" id="Mirror" onClick="image_preview_content(id);"/><script type="text/javascript">document.write(langstr.mirror);</script></td>
+                  <td class="table-bottom-radius-right"></td>
+                </tr>
+              </table>
+			<button class="save_button" onClick="image_save_content();"><script type="text/javascript">document.write(langstr.save_image);</script></button><br>
+          </div>
+        </div>
+        </div>
+        <div id="bottom"></div> 
+      </div>
+    </div>
+	<!--image-->
+    <!--audio -->
+        <div class="audio hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.audio);</script></div>
+          <div class="mainer">
+            <table class="table-special" align="center">
+				<tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="3"><script type="text/javascript">document.write(langstr.audio_input_mode);</script></td>
+				</tr>	
+			 
+                <tr class="table-radius-normal">
+				  <td><script type="text/javascript">document.write(langstr.audio_input_mode);</script></td>
+				  <td colspan="2">
+				  	<select name="audio_mode" id="audio@inputMode"  onChange="audio_preview_content(this.id,this.value)">
+					  <option value="line"><script type="text/javascript">document.write(langstr.audio_input_line);</script></option>
+					  <option value="mic"><script type="text/javascript">document.write(langstr.audio_input_mic);</script></option>
+					</select>
+				  </td>
+				</tr>
+                </table>
+				<tr>
+				  <td colspan="3">&nbsp;</td>
+				</tr>
+			</table>
+            <button class="save_button" onClick="audio_save_content();"><script type="text/javascript">document.write(langstr.save_audio);</script></button><br>
+		  </div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+      </div>
+    </div>              
+    <!-- audio -->
+    <div class="isp hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.isp);</script></div>
+          <div class="mainer">
+            <table class="table-special" align="center">
+				<tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="3"><script type="text/javascript">document.write(langstr.day_or_night);</script></td>
+				</tr>	
+				<tr class="table-radius-normal">
+				  <td><script type="text/javascript">document.write(langstr.ir_cut_control);</script></td>
+				  <td colspan="2">
+				  	<select name="ircut_control_mode" id="isp@ircut_control_mode"  onChange="isp_preview_content(this.id,this.value)" disabled="disabled">
+					  <option value="hardware"><script type="text/javascript">document.write(langstr.hardware);</script></option>
+					  <option value="software"><script type="text/javascript">document.write(langstr.software);</script></option>         
+					</select>
+				  </td>
+				</tr>
+                <tr class="table-radius-normal">
+				  <td><script type="text/javascript">document.write(langstr.ir_cut_mode);</script></td>
+				  <td colspan="2">
+				  	<select name="ircut_mode" id="isp@ircut_mode"  onChange="isp_preview_content(this.id,this.value)">
+					  <option value="auto"><script type="text/javascript">document.write(langstr.auto);</script></option>
+					  <option value="daylight"><script type="text/javascript">document.write(langstr.daylight);</script></option>
+                      <option value="night"><script type="text/javascript">document.write(langstr.night);</script></option>
+					</select>
+				  </td>
+				</tr>
+					<tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="3"><script type="text/javascript">document.write(langstr.imageStyle);</script></td>
+				</tr>	
+				<tr class="table-radius-normal">
+				  <td width="140px;"><script type="text/javascript">document.write(langstr.imageStyle);</script></td>
+				  <td colspan="2" width="auto">
+				  	<select name="imageStyle" id="isp@imageStyle"  onChange="isp_preview_content(this.id,this.value)">
+                      	  <option value="1"><script type="text/javascript">document.write(langstr.standard);</script></option>
+					  <option value="2"><script type="text/javascript">document.write(langstr.bright);</script></option>
+					  <option value="3"><script type="text/javascript">document.write(langstr.gorgeous);</script></option>
+					</select>
+				  </td>    
+				</tr>
+                </table>
+				<tr>
+				  <td colspan="3">&nbsp;</td>
+				</tr>
+			</table>
+            <button class="save_button" onClick="isp_save_content();"><script type="text/javascript">document.write(langstr.save_isp);</script></button><br>
+		  </div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+      </div>
+    </div>              
+    <!-- isp -->
+    <!-- Cover -->
+
+    <div class="cover hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.cover);</script></div>
+          <div class="mainer">
+            <table class="table-special" align="center">
+                <tr>
+				  <td id="preview_board2" colspan="3" align="center" bordercolor="#333333">
+					<div class="get_image"><span id="Cover_background"></span></div>
+                    </td>
+                    </tr>
+                    <table class="table-common">
+				<tr class="table-radius-normal">
+					<td width="35%" class="table-radius-normal-left"><script type="text/javascript">document.write(langstr.cover_enabled);</script></td>
+					<td width="65%" class="table-radius-normal-right"><input type="checkbox" id="cover_enabled" /></td>
+				</tr>
+ 
+                 <tr>
+					<td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.cover_color);</script></td>
+					<td class="table-bottom-radius-right-f1">
+						<select id="Cover_bgColor" >
+                        <option value="ffffff"><script type="text/javascript">document.write(langstr.Color_S1);</script></option>
+						<option value="5AAF5A"><script type="text/javascript">document.write(langstr.Color_S2);</script></option>
+						<option value="006ECF"><script type="text/javascript">document.write(langstr.Color_S3);</script></option>
+						</select>
+					</td>
+				</tr>
+              </table>
+               <button class="save_button" onClick="cover_save_content();"><script type="text/javascript">document.write(langstr.save_cover);</script></button><br>
+          </div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+      </div>
+    </div>
+    <!-- Cover -->
+    
+    <!-- Overlay -->
+<div class="overlay hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.Overlay);</script></div>
+          <div class="mainer">
+            <table class="table-special" align="center">
+                <tr>
+				  <td id="preview_board3" colspan="3" align="center" bordercolor="#333333">
+                  <div class="get_image"><span id="Overlay_background"></span></div>
+                    </td>
+                    </tr>
+               <table class="table-common">
+				<tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="2"><script type="text/javascript">document.write(langstr.DatetimeOverlay);</script></td>
+				</tr>   
+                <tr class="table-radius-normal">
+                <td width="35%"><script type="text/javascript">document.write(langstr.Enabled);</script></td>
+                  <td width="65%"><input type="checkbox" id="overlay1_datetime" /></td>
+				</tr>
+               
+                <tr class="table-radius-normal">
+                <td><script type="text/javascript">document.write(langstr.region);</script></td>
+                <td><div id="overlay_datetime_region"></div></td>  
+				</tr>
+                <tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.dateFormat);</script></td>
+					<td>
+						<select id="Overlay_dateFormat">
+						<option>YYYY/MM/DD</option>
+						<option>MM/DD/YYYY</option>
+						<option>DD/MM/YYYY</option>
+						</select>
+					</td>
+                    </tr>
+                <tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.timeFormat);</script></td>
+					<td>
+						<select id="overlay_timeFormat" >
+						<option>12</option>
+						<option>24</option>
+						</select>
+				</tr>
+                <tr class="table-radius-normal">
+                <td><script type="text/javascript">document.write(langstr.DisplayWeek);</script></td>
+                  <td><input type="checkbox" id="overlay_DisplayWeek" /></td>
+                </tr>
+                <tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="2"><script type="text/javascript">document.write(langstr.ChannelNameOverlay);</script></td>
+				</tr>  
+                <tr class="table-radius-normal">
+                <td><script type="text/javascript">document.write(langstr.Enabled);</script></td>
+                  <td><input type="checkbox" id="overlay1_name" /></td>
+				</tr>
+                <tr class="table-radius-normal">
+                <td><script type="text/javascript">document.write(langstr.region);</script></td>
+                <td><div id="overlay_channelName_region"></div></td>  
+				</tr>
+                <tr class="table-radius-normal">
+				  <td class="marker marker-active" colspan="2"><script type="text/javascript">document.write(langstr.DeviceIDOverlay);</script></td>
+				</tr>  
+                <tr class="table-radius-normal">
+                <td><script type="text/javascript">document.write(langstr.Enabled);</script></td>
+                  <td><input type="checkbox" id="overlay1_id" /></td>
+				</tr>
+                <tr>
+                <td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.region);</script></td>
+                <td class="table-bottom-radius-right-f1"><div id="overlay_deviceID_region"></div></td>  
+				</tr>
+                
+              </table>
+               <button class="save_button" onClick="overlay_save_content();"><script type="text/javascript">document.write(langstr.save_overlay);</script></button><br>
+          </div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+      </div>
+    </div>
+    
+	
+	<div class="local-network hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+
+          <div class="title-window"><script type="text/javascript">document.write(langstr.local);</script></div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td width="35%" class="table-top-radius-left-f1">
+						<script type="text/javascript">document.write(langstr.PhysicalAddress);</script>
+					</td>
+					<td width="65%" class="table-top-radius-right-f1">
+						<input id="local_network_mac" type="text" readonly />
+					</td>
+				</tr>
+				<!--<input name="dhcp" type="radio" id="local_network_dhcp_1" onClick="ip_config_change();" /> -->
+				<tr class="table-radius-normal">
+					<td width="35%"><script type="text/javascript">document.write(langstr.IpAutoAdapation);</script></td>
+					<td width="25%">
+						<input name="ip" type="radio" id="local_network_ipautoadpatation_1"  />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="ip" type="radio" id="local_network_ipautoadpatation_0"  />
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td width="35%">P2P</td>
+					<td width="65%">
+						<input id="local_network_p2p" type="checkbox" />
+					</td>
+				</tr>
+				
+				<tr class="table-radius-normal">
+					<td width="35%">P2P ID</td>
+					<td width="65%">
+						<input id="local_network_p2p_id" type="text" readonly />
+					</td>
+				</tr>
+				
+				<tr class="table-radius-normal">
+					<td width="35%"><script type="text/javascript">document.write(langstr.dhcpAutoSetting);</script></td>
+					<td width="65%">
+						<input id="local_network_dhcp" name="dhcp" type="checkbox" />
+					</td>
+				</tr>
+				
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.ip);</script></td>
+					<td><input id="local_network_ip" type="text" onChange="is_valid_ip('local_network_ip')" onFocus="save_ipaddr('local_network_ip')"/></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.gateway);</script></td>
+					<td><input id="local_network_gateway" type="text" onChange="is_valid_ip('local_network_gateway')" onFocus="save_ipaddr('local_network_gateway')"/></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.netmask);</script></td>
+					<td><input id="local_network_submask" type="text" onChange="is_valid_ip('local_network_submask')" onFocus="save_ipaddr('local_network_submask')"/></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.dns0);</script></td>
+					<td><input id="local_network_dns" type="text" onChange="is_valid_ip('local_network_dns')" onFocus="save_ipaddr('local_network_dns')"/></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.dns1);</script></td>
+					<td><input id="local_network_dns2" type="text" onChange="is_valid_ip('local_network_dns2')" onFocus="save_ipaddr('local_network_dns2')"/></td>
+				</tr>
+				<!--
+				<tr>
+					<td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.port);</script></td>
+					<td class="table-bottom-radius-right-f1"><input id="local_network_port" type="text" onChange="is_valid_port()" onFocus="save_port()"/></td>
+				</tr>
+				-->
+			</table>
+            <button id="losaco" class="save_button" onClick="local_save_content();"><script type="text/javascript">document.write(langstr.save_local);</script></button><br>
+            <span id="lai1" style="display: none; background-color:#f33; font-size:12px; height:24px; line-height:24px; color:#fff; margin-left: 203px; width: 180px;"></span> 
+			</div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+</div>
+    </div>
+	<!--local-netork-->
+	
+	<div class="remote-network hidden">
+      <div id="inner">
+		<div class="window">
+         <div class="window_inner">
+
+          <div class="title-window"><script type="text/javascript">document.write(langstr.remote);</script></div>
+          <div class="mainer">
+              <div class="marker marker-active" colspan="2" style="height:32px; text-align:left;"><script type="text/javascript">document.write(langstr.ddns_set);</script>
+                    </div>
+			<table class="table-common">
+				<tr>
+					<td class="table-top-radius-left-f1" width="35%"><script type="text/javascript">document.write(langstr.ddns);</script></td>
+					<td class="table-top-radius-right-f1" width="65%">
+						<input name="ddns" type="radio" id="remote_network_ddns_1" onClick="remote_change();" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="ddns" type="radio" id="remote_network_ddns_0" onClick="remote_change();" checked />
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.server);</script></td>
+					<td>
+						<select id="remote_network_ddns_provider" >
+						<option>DYNDDNS</option>
+						<option>NOIP</option>
+						<option>3322</option>
+						<option>CHANGEIP</option>
+						<option>POPDVR</option>
+						<option>SKYBEST</option>
+						<option>DVRTOP</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.domain);</script></td>
+					<td><input id="remote_network_ddns_url" /></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.user);</script></td>
+					<td><input id="remote_network_ddns_usr" /></td>
+				</tr>
+				<tr>
+					<td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.password);</script></td>
+					<td class="table-bottom-radius-right-f1"><input id="remote_network_ddns_pwd" /></td>
+				</tr>
+                </table>
+                    <div class="marker marker-active" colspan="2" style="height:32px; text-align:left;"><script type="text/javascript">document.write(langstr.pppoe_set);</script>
+                    </div>
+			<table class="table-common">
+				<tr>
+					<td class="table-top-radius-left-s1" width="35%"><script type="text/javascript">document.write(langstr.pppoe);</script></td>
+					<td class="table-top-radius-right-s1" width="65%">
+						<input name="pppoe" type="radio" id="remote_network_pppoe_1" onClick="remote_change();" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="pppoe" type="radio" id="remote_network_pppoe_0" onClick="remote_change();" checked />
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.user);</script></td>
+					<td><input id="remote_network_pppoe_usr" /></td>
+				</tr>
+				<tr>
+					<td class="table-bottom-radius-left-s1"><script type="text/javascript">document.write(langstr.password);</script></td>
+					<td class="table-bottom-radius-right-s1"><input id="remote_network_pppoe_pwd" /></td>
+				</tr>
+			</table>
+             <button class="save_button" onClick="remote_save_content();"><script type="text/javascript">document.write(langstr.save_remote);</script></button><br>
+			</div>
+        </div>
+      </div>
+       <div id="bottom"></div> 
+</div>
+    </div>
+	<!--remote-network-->
+    
+  <!-- wireless -->
+
+<div class="wireless hidden">
+  <div id="inner">
+    <div class="window">
+    <div class="window_inner">
+    
+      <div class="title-window"><script type="text/javascript">document.write(langstr.wireless);</script></div>
+     <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td width="194px"><script type="text/javascript">document.write(langstr.wireless_Mode);</script></td>
+					<td width="341px">
+						<select id="wireless_mode" onChange="wireless_load_content()">
+						<!--<option>accessPoint</option>-->
+						<option>stationMode</option>
+						<option>none</option>
+                        </select>
+                    </td>
+				</tr>
+                </table>
+                <table class="table-common" id="sta">
+				<tr>
+                	<td width="194px"><script type="text/javascript">document.write(langstr.StaMode);</script></td>
+					<td width="341px"><input id="wirelessStaMode_sta" disabled="disabled"/></td>
+				</tr>
+				<!--<tr>
+					<td><script type="text/javascript">document.write(langstr.StaBssId);</script></td>
+					<td><input id="wirelessApBssId_sta" /></td>
+				</tr>-->
+				<tr>
+					<td><script type="text/javascript">document.write(langstr.StaEssId);</script></td>
+					<td><input id="wirelessApEssId_sta" /></td>
+				</tr>
+				<tr>
+					<td><script type="text/javascript">document.write(langstr.StaPsk);</script></td>
+					<td><input id="wirelessApPsk_sta" /></td>
+				</tr>
+				<!--<tr class="table-radius-normal">
+					<td><script type="text/javascript">document.write(langstr.fixBpsModeEnable);</script></td>
+					<td>
+						<input name="fixBps" type="radio" id="wireless_sta_1" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="fixBps" type="radio" id="wireless_sta_0" checked />
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>-->
+				<tr>
+					<td><script type="text/javascript">document.write(langstr.dhcpAutoSetting);</script></td>
+					<td>
+                    	<input name="dhcpAutoSetting" type="radio" id="dhcpAutoSettingEnabled_1" onClick="sta_dhcp_change();" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="dhcpAutoSetting" type="radio" id="dhcpAutoSettingEnabled_0" onClick="sta_dhcp_change();"/>
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>
+				 <tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticIP);</script></td>
+					<td><input id="wlan0_staticIP_sta" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticNetmask);</script></td>
+					<td><input id="wlan0_staticNetmask_sta" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticGateway);</script></td>
+					<td><input id="wlan0_staticGateway_sta" /></td>
+				</tr>
+                </table>
+                <table class="table-common" id="acc">
+                <!--<tr>
+					<td width="194px"><script type="text/javascript">document.write(langstr.ApBssId);</script></td>
+					<td width="341px"><input id="wirelessApBssId_acc" disabled="disabled" /></td>
+				</tr>
+				<tr>
+					<td><script type="text/javascript">document.write(langstr.ApEssId);</script></td>
+					<td><input id="wirelessApEssId_acc" /></td>
+				</tr>
+				<tr>
+					<td><script type="text/javascript">document.write(langstr.ApPsk);</script></td>
+					<td><input id="wirelessApPsk_acc" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.ApMode);</script></td>
+					<td>
+						<select id="wirelessApMode_acc" >
+						<option>802.11b</option>
+						<option>802.11g</option>
+						<option>802.11n</option>
+                        <option>802.11bg</option>
+						<option>802.11bgn</option>
+						</select>
+                    </td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.wirelessApMode80211nChannel_acc);</script></td>
+					<td>
+						<select id="wirelessApMode80211nChannel_acc" >
+						<option>auto</option>
+						<option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+						</select>
+                    </td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.EssId_Enabled);</script></td>
+					<td>
+                    	<input name="EssId_Enabled" type="radio" id="wirelessEssIdBroadcastingEnabled_1" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="EssId_Enabled" type="radio" id="wirelessEssIdBroadcastingEnabled_0"/>
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+                  </td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.WpaMode);</script></td>
+					<td>
+						<select id="wirelessWpaMode_acc" >
+						<option>WPA_PSK</option>
+						<option>WPA2_PSK</option>
+						</select>
+                    </td>
+				</tr>
+			<tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticIP);</script></td>
+					<td><input id="wlan0_staticIP_ap" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticNetmask);</script></td>
+					<td><input id="wlan0_staticNetmask_ap" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.wlan0_staticGateway);</script></td>
+					<td><input id="wlan0_staticGateway" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.dhcp);</script></td>
+					<td>
+                    	<input name="dhcpp" type="radio" id="dhcpServer_enabled_1" onClick="ap_dhcp_change();" />
+						<script type="text/javascript">document.write(langstr.sz_open);</script>
+						<input name="dhcpp" type="radio" id="dhcpServer_enabled_0" onClick="ap_dhcp_change();" />
+						<script type="text/javascript">document.write(langstr.sz_close);</script>
+					</td>
+				</tr>
+			<tr>
+					<td><script type="text/javascript">document.write(langstr.dhcpIpNumber);</script></td>
+					<td><input id="dhcpIpNumber" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.dhcpIpRange);</script></td>
+					<td><input id="dhcpIpRange" /></td>
+				</tr>           
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.dhcpIpDns);</script></td>
+					<td><input id="dhcpIpDns" /></td>
+				</tr>
+                <tr>
+					<td><script type="text/javascript">document.write(langstr.dhcpIpGateway);</script></td>
+					<td><input id="dhcpIpGateway" /></td>
+				</tr>-->
+                </table>
+             <button class="save_button" onClick="wireless_save_content();"><script type="text/javascript">document.write(langstr.save_wireless);</script></button><br>
+			</div>
+        </div>
+      </div>
+       <div id="bottom"></div> 
+</div>
+    </div>
+
+	<div class="alarm-time-setting hidden">
+      <div id="inner">
+        <div class="window">
+          <div class="title-window">报警时间设置</div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="35%">待添加</td>
+					<td width="65%">待添加</td>
+				</tr>
+				<tr>
+					<td>待添加</td>
+					<td>待添加</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			<hr>
+			-<a class="marker marker-active">具体分类标签-1</a><br>
+			-<a class="marker">具体分类标签-2</a>
+		  </div>
+        </div>
+      </div>
+	</div>
+	
+	<!--Danale-->	
+	<div class="danale hidden">
+      <div id="inner">
+		<div class="window">
+         <div class="window_inner">
+
+          <div class="title-window">Danale</div>
+          <div class="mainer">   
+              	 <div id="main_dana" class="marker marker-active" style="height:64px; text-align:right;">
+              	 		<a href="javascript:showBg_dana();"><script type="text/javascript">document.write(langstr.danale_app_download);</script></a>
+						<div id="fullbg_dana"></div> 
+						<div id="dialog_dana"> 
+						<p class="close"><a href="#" onclick="closeBg_dana();"><script type="text/javascript">document.write(langstr.sz_close);</script></a></p>
+						<center> 
+							<div style=" background:url(images/dana_esee.bmp) repeat-x; width:124px; height:124px; vertical-align:middle">	
+							</div>
+							<div><script type="text/javascript">document.write(langstr.danale_app_download);</script></div> 
+						</center>
+						</div>
+			</div>			
+			<!--table class="table-common"-->
+				 <tr><!--div style="float: right; width:400px; height:200px;"-->
+				    <!--td>	<div style=" margin: 0px auto; background:#F0F0F1; width:200px; height:130px; position:relative; top:5px;">
+				        	<div style=" background:url(images/dana_esee.bmp) repeat-x; width:124px; height:124px;"></div>
+				            <div style="center"><script type="text/javascript">document.write(langstr.danale_app_download);</script></div>
+				        </div></td-->
+				       <center><td> <div id="dana_qrcode" style="center;background:#F0F0F1; width:200px; height:124px; position:relative; top:5px;">
+				        	<div id="dana_id" style="repeat-x; width:124px; height:124px;"></div>         
+				        </div>
+				        <span style="center"><script type="text/javascript">document.write(langstr.danale_id);</script></span>
+				    </td></center>
+				</tr>
+                <!--/table-->
+			</div>
+        </div>
+      </div>
+       <div id="bottom"></div> 
+</div>
+    </div>
+	<!--alarm-time-setting-->
+
+	<div class="alarmin hidden">
+      <div id="inner">
+        <div class="window">
+          <div class="title-window">报警设置</div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="35%">报警输入(旧)</td>
+					<td width="65%">
+						<input id="juan_envload#alarm@enable_1" type="radio" name="enable" />
+						开启
+						<input id="juan_envload#alarm@enable_0" type="radio" name="enable" checked />
+						关闭
+					</td>
+				</tr>
+				<tr>
+					<td>报警输入模式(旧)</td>
+					<td>
+						<input name="mode" type="radio" id="juan_envload#alarm@mode_1" />
+						开启
+						<input name="mode" type="radio" id="juan_envload#alarm@mode_0" checked />
+						关闭
+					</td>
+				</tr>
+				<tr>
+					<td>报警类型(未接入)</td>
+					<td>
+						<select id="juan_envload#alarm@type">
+						<option>Email报警</option>
+						<option>未添加</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>报警时间(未接入)</td>
+					<td>（未接入）</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			<hr>
+			-<a class="marker marker-active">具体分类标签-1</a><br>
+			-<a class="marker">具体分类标签-2</a>
+		  </div>
+        </div>
+      </div>
+    </div>
+	<!--alarmin-->
+	
+	<div class="motion-detection hidden">
+      <div id="inner">
+		<div class="window">
+          <div class="title-window">移动侦测</div>
+          <div class="mainer">
+            这里是移动侦测标签，暂时无内容，等待更新
+            <hr>
+            -<a class="marker marker-active">具体分类标签-1</a><br>
+            -<a class="marker">具体分类标签-2</a> </div>
+        </div>
+      </div>
+    </div>
+	<!--motion-detection-->
+	
+	<div class="ptz hidden">
+      <div id="inner">
+		<div class="window">
+          <div class="title-window">云台设置</div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="marker marker-active">云台设置</td>
+				</tr>
+				<tr>
+					<td width="35%">地址码</td>
+					<td width="65%"><input id="juan_envload#ptzset@id" value="0" /></td>
+				</tr>
+				<tr>
+					<td>协议</td>
+					<td>
+						<select id="juan_envload#ptzset@protocal">
+							<option>PELCO-D</option>
+							<option>PELCO-P</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="marker marker-active">485端口设置</td>
+				</tr>
+				<tr>
+					<td>波特率</td>
+					<td>
+						<select id="juan_envload#ptzset@baudrate" >
+						<option>1200</option>
+						<option>2400</option>
+						<option>4800</option>
+						<option>9600</option>
+						<option>19200</option>
+						<option>38400</option>
+						<option>57600</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>数据位</td>
+					<td>
+						<select id="juan_envload#ptzset@databit" >
+						<option>7</option>
+						<option>8</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>停止位</td>
+					<td>
+					<select id="juan_envload#ptzset@stopbit">
+					<option>1</option>
+					<option>2</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>校验</td>
+					<td>
+						<select id="juan_envload#ptzset@crc">
+						<option>无</option>
+						<option>奇校验</option>
+						<option>偶校验</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+            <hr>
+            -<a class="marker marker-active">具体分类标签-1</a><br>
+            -<a class="marker">具体分类标签-2</a> </div>
+        </div>
+      </div>
+    </div>
+	<!--ptz-->
+			
+	<div class="user-management hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+          <div class="title-window"><script type="text/javascript">document.write(langstr.usermanage)</script></div>
+          <div class="mainer">
+			<table id="tbl_user_manage" class="table-special-user">
+				<tr>
+					<td class="table-top-radius-left-f2" width="21%"><script type="text/javascript">document.write(langstr.username)</script></td>
+				</tr>
+			</table>
+			<table id="tbl_user_manage1" class="table-common">
+				<tr>
+					<td>
+						<button type="button" onClick="user_management_prepare_modify()"><script type="text/javascript">document.write(langstr.changepwd)</script></button>
+						
+			<table id="tbl_add_user" style=" margin-top:10px; display:none;">
+				<tr>
+					<td>
+						<script type="text/javascript">document.write(langstr.username)</script>
+					</td>
+					<td>
+						<input type="text" id="txt_new_usr" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<script type="text/javascript">document.write(langstr.password)</script>
+					</td>
+					<td>
+						<input type="password" id="txt_new_pwd" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="button" onClick="user_management_save_new_usr()"><script type="text/javascript">document.write(langstr.save)</script></button>
+						<button type="button" onClick="user_management_prepare_cancel()"><script type="text/javascript">document.write(langstr.cancel)</script></button>
+					</td>
+				</tr>
+			</table>
+			<table id="tbl_modify_pwd" style=" margin-top:10px; display:none;">
+				<tr>
+					<td>
+						<script type="text/javascript">document.write(langstr.oldpwd)</script>
+					</td>
+					<td>
+						<input type="password" id="txt_old_pwd" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<script type="text/javascript">document.write(langstr.newpwd)</script>
+					</td>
+					<td>
+						<input type="password" id="txt_modify_pwd" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<script type="text/javascript">document.write(langstr.confirmpwd)</script>
+					</td>
+					<td>
+						<input type="password" id="txt_repeat_pwd" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="button" onClick="user_management_prepare_save_modify_usr()"><script type="text/javascript">document.write(langstr.save)</script></button>
+						<button type="button" onClick="user_management_prepare_cancel()"><script type="text/javascript">document.write(langstr.cancel)</script></button>
+					</td>
+				</tr>
+			</table>						
+			
+					</td>
+				</tr>
+                <tr><td class="table-bottom-radius-f2"></td></tr>
+			</table>
+            <hr>
+            <!---<a class="marker marker-active">具体分类标签-1</a><br>
+            -<a class="marker">具体分类标签-2</a>-->
+			</div>
+        </div>
+      </div>
+       <div id="bottom"></div> 
+      </div>
+    </div>
+	<!--user-management-->
+    
+    <!--record-->
+    <div class="record hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+           <div class="title-window"><script type="text/javascript">document.write(langstr.record)</script></div>
+                 <div class="mainer">
+                 <div>
+                 	<table class="table-common">
+                    	<tr>
+                        	<td width="30%"><script type="text/javascript">document.write(langstr.format)</script></td>
+                        	<td width="30%"><button id="format_sd" onClick="format_sd()"><script type="text/javascript">document.write(langstr.format)</script></button></td>
+                            <td width="40%"><span id="format_message"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                	<!--<div class="sub_menu">
+                    	<ul class="record_ul">
+                        	<li class="submenu_current1"><a href="javascript:SelectWeekDayTable('0');" >星期一</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('1');">星期二</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('2');">星期三</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('3');">星期四</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('4');">星期五</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('5');">星期六</a></li>
+                            <li><a href="javascript:SelectWeekDayTable('6');">星期日</a></li>                
+                        </ul>
+                    </div>
+                    <div class="record_content">
+                    		<div style="height:28px;">
+                        	<div id="timeInputWindow" style=" position:relative; width:135px; background-color:#CCC; display:none; text-align:left; padding:3px 0px 0px 10px;">
+                                <input type="text" id="InputTimeH" style="width:60px;" onkeyup="if(!(Number(this.value) <= 24)) {this.value = this.value.replace(this.value,'00')} else if((Number(this.value) == 24)) {document.getElementById('InputTimeM').value = '00'}" maxlength="2" style="width:80px" value="00"></input>:<input type="text" id="InputTimeM" style="width:60px;" onkeyup="if(!(Number(this.value) <= 24)) {this.value = this.value.replace(this.value,'00')} else if((Number(this.value) == 24)) {document.getElementById('InputTimeM').value = '00'}" maxlength="2" style="width:80px" value="00"></input>
+                            </div></div>
+                    	<div style="height:28px; text-align:left; padding:0px 0px 0px 20px;">
+                        	<span><input type="radio" name="record_type" id="WholeDayRecord" onClick="record_type();" />WholeDay</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span><select id="WholeDayRecordType">
+                            		<option>111111</option>
+                                    <option>222222</option>
+                                  </select>
+                            </span>
+                        </div>
+                        <div style="height:28px; text-align:left; padding:0px 0px 0px 20px;">
+                        	<span><input type="radio" name="record_type" id="SectionDay" onClick="record_type();" checked />SectionDay</span>
+                        </div>
+                        <table class="table_record">
+                        	<tr>
+                            	<td style="width:15%">时间段</td>
+                                <td style="width:25%">开始时间</td>
+                                <td style="width:25%">结束时间</td>
+                                <td style="width:35%">录像类型</td>
+                            </tr>
+                            <tr>
+                            	<td>1</td>
+                                <td id="start_time1" class="record_timea" onClick="showtimeInputWindow(0)">
+                                	<span id="StartTime1H">00</span>:<span id="StartTime1M">00</span>
+                                </td>
+                                <td id="stop_time1" class="record_timea" onClick="showtimeInputWindow(8)">
+                                	<span id="StopTime1H">00</span>:<span id="StopTime1M">00</span>
+                                </td>
+                                <td>
+                                	<span>
+                                        <select id="RecordType1">
+                                        <option>111111</option>
+                                        <option>222222</option>
+                                        </select>
+                            		</span>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td>2</td>
+                                <td id="start_time2" onClick="showtimeInputWindow(1)">
+                                	<span id="StartTime2H">00</span>:<span id="StartTime2M">00</span>
+                                </td>
+                                <td id="stop_time2" onClick="showtimeInputWindow(9)">
+                                	<span id="StopTime2H">00</span>:<span id="StopTime2M">00</span>
+                                </td>
+                                <td>
+                                	<span>
+                                        <select id="RecordType2">
+                                        <option>111111</option>
+                                        <option>222222</option>
+                                        </select>
+                            		</span>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td>3</td>
+                                <td id="start_time3" onClick="showtimeInputWindow(2)">
+                                	<span id="StartTime3H">00</span>:<span id="StartTime3M">00</span>
+                                </td>
+                                <td id="stop_time3" onClick="showtimeInputWindow(10)">
+                                	<span id="StopTime3H">00</span>:<span id="StopTime3M">00</span>
+                                </td>
+                                <td>
+                                	<span>
+                                        <select id="RecordType3">
+                                        <option>111111</option>
+                                        <option>222222</option>
+                                        </select>
+                            		</span>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td>4</td>
+                                <td id="start_time4" onClick="showtimeInputWindow(3)">
+                                	<span id="StartTime4H">00</span>:<span id="StartTime4M">00</span>
+                                </td>
+                                <td id="stop_time4" onClick="showtimeInputWindow(11)">
+                                	<span id="StopTime4H">00</span>:<span id="StopTime4M">00</span>
+                                </td>
+                                <td>
+                                	<span>
+                                        <select id="RecordType4">
+                                        <option>111111</option>
+                                        <option>222222</option>
+                                        </select>
+                            		</span>
+                                </td>
+                            </tr>
+                        </table>
+                      	<div style="height:28px; text-align:left; padding:20px 0px 0px 20px;">
+                        	<span>Copy To Week</span>
+                            <span><input type="checkbox" id="alldaylist" />QuanXuan</span>
+                        </div>
+                        <div style="height:28px; text-align:left; padding:0px 0px 0px 20px;">
+                            <span><input type="checkbox" class="check_menu" id="RecordList0" />星期一</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList1" />星期二</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList2" />星期三</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList3" />星期四</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList4" />星期五</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList5" />星期六</span>
+                            <span><input type="checkbox" class="check_menu" id="RecordList6" />星期日</span>
+                            <span><button id="CopyRecordList">Copy the List</button></span>
+                        </div>
+                        <div style="height:28px; text-align:right; padding:20px 20px 0px 0px;">
+                        	<span><button id="save_record">Save Record List</button>&nbsp;&nbsp;&nbsp;<button id="cancel">Cancel</button></span>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+      </div>
+       <div id="bottom"></div> 
+      </div>
+    </div>
+    <!--record-->
+    
+    <!--  playback  -->
+	 <div class="playback hidden">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+        
+            <div class="title-window"><script type="text/javascript">document.write(langstr.playback)</script></div>
+                <div class="mainer">
+                        <table class="table-special-user">
+                            <tr><td><script type="text/javascript">document.write(langstr.search_date)</script></td>
+                            <td style="width:90px;">
+                                <input type="text" class="m_date" onChange="is_valid_date()" />
+                            </td>&nbsp;&nbsp;&nbsp;<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button style="width:80px; height:30px;" type="button" id="search_date" onClick="rec_search2();" ><script type="text/javascript">document.write(langstr.Search)</script></button>
+                            </td></tr>
+                            <tr><td><script type="text/javascript">document.write(langstr.search_time)</script></td><td>
+                                <input type="text" id="begin" value="00:00:00" />
+                            </td><td>
+                                <input type="text" id="end" value="23:59:59" />
+                            </td></tr>  
+                            <tr><td id="text_view"></td></tr>
+                        </table>
+                        <table id="tbl_main">
+                        </table> 
+                        <table>
+                        	<tr>
+                            	<td><div id="barcon" name="barcon"></div></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr><td colspan="3">
+                            	<div id="flashcontent-container">
+                                    <div id="flashcontent">&nbsp;</div>
+                                </div>
+                            </td></tr>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+       <div id="bottom"></div> 
+      </div>
+    </div>
+    <!--playback-->
+    
+	<div class="capture hidden">
+      <div id="inner">
+		<div class="window">
+          <div class="title-window">抓拍</div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="marker marker-active">手动抓拍</td>
+				</tr>
+				<tr>
+					<td width="35%">抓拍路径</td>
+					<td width="65%"><input id="juan_envload#cap@path" value="D:\NetRecord" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="marker marker-active">自动抓拍</td>
+				</tr>
+				<tr>
+					<td>时间间隔</td>
+					<td>
+						<input id="juan_envload#cap@span" value="60"/>
+						分
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="juan_envload#cap@email" />
+						发送到E-mail
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="juan_envload#cap@sd" />
+						保存到SD卡
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+            
+            -<a class="marker marker-active">具体分类标签-1</a><br>
+            -<a class="marker">具体分类标签-2</a> </div>
+        </div>
+      </div>
+    </div>
+	<!--capture-->
+	
+	<div class="email hidden">
+      <div id="inner">
+        <div class="window">
+          <div class="title-window">电子邮件设置</div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="35%">待添加</td>
+					<td width="65%">待添加</td>
+				</tr>
+				<tr>
+					<td>待添加</td>
+					<td>待添加</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			
+			-<a class="marker marker-active">具体分类标签-1</a><br>
+			-<a class="marker">具体分类标签-2</a>
+		  </div>
+        </div>
+      </div>
+	</div>
+	<!--email-->
+
+	<div class="time hidden">
+     <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+          <div class="title-window"><script type="text/javascript">document.write(langstr.time);</script></div>
+          <div class="mainer">
+			<table class="table-common bor-none">
+				<tr >
+					<td class="table-top-radius-left-f1 marker marker-active txt-center"  width=35% ><script type="text/javascript">document.write(langstr.dev_time);</script></td>
+					<td class="table-top-radius-right-f1" width=65% ><input style="width:150px" id="curent_time" value="0" disabled="disabled"/></td>
+				</tr>
+				<tr class="table-radius-normal" style="display:none;">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.date_frt);</script></td>
+					<td>
+						<select class="date_form" onChange="showtime();">
+						<option><script type="text/javascript">document.write(langstr.date_frt1);</script></option>
+						<option><script type="text/javascript">document.write(langstr.date_frt2);</script></option>
+						<option><script type="text/javascript">document.write(langstr.date_frt3);</script></option>
+						</select>
+					</td>
+				</tr>
+				<tr class="table-radius-normal" style="display:none;">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.date_del);</script></td>
+					<td>
+						<select id="date_break" disabled onChange="showtime();">
+						<option value="-"><script type="text/javascript">document.write(langstr.date_del1);</script></option>
+						<option value="/"><script type="text/javascript">document.write(langstr.date_del2);</script></option>
+						<option value="."><script type="text/javascript">document.write(langstr.date_del3);</script></option>
+						</select>
+					</td>
+				</tr>
+<!--				<tr>
+					<td>时间格式</td>
+					<td>
+						<select id="time_form">
+						<option>12时制</option>
+						<option>24时制</option>
+						</select>
+					</td>
+				</tr>
+-->				
+
+<!--
+				<tr class="table-radius-normal osd_bg_color_white">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.time_zone);</script></td>
+					<td>
+                        <select id="time_zone">
+						<option>GMT-12:00</option>
+						<option>GMT-11:00</option>
+                        <option>GMT-10:00</option>
+                        <option>GMT-09:00</option>
+                        <option>GMT-08:00</option>
+                        <option>GMT-07:00</option>
+                        <option>GMT-06:00</option>
+                        <option>GMT-05:00</option>
+                        <option>GMT-04:30</option>
+                        <option>GMT-04:00</option>
+                        <option>GMT-03:30</option>
+                        <option>GMT-03:00</option>
+                        <option>GMT-02:00</option>
+                        <option>GMT-01:00</option>
+                        <option>GMT</option>
+                        <option>GMT+01:00</option>
+                        <option>GMT+02:00</option>
+                        <option>GMT+03:00</option>
+                        <option>GMT+03:30</option>
+                        <option>GMT+04:00</option>
+                        <option>GMT+04:30</option>
+                        <option>GMT+05:00</option>
+   						<option>GMT+05:30</option>
+                        <option>GMT+05:45</option>
+                        <option>GMT+06:00</option>
+                        <option>GMT+06:30</option>
+                        <option>GMT+07:00</option>
+                        <option>GMT+08:00</option>
+                        <option>GMT+09:00</option>
+                        <option>GMT+09:30</option>
+                        <option>GMT+10:00</option>
+                        <option>GMT+11:30</option>
+                        <option>GMT+12:00</option>
+                        <option>GMT+13:00</option>
+						</select>
+					</td>
+				</tr>
+			-->
+				<!--<tr>
+					<td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.daylightt);</script></td>
+					<td class="table-bottom-radius-right-f1">
+						<input id="daylight_time" value="0" onChange="is_valid_daylight()" />
+					</td>
+				</tr>-->
+                </table>
+               <!-- <div class="marker marker-active" colspan="2" style="height:32px; text-align:left;"><script type="text/javascript">document.write(langstr.manual_set);</script></div>
+                <table class="table-common">
+				<tr>
+					<td width="35%" class="table-top-radius-left-s1"><script type="text/javascript">document.write(langstr.date);</script></td>
+					<td width="65%" class="table-top-radius-right-s1"><input class="m_date" id="mdate11" value="" onChange="is_valid_date()" /></td>
+				</tr>
+				<tr>
+					<td width="35%" class="table-bottom-radius-left-s1"><script type="text/javascript">document.write(langstr.time);</script></td>
+					<td width="65%" class="table-bottom-radius-right-s1"><div class="time_3"><input  class="in"  maxlength="2"  value=""/>:<input  class="in"  maxlength="2" value=""/>:<input  class="in" maxlength="2" value=""/></div><button id="set_time" class="btn" onClick="manual_set_time()"><script type="text/javascript">document.write(langstr.ok);</script></button></td>
+				</tr>
+                </table>-->
+                <div class="marker marker-active osd_bg_color line-height" colspan="2"><script type="text/javascript">document.write(langstr.sync_pc_time);</script></div>
+                <table class="table-common bor-none">		
+				<tr>
+					<td class="table-radius-left txt-center" width="35%" style="background-color:#fff !important"><script type="text/javascript">document.write(langstr.pc_time);</script></td>
+					<td class="table-radius-right" width="65%" style="background-color:#fff !important"><input style="width:150px" id="time_pc" value="0" disabled="disabled"><button id="sync_pc" class="btn" onClick="sync_pc_time()"><script type="text/javascript">document.write(langstr.sync);</script></button></td>
+				</tr>
+                 </table>
+            <button class="save_button" onClick="time_zone_save();"><script type="text/javascript">document.write(langstr.save_time);</script></button><br>
+			</div>
+          
+        </div>
+      </div>
+      <div id="bottom"></div> 
+</div>
+    </div>
+	<!--initialize-->
+	<div class="devinfo hidden">
+      <div id="inner">
+		<div class="window">
+        <div class="window_inner">
+
+          <div class="title-window"><script type="text/javascript">document.write(langstr.devinfo);</script></div>
+          <div class="mainer">
+			<table class="table-common">
+				<tr>
+					<td class="table-top-radius-left-f1 txt-center" width="35%"><script type="text/javascript">document.write(langstr.dev_name);</script></td>
+					<td class="table-top-radius-right-f1" width="65%"><input id="juan#devinfo@name" value="" readonly disabled="disabled" /></td>
+				</tr>
+				<tr class="table-radius-normal osd_bg_color_white">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.dev_model);</script></td>
+					<td><input id="juan#devinfo@model" value="" readonly disabled="disabled" /></td>
+				</tr>
+				<!--
+				<tr class="table-radius-normal">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.hw_ver);</script></td>
+					<td><input id="juan#devinfo@hwver" value="" readonly disabled="disabled" /></td>
+				</tr>
+				-->
+				<tr class="table-radius-normal osd_bg_color_white">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.sw_ver);</script></td>
+					<td><input id="juan#devinfo@swver" value="" readonly disabled="disabled" /></td>
+				</tr>
+				<tr class="table-radius-normal osd_bg_color_white">
+					<td class="txt-center"><script type="text/javascript">document.write("SDK");</script></td>
+					<td><input id="juan#devinfo@sdk" value="" readonly disabled="disabled" /></td>
+				</tr>
+				<tr class="table-radius-normal">
+					<td class="txt-center"><script type="text/javascript">document.write(langstr.rel_time);</script></td>
+					<td><input id="juan#devinfo@reldatetime" value="" readonly disabled="disabled" /></td>
+				</tr>
+				<!--<tr>
+					<td class="table-bottom-radius-left-f1"><script type="text/javascript">document.write(langstr.sd_num);</script></td>
+					<td class="table-bottom-radius-right-f1"><input id="juan#devinfo@sdnum" value="" readonly disabled="disabled" /></td>
+				</tr>-->
+			</table>
+            <button style="display:none;" class="save_button" onClick=""></button><br>
+            
+			</div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+</div>
+    </div>			
+	
+		
+	<div class="initialize hidden">
+      <div id="inner">
+		<div class="window">
+        <div class="window_inner">
+
+          <div class="title-window"><script type="text/javascript">document.write(langstr.initial);</script></div>
+          <div class="mainer restore">
+          <!--<div class="marker marker-active osd_bg_color_white line-height" colspan="2"><script type="text/javascript">document.write(langstr.reboot);</script></div>-->
+			<!--<table class="table-common">
+				<tr>
+					<td class="table-top-radius-f2" colspan="2"><script type="text/javascript">document.write(langstr.reboot_tip);</script></td>
+				</tr>
+				<tr class="osd_bg_color_white">
+					<td class="table-bottom-radius-f2" colspan="2"><button class="btn" onClick="reboot()"><script type="text/javascript">document.write(langstr.reboot);</script></button></td>
+				</tr>
+            </table>-->
+            <div class="marker marker-active osd_bg_color line-height" colspan="2"><script type="text/javascript">document.write(langstr.restore);</script></div>
+			<table class="table-common">     
+				<tr>
+					<td class="table-top-radius-f2" style="background-color:rgb(241,241,241) !important;" colspan="2"><script type="text/javascript">document.write(langstr.restore_tip);</script></td>
+				</tr>
+				<tr class="osd_bg_color">
+					<td class="table-bottom-radius-f2" colspan="2"><button class="btn" onClick="default_setting()"><script type="text/javascript">document.write(langstr.restore);</script></button></td>
+				</tr>
+             </table>
+			<div class="marker marker-active osd_bg_color_white line-height" colspan="2"><script type="text/javascript">document.write(langstr.upgrade);</script></div>
+			<table class="table-common">	
+				<tr>
+					<td class="table-top-radius-f2" colspan="2"><p><script type="text/javascript">document.write(langstr.upgrade_tip);</script></p></td>
+				</tr>
+				<tr class="osd_bg_color_white">
+					<td class="table-bottom-radius-f2" colspan="2">
+						<div id="swfupload-control"></div>
+						<!--<span id="txt_status"></span><span id="txt_progress"></span>&nbsp;<button class="btn" id="button"></button><br />-->
+						<span id="txt_status"></span><span id="txt_progress"></span>&nbsp;	<button type="button"  class="btn"  id="button"  ></button><br />
+						<span id="txt_upgrade_status"></span><span id="txt_upgrade_progress"></span>
+					</td>
+				</tr>
+			</table>
+            <button style="display:none;" id="result" onClick=""></button><br>
+            
+			</div>
+        </div>
+      </div>
+      <div id="bottom"></div> 
+    </div>
+  </div>  
+</div>  
+          </div>
+            
+            <div id="mc">
+                <script type="text/javascript">document.write(langstr.copyright_info)</script></div>    
+                <!--<div class="playback" id="huifang" style="width:60%; margin-left: auto; margin-right: auto; display: none;">
+      <div id="inner">
+        <div class="window">
+        <div class="window_inner">
+                <div class="mainer">
+                        <table class="table-special-user">
+                            <tr><td><script type="text/javascript">document.write(langstr.search_date)</script></td>
+                            <td style="width:90px;">
+                                <input type="text" class="m_date" onChange="is_valid_date()" />
+                            </td>&nbsp;&nbsp;&nbsp;<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button style="width:80px; height:30px;" type="button" id="search_date" onClick="rec_search2();" ><script type="text/javascript">document.write(langstr.Search)</script></button>
+                            </td></tr>
+                            <tr><td><script type="text/javascript">document.write(langstr.search_time)</script></td><td>
+                                <input type="text" id="begin" value="00:00:00" />
+                            </td><td>
+                                <input type="text" id="end" value="23:59:59" />
+                            </td></tr>  
+                            <tr><td id="text_view"></td></tr>
+                        </table>
+                        <table id="tbl_main">
+                        </table> 
+                        <table>
+                        	<tr>
+                            	<td><div id="barcon" name="barcon"></div></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr><td colspan="3">
+                            	<div id="flashcontent-container">
+                                    <div id="flashcontent">&nbsp;</div>
+                                </div>
+                            </td></tr>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+       <div id="bottom"></div> 
+      </div>
+    </div>-->
+            
+    </div>  
+</div>
+</body>
+</html>
+
+<!-- This page is a derivative version of ACFUN~ Thanks for it-->
+<!--                                          --Azrael--      -->

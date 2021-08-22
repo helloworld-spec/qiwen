@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" media="screen" href="m.css" />
+		<script type="text/javascript" src="js/language.js"></script>
+		<title></title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="js/language.js"></script>
+		<script type="text/javascript">
+			document.write("<scr" + "ipt src=\"" + getDefaultLanguage() + "\" id=\"js_lang\" ></sc" + "ript>");
+		</script>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/xml.js"></script>
+		<script type="text/javascript" src="jquery.min.js"></script><!--jQuery.min -->
+        <script type="text/javascript" src="js/xml2json.js"></script>
+        <script type="text/javascript" src="js/cookie.js"></script>
+        <script type="text/javascript" src="config1.js"></script>
+		<!-- <link id="css-link" rel="stylesheet" href="js/index.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/autosuggest.css">
+		<script type="text/javascript" src="js/autosuggest.js"></script>
+    <!--<script type="text/javascript">
+    	function ChangeLang1(index){ 
+       switch(index){
+       	    case 0:
+       		setLanguage('zh-cn');
+       	break;
+       	    case 1:
+       	    setLanguage('en');
+       	break;
+//     		case 2:
+//     	    setLanguage('zh-tw');
+//     	break;
+//     		case 3:
+//     	    setLanguage('tr');
+//     	break;
+//     		case 4:
+//     	    setLanguage('fa');
+//     	break;
+       	   
+       }
+    }
+    </script>-->
+    <!-- version 1.0.3 -->
+	</head>
+	<body>
+	 <!-- <div class="mask_ipcam"><script type="text/javascript">document.write(langstr.install_hinit1);</script></div> -->
+		 <div id='lt' style="position: relative; width: 100%; height: 228px; background: url(images/t.jpg) repeat-x #FFF;text-align:center;">
+            <!--<div id='lang' style="position: relative; float: right;margin:20px 30px 0px 0px;">
+         
+              <span onClick="ChangeLang1(0)"><a href="#"><font color="#000000">简体中文</font></a></span>&nbsp;&nbsp;
+              <span onClick="ChangeLang1(1)"><a href="#"><font color="#000000">English</font></a></span>
+                   
+             </div>-->
+            <div style="width: 417px; height: 228px;margin-left:auto;margin-right:auto;"></div>
+          
+            </div>
+		<!--  </div>-->
+		<div id="lm" style="height: 299px; width: 100%; position: absolute; top: 228px;
+		left: 0; right: 0;">
+			<div id="lmll" style="position: relative; width: 102px; height: 100%; background: url(images/lr.jpg) repeat-x;
+			float: left;"></div>
+			<div id="lml" style="width: 355px; height: 299px; background: url(images/ml.jpg); float: left;
+			margin: 0 0 0 0;"></div>
+			<div id="lmm" style="width: 417px; height: 299px; float: left; margin: 0 0px 0 0;">
+
+				<div style="width: 417px; height: 223px; float: left;background:url(images/l_bgm.gif)">
+					<div style="width: 417px; height: 223px; position:relative">
+						<!-- <div style="margin: 0px 0px 0 350px;">
+						<button  id='DownLoadPlug' onclick="DownLoadLo()" style="margin:10px 0 0 0;color: #000; width: 58px; height: 18px;
+						padding: 3px 0px 0 0; border: 0; background: url(board.gif);" >
+						</button>
+
+						</div>-->
+
+						<div style="width:11px;height:100%;float:left;"></div>
+						<div style="width: 406px; height: 100%; float: left;
+						margin: 0 0 0 0; color: #000000;  font-size: 15px; font-family: Arial, '宋体';">
+
+							<div   style="margin:10px 0px 0px 340px;padding:3px 0px 0px 2px; width: 56px; height: 14px;overflow:hidden;cursor:pointer;" id='DownLoadPlug' onclick="DownLoadLo();"  >
+								<div style="color: #000;width:100%;height:100%;border: 0;"></div>
+							</div>
+
+							
+							<div style="margin: 10px 0 0 0px;float:right;width:100%">
+								<input id="userName" type='text' class="login" class="userName" style="color: #000; font-size: 15px; line-height:25px;
+								margin: 0 120px 0 0; padding: 0px 0 0 0px; width: 133px; height: 25px;float:right;" onfocus="show_suggest()" onDblClick="show_suggest()"/>
+								<span id='userNameInput' style="padding-top:6px;float:right;font-size: 15px;margin:0px 3px 0 0; font-family: Arial, '宋体';">
+									<script type="text/javascript">
+										document.write(langstr.user);
+									</script></span>
+
+							</div>
+							<div style="margin: 10px 0 0 0px;float:right;width:100%">
+								<input id="password" type="password" class="userName" class="login" style="color: #000; font-size: 15px; line-height:25px;
+								margin: 0 120px 0 0; padding: 0px 0 0 0px; width: 133px; height: 25px;float:right;"/>
+								<span id='passWordInput' style="padding-top:6px;float:right;font-size: 15px; margin:0px 3px 0 0; font-family: Arial, '宋体';">
+									<script type="text/javascript">
+										document.write(langstr.password);
+									</script></span>
+
+							</div>
+							<div style="margin: 10px 0px 0 174px;">
+								<button id='submit' value="" style="margin:15px 0 0 0;color: #000; width: 88px; height: 28px;
+								padding: 4px 0 0 0; border: 0; float: left; background: url(images/bt.gif)">
+									<script type="text/javascript">
+										document.write(langstr.login);
+									</script>
+								</button>
+							</div>
+							<div style="width: 100%; margin: 10px 0px 0px 0px;">
+								<div style="width: 45%; text-align: center; float: left; margin: 10px 0px 0px 0px;">
+									<input id="saveCookie" type="checkbox" checked="checked"/>
+									<span><script type="text/javascript">
+										document.write(langstr.remPass);
+									</script></span>
+								</div>
+								<div style="width: 55%; text-align: center; float: left; margin: 10px 0px 0px 0px;">
+									<input id="timeAlign" type="checkbox"  checked="checked"/>
+									<span><script type="text/javascript">
+										document.write(langstr.synctime);
+									</script></span>
+								</div>
+							</div>
+							<div id="message_here" style="width: 100%;"></div>
+						</div>
+					</div>
+
+				</div>
+				<div style="width: 417px; height: 76px; float: left;background:url(images/l_bgmd.gif)"></div>
+
+			</div>
+			<div id="lmr" style="width: 355px; height: 299px; background: url(images/mr.jpg); float: left;"></div>
+			<div id="lmrr" style="position: relative; width: 114px; height: 100%; background: url(images/lr.jpg) repeat-x;
+			float: left;"></div>
+		</div>
+		<div style="position: absolute; width: 100%; height: 266px; top: 527px; left: 0;">
+			<div id="ldl" style="height: 66px; width: 34.2%; background: url(images/dlr.jpg) repeat-x;
+			float: left"></div>
+			<div id="ldm" style="height: 66px; width: 31%; background: url(images/dm.jpg); float: left"></div>
+			<div id="ldr" style="height: 66px; width: 34.8%; background: url(images/dlr.jpg) repeat-x;
+			float: left"></div>
+			<div style="height: 200px; width: 100%; background: url(images/dlr.jpg) repeat-x; float: left"></div>
+		</div>
+		 
+	</body>
+</html>

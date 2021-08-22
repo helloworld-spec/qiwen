@@ -1,0 +1,338 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AnykaIPCamera.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Anyka IP Camera.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "NetCamera，2.0.02版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ANYKAIPCAMERA_DIALOG DIALOGEX 0, 0, 398, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NetCamera"
+MENU IDR_MENU1
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | NOT WS_VISIBLE | WS_BORDER | WS_HSCROLL | WS_TABSTOP,12,60,50,75,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Set",IDC_BUTTON_SET,98,4,50,14
+    CONTROL         "IRCUT开",IDC_RADIO_IRCUT_ON,"Button",BS_AUTORADIOBUTTON,3,7,42,10
+    CONTROL         "IRCUT关",IDC_RADIO_IRCUT_OFF,"Button",BS_AUTORADIOBUTTON,46,6,42,10
+    PUSHBUTTON      "恢复出厂设备",IDC_BUTTON_RECOVER_DEV,154,4,50,14
+    GROUPBOX        "",IDC_STATIC,2,0,88,18
+END
+
+IDD_DIALOG_PREVIEW1 DIALOGEX 0, 0, 335, 164
+STYLE DS_ABSALIGN | DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_PRIVACY DIALOGEX 0, 0, 368, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Privacy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "启用",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,54,50,32,10
+    COMBOBOX        IDC_COMBO1,74,20,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,119,47,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "静态",IDC_STATIC1,49,24,17,8
+    LTEXT           "静态",IDC_STATIC2,95,50,17,8
+    PUSHBUTTON      "确定",IDC_BUTTON1,237,41,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,297,41,50,14
+END
+
+IDD_WAITDIALOG DIALOGEX 0, 0, 107, 36
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Wait"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    LTEXT           "处理中请稍后...",IDC_STATIC,18,12,74,8
+END
+
+IDD_DIALOG_MOTION_DETECT DIALOGEX 0, 0, 368, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Motion Detect"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,112,255,50,14
+    PUSHBUTTON      "取消",IDCANCEL,195,255,50,14
+    COMBOBOX        IDC_COMBO1,99,20,78,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "启用",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,57,48,36,12,WS_EX_RIGHT
+    COMBOBOX        IDC_COMBO2,161,45,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "设备",IDC_STATIC1,67,24,17,8
+    LTEXT           "灵敏度",IDC_STATIC2,134,48,25,8
+    GROUPBOX        "侦测区域",IDC_STATIC3,15,70,339,176
+END
+
+IDD_DIALOG_RECORD_PLAY DIALOGEX 0, 0, 572, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录像回放"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,461,52,108,222,WS_EX_CLIENTEDGE
+    LTEXT           "录像回放",IDC_STATIC,499,12,34,8
+    PUSHBUTTON      "记录查找",IDC_BUTTON_GET_FILES,490,24,56,13
+    GROUPBOX        "",IDC_STATIC,459,0,113,44,BS_LEFT
+    GROUPBOX        "",IDC_STATIC,459,44,113,266,BS_LEFT
+    PUSHBUTTON      "下载",IDC_BUTTON_DOWNLOAD,461,283,48,13
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,522,283,47,13
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,36,272,383,13
+    PUSHBUTTON      "播放",IDC_BUTTON_PLAY,8,289,31,13
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,44,289,31,13
+    RTEXT           "0",IDC_STATIC_CTIME,2,274,33,8
+    LTEXT           "0",IDC_STATIC_DURATION,419,273,33,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,3
+ PRODUCTVERSION 1,1,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.1.0.3"
+            VALUE "InternalName", "Anyka IP Camera.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Anyka IP Camera.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.1.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ANYKAIPCAMERA_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 392
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_DIALOG_PREVIEW1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 333
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_PRIVACY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_WAITDIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 106
+    END
+
+    IDD_DIALOG_MOTION_DETECT, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "", INACTIVE
+    BEGIN
+        MENUITEM "隐私遮挡",                        ID_32771, INACTIVE
+        MENUITEM "移动侦测",                        ID_32772, INACTIVE
+    END
+    MENUITEM "",                            ID_32783, INACTIVE
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "SearchMenu"
+    BEGIN
+        MENUITEM "搜索设备",                        ID_32773
+    END
+END
+
+IDR_MENU3 MENU 
+BEGIN
+    POPUP "PreviewChoose"
+    BEGIN
+        MENUITEM "预览1",                         ID_PREVIEWCHOOSE_32774
+        MENUITEM "预览2",                         ID_PREVIEWCHOOSE_32775
+    END
+END
+
+IDR_MENU4 MENU 
+BEGIN
+    POPUP "PreviewDlgChoose"
+    BEGIN
+        MENUITEM "双向对讲打开",                      ID_PREVIEWDLGCHOOSE_TALKOPEN
+        MENUITEM "关闭预览",                        ID_PREVIEWDLGCHOOSE_CLOSE_PREVIEW
+    END
+    POPUP "PreviewDlgChoose1"
+    BEGIN
+        MENUITEM "双向对讲关闭",                      ID_PREVIEWDLGCHOOSE1_TALKCLOSE
+        MENUITEM "关闭预览",                        ID_PREVIEWDLGCHOOSE1_CLOSE_PREVIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Anyka IP Camera(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AnykaIPCamera.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

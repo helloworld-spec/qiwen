@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>N1-SDK Infomation</title>
+    <script type="text/javascript" src="jquery.min.js" ></script>
+    <script type="text/javascript">
+        function ObjectToHTML(key, parsedJson) {
+            var tbl = '<tr width="100%" >';
+            if (undefined === parsedJson) {
+                return '';
+            }
+            if (null != key) {
+                tbl += '<th style="background-color:lightgray; color=white; text-align: right; padding-right: 16" width="15%">' + key + '</th>';
+                tbl += '<td style="text-align: left" width="85%">';
+            }
+            if(typeof(parsedJson) === 'object') {
+                tbl += '<table width="100%" border="1" cellpadding="0">';
+                var okey;
+                for (okey in parsedJson) {
+                    if (parsedJson.hasOwnProperty(okey)) {
+                        // console.log(tbl);
+                        tbl += ObjectToHTML(okey, parsedJson[okey]);
+                    }
+                }
+                tbl += '</table>';
+            } else {
+                tbl += parsedJson;
+            }
+            if (null != key) {
+                tbl += '</td>';
+            }
+            tbl += '</tr>';
+            return tbl;
+        }
+
+        function update(){
+            $.ajax({
+                type: "GET",
+                url: "/SDK/info.php",
+                contentType: "text/json",
+                async: true,
+                dataType: "json",
+                success: function(obj) {
+                    console.log(obj);
+                    document.getElementById("tbl").innerHTML = ObjectToHTML(null, obj);
+                },
+            });
+            window.setTimeout(update, 1000);
+        }
+
+        window.onload = function () {
+            window.setTimeout(update, 1000);
+        }
+    </script>
+</head>
+<body >
+    <table id="tbl" width = "100%" border="1"></table>
+</body>
+</html>

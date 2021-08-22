@@ -1,0 +1,12 @@
+EILM 0x00000000 0x00010000 ; address base 0x00000000, max_size=64K
+{
+        EXEC 0x00000000
+        {
+                * (.nds32_init)
+
+                LOADADDR NEXT __data_lmastart
+                ADDR NEXT __data_start
+                * (+RO,+ISR,+RW,+ZI)
+                STACK = 0x0000FFFC
+        }
+}
